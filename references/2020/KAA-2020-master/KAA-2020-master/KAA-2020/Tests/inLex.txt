@@ -1,6 +1,0 @@
-main
-{
-int number = 3;
-char number;
-return number;
-}
