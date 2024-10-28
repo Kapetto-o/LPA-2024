@@ -1,0 +1,73 @@
+number function min(number x, number y)
+[
+	new number res;
+	criterion: x < y #
+	istrue [res = x;]
+	isfalse [res = y;] #
+	return res;
+]
+
+script function stand (string a, string b)
+[
+	new number k;
+	k = lenght(a) + 5;
+        print "Lenght + 5:          ";
+	print k;
+	newline;
+	new string str;
+	str = strcopy(b);
+        print "String copy:         ";
+	print str;
+	newline;
+	return;
+]
+
+main
+[
+	new number x = 10;
+	new number y = 3;
+	x = x % y;
+	print "10 module 3:         ";
+	print x;
+	newline;
+
+	new string strx = "VAD-2021";
+	new string stry = "Course Project Test";
+        new string strz = "70";
+
+        new number e;
+        print  "Number from string:  ";
+        e = atoii(strz);
+        print e;
+        newline;
+
+	new number shiftnum = 2;
+        new number shiftres;
+        shiftres = x{6;
+        print "Left shift 2 on 6:   ";
+        print  shiftres;
+        newline;
+
+	new number minone = 21;
+	new number mintwo = 13;
+ 	new number resmin;
+	resmin = min (minone,mintwo);
+	print "Minimal number:      ";
+        print resmin;
+	newline;
+
+	print "Cycle:               ";
+	new number ab = 125;
+	criterion: ab > 1 #
+	cycle [
+		print ab;
+		print "; ";
+		ab = ab / 3;
+	]#
+	newline;
+	print "Number after cycle:  ";
+	print ab;
+	newline;
+
+	stand(strx, stry);
+]
