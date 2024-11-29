@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE4981E2-CAC8-4E5B-8CC1-70CDCC7540BD}|Test Case A\\Test Case A.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case A\\Test Case A\\Test Case A.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE4981E2-CAC8-4E5B-8CC1-70CDCC7540BD}|Test Case A\\Test Case A.vcxproj|solutionrelative:Test Case A\\Test Case A.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Test Case A.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case A\\Test Case A\\Test Case A.cpp",
+              "RelativeDocumentMoniker": "Test Case A\\Test Case A.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case A\\Test Case A\\Test Case A.cpp",
+              "RelativeToolTip": "Test Case A\\Test Case A.cpp",
+              "ViewState": "AgIAACkAAAAAAAAAAAAswFYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-31T08:14:33.631Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
