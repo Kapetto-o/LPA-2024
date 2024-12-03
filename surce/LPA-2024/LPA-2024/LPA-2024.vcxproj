@@ -127,10 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FST.cpp" />
     <ClCompile Include="LPA-2024.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="in.h" />
+    <ClInclude Include="FST.h" />
+    <ClInclude Include="Graphs.h" />
+    <ClInclude Include="MFST.h" />
+    <ClInclude Include="In.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
