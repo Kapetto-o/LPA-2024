@@ -7,15 +7,54 @@ struct GRAPH
 	FST::FST graph;		// Недетерминированный конечный автомат
 };
 
+// Литералы
 
+#define GRAPH_INT_LITERAL_8 \
+    4, \
+    FST::NODE(2, \
+        FST::RELATION('-', 1), FST::RELATION('0', 2)), \
+    FST::NODE(1, FST::RELATION('0', 2)), \
+	FST::NODE(14, \
+        FST::RELATION('1', 3), FST::RELATION('2', 3), FST::RELATION('3', 3), \
+        FST::RELATION('4', 3), FST::RELATION('5', 3), FST::RELATION('6', 3), \
+        FST::RELATION('7', 3), FST::RELATION('1', 4), FST::RELATION('2', 4), \
+		FST::RELATION('3', 4), FST::RELATION('4', 4), FST::RELATION('5', 4), \
+		FST::RELATION('6', 4), FST::RELATION('7', 4)), \
+    FST::NODE(8, \
+        FST::RELATION('0', 3), FST::RELATION('1', 3), FST::RELATION('2', 3), \
+        FST::RELATION('3', 3), FST::RELATION('4', 3), FST::RELATION('5', 3), \
+        FST::RELATION('6', 3), FST::RELATION('7', 3), FST::RELATION('0', 4), \
+		FST::RELATION('1', 4), FST::RELATION('2', 4), FST::RELATION('3', 4), \
+        FST::RELATION('4', 4), FST::RELATION('5', 4), FST::RELATION('6', 4), \
+		FST::RELATION('7', 4)), \
+    FST::NODE()
 
-
-
-
-
+#define GRAPH_INT_LITERAL_10  \
+    4, \
+    FST::NODE(11, \
+        FST::RELATION('-', 1), FST::RELATION('1', 2), FST::RELATION('2', 2), \
+        FST::RELATION('3', 2), FST::RELATION('4', 2), FST::RELATION('5', 2), \
+        FST::RELATION('6', 2), FST::RELATION('7', 2), FST::RELATION('8', 2), \
+        FST::RELATION('9', 2), FST::RELATION('0', 3)), \
+    FST::NODE(18, \
+        FST::RELATION('1', 2), FST::RELATION('2', 2), FST::RELATION('3', 2), \
+        FST::RELATION('4', 2), FST::RELATION('5', 2), FST::RELATION('6', 2), \
+        FST::RELATION('7', 2), FST::RELATION('8', 2), FST::RELATION('9', 2), \
+        FST::RELATION('1', 3), FST::RELATION('2', 3), FST::RELATION('3', 3), \
+        FST::RELATION('4', 3), FST::RELATION('5', 3), FST::RELATION('6', 3), \
+        FST::RELATION('7', 3), FST::RELATION('8', 3), FST::RELATION('9', 3)), \
+    FST::NODE(20, \
+        FST::RELATION('0', 2), FST::RELATION('1', 2), FST::RELATION('2', 2), \
+        FST::RELATION('3', 2), FST::RELATION('4', 2), FST::RELATION('5', 2), \
+        FST::RELATION('6', 2), FST::RELATION('7', 2), FST::RELATION('8', 2), \
+        FST::RELATION('9', 2), FST::RELATION('0', 3), FST::RELATION('1', 3), \
+		FST::RELATION('2', 3), FST::RELATION('3', 3), FST::RELATION('4', 3), \
+        FST::RELATION('5', 3), FST::RELATION('6', 3), FST::RELATION('7', 3), \
+        FST::RELATION('8', 3), FST::RELATION('9', 3)), \
+    FST::NODE()
 
 // Функции
-#define GRAPH_RETURN \
+#define GRAPH_MAIN \
 	5, \
 	FST::NODE(1,FST::RELATION('m', 1)), \
 	FST::NODE(1,FST::RELATION('a', 2)), \
