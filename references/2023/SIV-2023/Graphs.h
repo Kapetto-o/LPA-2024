@@ -6,7 +6,7 @@ struct GRAPH
 	char lex;
 	FST::FST graph;		// Ќедетерминированный конечный автомат
 };
-
+//38
 #define GRAPH_SEMICOLON \
 	2, \
 	FST::NODE(1,FST::RELATION(';', 1)), \

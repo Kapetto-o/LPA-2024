@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2020\\AEV-2020-master\\AEV\\Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +16,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\fst.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\fst.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\MFST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,8 +37,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Graphs.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2020\\AEV-2020-master\\AEV\\Graphs.h",
+              "RelativeDocumentMoniker": "..\\..\\references\\2020\\AEV-2020-master\\AEV\\Graphs.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2020\\AEV-2020-master\\AEV\\Graphs.h",
+              "RelativeToolTip": "..\\..\\references\\2020\\AEV-2020-master\\AEV\\Graphs.h",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAEQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-05T22:31:54.373Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -66,20 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Graphs.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h",
               "RelativeDocumentMoniker": "LPA-2024\\Graphs.h",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h",
               "RelativeToolTip": "LPA-2024\\Graphs.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAQwHEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-03T22:34:33.681Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FST.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.h",
               "RelativeDocumentMoniker": "LPA-2024\\FST.h",
@@ -91,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "In.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.h",
               "RelativeDocumentMoniker": "LPA-2024\\In.h",
@@ -99,19 +111,8 @@
               "RelativeToolTip": "LPA-2024\\In.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T21:32:04.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MFST.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h",
-              "RelativeDocumentMoniker": "LPA-2024\\MFST.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h",
-              "RelativeToolTip": "LPA-2024\\MFST.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:29:40.016Z"
+              "WhenOpened": "2024-12-01T21:32:04.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

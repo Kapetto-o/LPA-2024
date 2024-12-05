@@ -29,9 +29,6 @@
     <ClInclude Include="FST.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="MFST.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Graphs.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
