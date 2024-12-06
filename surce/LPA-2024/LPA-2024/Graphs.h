@@ -35,21 +35,6 @@ struct GRAPH
 	FST::NODE(1, FST::RELATION('o', 3)), \
 	FST::NODE(1, FST::RELATION('l', 4)), \
 	FST::NODE()
-#define GRAPH_BOOL_TRUE \
-	5, \
-	FST::NODE(1, FST::RELATION('t', 1)), \
-	FST::NODE(1, FST::RELATION('r', 2)), \
-	FST::NODE(1, FST::RELATION('u', 3)), \
-	FST::NODE(1, FST::RELATION('e', 4)), \
-	FST::NODE()
-#define GRAPH_BOOL_FALSE \
-	6, \
-	FST::NODE(1, FST::RELATION('f', 1)), \
-	FST::NODE(1, FST::RELATION('a', 2)), \
-	FST::NODE(1, FST::RELATION('l', 3)), \
-	FST::NODE(1, FST::RELATION('s', 4)), \
-	FST::NODE(1, FST::RELATION('e', 5)), \
-	FST::NODE()
 
 // Идентификаторы
 
@@ -102,6 +87,22 @@ struct GRAPH
     FST::NODE()
 
 // Литералы
+
+#define GRAPH_BOOL_TRUE \
+	5, \
+	FST::NODE(1, FST::RELATION('t', 1)), \
+	FST::NODE(1, FST::RELATION('r', 2)), \
+	FST::NODE(1, FST::RELATION('u', 3)), \
+	FST::NODE(1, FST::RELATION('e', 4)), \
+	FST::NODE()
+#define GRAPH_BOOL_FALSE \
+	6, \
+	FST::NODE(1, FST::RELATION('f', 1)), \
+	FST::NODE(1, FST::RELATION('a', 2)), \
+	FST::NODE(1, FST::RELATION('l', 3)), \
+	FST::NODE(1, FST::RELATION('s', 4)), \
+	FST::NODE(1, FST::RELATION('e', 5)), \
+	FST::NODE()
 
 #define GRAPH_INT_LITERAL_8 \
     4, \
@@ -162,7 +163,7 @@ struct GRAPH
 		FST::RELATION('5', 1), FST::RELATION('6', 1), FST::RELATION('7', 1), FST::RELATION('8', 1), FST::RELATION('9', 1), FST::RELATION('0', 1), \
 		\
 		FST::RELATION('А', 1), FST::RELATION('Б', 1), FST::RELATION('В', 1), FST::RELATION('Г', 1), FST::RELATION('Д', 1), FST::RELATION('Е', 1), \
-		FST::RELATION('Ё', 1), FST::RELATION('Ж', 1), FST::RELATION('З', 1), FST::RELATION('И', 1), FST::RELATION('Й', 1), FST::RELATION('К', 1), \
+		FST::RELATION('Ё', 1), FST::RELATION('Ж', 1), FST::RELATION('З', 1),FST::RELATION('И', 1), FST::RELATION('Й', 1), FST::RELATION('К', 1), \
 		FST::RELATION('Л', 1), FST::RELATION('М', 1), FST::RELATION('Н', 1), FST::RELATION('О', 1), FST::RELATION('П', 1), FST::RELATION('Р', 1), \
 		FST::RELATION('С', 1), FST::RELATION('Т', 1), FST::RELATION('У', 1), FST::RELATION('Ф', 1), FST::RELATION('Х', 1), FST::RELATION('Ц', 1), \
 		FST::RELATION('Ч', 1), FST::RELATION('Ш', 1), FST::RELATION('Щ', 1), FST::RELATION('Ъ', 1), FST::RELATION('Ы', 1), FST::RELATION('Ь', 1), \
@@ -237,7 +238,7 @@ struct GRAPH
 		FST::RELATION('э', 1), FST::RELATION('ю', 1), FST::RELATION('я', 1), FST::RELATION(' ', 1), FST::RELATION('.', 1), FST::RELATION(',', 1), \
 		FST::RELATION('?', 1), FST::RELATION('!', 1), FST::RELATION(';', 1), FST::RELATION(':', 1), FST::RELATION('-', 1), FST::RELATION(')', 1), \
 		FST::RELATION('(', 1), FST::RELATION('<', 1), FST::RELATION('>', 1), FST::RELATION('/', 1), FST::RELATION('%', 1), FST::RELATION('=', 1), \
-		FST::RELATION('+', 1), FST::RELATION('*', 1), \
+		FST::RELATION('+', 1), FST::RELATION('*', 1)), \
 		\
 	FST::NODE(1, FST::RELATION('\'', 3)), \
 	FST::NODE()
@@ -301,7 +302,7 @@ struct GRAPH
 	FST::NODE(1,FST::RELATION('t', 11)), \
 	FST::NODE()
 
-// Операторы вывода и цикл
+// Операторы вывода и цикла
 
 #define GRAPH_WRITELINE \
 	10, \

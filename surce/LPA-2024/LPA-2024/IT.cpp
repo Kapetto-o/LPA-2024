@@ -84,6 +84,17 @@ namespace IT
 		return result;
 	}
 
+	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, char vchar)
+	{
+		Entry result;
+		result.idxfirstLE = lineLT;
+		result.id = id;
+		result.idDataType = idDataType;
+		result.idType = idType;
+		result.value.vchar = vchar;
+		return result;
+	}
+
 	void SaveToFile(IdTable& idtable, wchar_t outfile[])
 	{
 		std::ofstream file(outfile, std::ios_base::app);
@@ -129,11 +140,14 @@ namespace IT
 
 			switch (iddatatype)
 			{
+			case IDDATATYPE::SHORT:
+				file << '|' << std::setw(15) << std::left << "Int";
+				break;
 			case IDDATATYPE::STR:
 				file << '|' << std::setw(15) << std::left << "Str";
 				break;
-			case IDDATATYPE::SHORT:
-				file << '|' << std::setw(15) << std::left << "Int";
+			case IDDATATYPE::CHAR:
+				file << '|' << std::setw(15) << std::left << "Char";
 				break;
 			case IDDATATYPE::BOOL:
 				file << '|' << std::setw(15) << std::left << "Bool";
@@ -149,17 +163,20 @@ namespace IT
 			{
 				switch (iddatatype)
 				{
-				case IDDATATYPE::BOOL:
-					if (idtable.table[i].value.vshort)
-						file << '|' << std::setw(20) << std::left << "true";
-					else
-						file << '|' << std::setw(20) << std::left << "false";
-					break;
 				case IDDATATYPE::SHORT:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vshort;
 					break;
 				case IDDATATYPE::STR:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vstr.str;
+					break;
+				case IDDATATYPE::CHAR:
+					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vchar;
+					break;
+				case IDDATATYPE::BOOL:
+					if (idtable.table[i].value.vshort)
+						file << '|' << std::setw(20) << std::left << "true";
+					else
+						file << '|' << std::setw(20) << std::left << "false";
 					break;
 				}
 			}
