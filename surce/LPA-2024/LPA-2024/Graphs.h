@@ -8,6 +8,7 @@ struct GRAPH
 };
 
 // Типы данных
+
 #define GRAPH_INT \
 	4, \
 	FST::NODE(1, FST::RELATION('i', 1)), \

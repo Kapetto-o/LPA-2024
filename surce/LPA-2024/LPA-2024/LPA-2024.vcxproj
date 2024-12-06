@@ -128,13 +128,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FST.cpp" />
+    <ClCompile Include="In.cpp" />
     <ClCompile Include="LPA-2024.cpp" />
+    <ClCompile Include="LT.cpp" />
+    <ClCompile Include="Token.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FST.h" />
     <ClInclude Include="Graphs.h" />
     <ClInclude Include="In.h" />
+    <ClInclude Include="LT.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Token.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

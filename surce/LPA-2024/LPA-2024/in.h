@@ -1,4 +1,6 @@
 #pragma once
+#define IN_MAX_LEN_TEXT 1024*1024
+#define IN_CODE_ENDL '\0'
 
 /*
 T - Разрешённые символы
@@ -30,3 +32,19 @@ N - Переход на новую строку
 /*F*/	IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
 }
 
+namespace In
+{
+	unsigned char c = ':';
+	struct IN
+	{
+		enum { T = 1024, F = 2048, I = 4096 };
+		int size;
+		int lines;
+		int ignor;
+		unsigned char* text;
+		int code[256];
+	};
+
+	// Функция вывода и проверки входного потока 
+	IN GetIn(wchar_t infile[], wchar_t outfile[]);
+}
