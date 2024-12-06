@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #define IN_MAX_LEN_TEXT 1024*1024
 #define IN_CODE_ENDL '\0'
 
@@ -37,7 +38,7 @@ namespace In
 	unsigned char c = ':';
 	struct IN
 	{
-		enum { T = 1024, F = 2048, I = 4096 };
+		enum { T = 1024, F = 2048, I = 4096, S = 8192, P = 16384, N = 32768 };
 		int size;
 		int lines;
 		int ignor;

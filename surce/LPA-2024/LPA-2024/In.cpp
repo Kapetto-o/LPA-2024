@@ -1,8 +1,4 @@
 #include "stdafx.h"
-#include "Error.h"
-#include <fstream>
-#include <string>
-#include <iostream>
 
 namespace In
 {
