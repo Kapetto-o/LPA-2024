@@ -32,5 +32,4 @@
 #include "IT.h"
 #include "FST.h"
 #include "Graphs.h"
-
-
+#include "Polish.h"

@@ -80,29 +80,46 @@ namespace LA
 	};
 
 	// Определяем тип лексемы
+	//char LexType(Tokens::Token token)
+	//{
+	//	for (int i = 0; i < LENGTHOF(graph); i++)
+	//	{
+	//		FST::FST fstlex = FST::FST(token.token, graph[i].graph);
+	//		if (FST::execute(fstlex))
+	//		{
+	//			return graph[i].lex;
+	//		}
+	//	}
+	//	throw ERROR_THROW_IN(117, token.line, 0);
+	//}
+
 	char LexType(Tokens::Token token)
 	{
+		std::cout << "LexType: Token = " << token.token << " on line " << token.line << std::endl;
+
 		for (int i = 0; i < LENGTHOF(graph); i++)
 		{
+			std::cout << "Creating FST for token: " << token.token << " using graph " << i << std::endl;
 			FST::FST fstlex = FST::FST(token.token, graph[i].graph);
+
 			if (FST::execute(fstlex))
 			{
+				std::cout << "Token " << token.token << " recognized as " << (int)graph[i].lex << std::endl;
 				return graph[i].lex;
 			}
 		}
+		std::cout << "Token " << token.token << " is not recognized, throwing error 117" << std::endl;
 		throw ERROR_THROW_IN(117, token.line, 0);
 	}
-
 	LEX FillingInTables(Tokens::TokenTable tokenTable)
 	{
 		LEX lex = LEX(LT_MAXSIZE, TI_MAXSIZE);
 		char lexema;
-		string id;
+		std::string id;
 		int lineIT = TI_NULLIDX;
-		stack<int> areaOfVisibility;
+		std::stack<int> areaOfVisibility;
 		areaOfVisibility.push(0);
 		int globalAreaOfVisibility = 0;
-		char* currentVisibility = new char[0];
 		IT::IDTYPE idType = IT::IDTYPE::P;
 		IT::IDDATATYPE idDataType = IT::IDDATATYPE::UNDF;
 		int isNotGlobal = 0;
@@ -111,50 +128,47 @@ namespace LA
 		bool isDeclare = false;
 		bool GlobalFunIsFound = false;
 
+		std::cout << "Starting FillingInTables" << std::endl;
+
 		for (int index = 0; index < tokenTable.size; index++)
 		{
-			switch (lexema = LexType(tokenTable.table[index]))
+			std::cout << "Processing token: " << tokenTable.table[index].token
+				<< " at line: " << tokenTable.table[index].line
+				<< ", line position: " << tokenTable.table[index].linePosition << std::endl;
+
+			lexema = LexType(tokenTable.table[index]);
+			std::cout << "Lexeme identified: " << (int)lexema << " (" << tokenTable.table[index].token << ")" << std::endl;
+
+			switch (lexema)
 			{
 			case LEX_IDENTIFIER:
-				lineIT = SearchID(areaOfVisibility, string(tokenTable.table[index].token), lex.idtable);
-				// Если id переменной не найден в IT то ищем id функции
+				lineIT = SearchID(areaOfVisibility, std::string(tokenTable.table[index].token), lex.idtable);
 				if (lineIT == TI_NULLIDX)
 				{
-					lineIT = SearchGlobalFunctionID(globalAreaOfVisibility, string(tokenTable.table[index].token), lex.idtable);
+					lineIT = SearchGlobalFunctionID(globalAreaOfVisibility, std::string(tokenTable.table[index].token), lex.idtable);
 					if (lineIT != TI_NULLIDX)
+					{
 						GlobalFunIsFound = true;
+						std::cout << "Global function ID found for token: " << tokenTable.table[index].token << std::endl;
+					}
 				}
-				// Если id не найден в IT то это объявление
+
 				if (lineIT == TI_NULLIDX && isDeclare || lineIT == TI_NULLIDX && !isNotGlobal)
 				{
-					lineIT = lex.idtable.size;
-					id = string(tokenTable.table[index].token) + to_string(areaOfVisibility.top());
+					id = std::string(tokenTable.table[index].token) + std::to_string(areaOfVisibility.top());
+					std::cout << "New identifier declaration: " << id << std::endl;
 					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, idDataType, idType));
 				}
 				else if (lineIT == TI_NULLIDX)
 				{
+					std::cout << "Error: Identifier not found and not declared, throwing error 135" << std::endl;
 					throw ERROR_THROW_IN(135, tokenTable.table[index].line, tokenTable.table[index].linePosition);
 				}
-				// Если id есть в IT
 				else if (lineIT != TI_NULLIDX && isDeclare)
 				{
-					if ((IT::GetEntry(lex.idtable, lineIT)).id == string(tokenTable.table[index].token) + to_string(areaOfVisibility.top()) || GlobalFunIsFound
-						|| (IT::GetEntry(lex.idtable, lineIT)).id == string(tokenTable.table[index].token) + to_string(globalAreaOfVisibility) && ((IT::GetEntry(lex.idtable, lineIT)).idType == IT::IDTYPE::F)
-						|| (IT::GetEntry(lex.idtable, lineIT)).id == string(tokenTable.table[index].token) + to_string(globalAreaOfVisibility) && ((IT::GetEntry(lex.idtable, lineIT)).idType == IT::IDTYPE::P) && (isNotGlobal == 1))
-					{
-						throw ERROR_THROW_IN(136, tokenTable.table[index].line, tokenTable.table[index].linePosition);
-					}
-					else
-					{
-						lineIT = lex.idtable.size;
-						id = string(tokenTable.table[index].token) + to_string(areaOfVisibility.top());
-						IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, idDataType, idType));
-					}
+					std::cout << "Error: Duplicate identifier declaration, throwing error 136" << std::endl;
+					throw ERROR_THROW_IN(136, tokenTable.table[index].line, tokenTable.table[index].linePosition);
 				}
-				// Такая функция уже объявлена
-				else if (lineIT != TI_NULLIDX && idType == IT::IDTYPE::F)
-					throw ERROR_THROW_IN(143, tokenTable.table[index].line, tokenTable.table[index].linePosition);
-
 
 				LT::Add(lex.lextable, LT::CreateEntry(lexema, tokenTable.table[index].line, lineIT));
 				idType = IT::IDTYPE::P;
@@ -162,108 +176,233 @@ namespace LA
 				GlobalFunIsFound = false;
 				isDeclare = false;
 				break;
+
 			case LEX_LITERAL:
-				// Строковый литерал
 				if (tokenTable.table[index].token[0] == '"')
 				{
 					if (tokenTable.table[index].length == 2)
 					{
+						std::cout << "Error: Empty string literal detected, throwing error 149" << std::endl;
 						throw ERROR_THROW_IN(149, tokenTable.table[index].line, tokenTable.table[index].linePosition);
 					}
-					id = "str" + to_string(numOfLit++);
-					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::STR, IT::IDTYPE::L, string(tokenTable.table[index].token)));
-				}
-				// Литерал char
-				if (tokenTable.table[index].token[0] == '\'' && tokenTable.table[index].token[2] == '\'') {
-					char c = tokenTable.table[index].token[1];
-					id = "char" + to_string(numOfLit++);
-					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::CHAR, IT::IDTYPE::L, c));
-				}
-				// Литерал bool
-				else if (tokenTable.table[index].token[0] == 't' || tokenTable.table[index].token[0] == 'f')
-				{
-					bool vBool;
-					if (tokenTable.table[index].token[0] == 't')
-						vBool = true;
-					else vBool = false;
-
-					id = "bool" + to_string(numOfLit++);
-					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::BOOL, IT::IDTYPE::L, vBool));
-				}
-				// Целочисленный литерал
-				else
-				{
-					int vShort;
-					switch (tokenTable.table[index].token[strlen(tokenTable.table[index].token) - 1])
-					{
-					case 'B':
-						vShort = strtol(tokenTable.table[index].token, NULL, 2);
-						break;
-					case 'O':
-						vShort = strtol(tokenTable.table[index].token, NULL, 8);
-						break;
-					case 'H':
-						vShort = strtol(tokenTable.table[index].token, NULL, 16);
-						break;
-					default:
-						vShort = strtol(tokenTable.table[index].token, NULL, 10);
-						break;
-					}
-					if (vShort < -32768 || vShort > 32767)
-						throw ERROR_THROW_IN(133, tokenTable.table[index].line, tokenTable.table[index].linePosition);
-					id = "short" + to_string(numOfLit++);
-					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::SHORT, IT::IDTYPE::L, vShort));
+					id = "str" + std::to_string(numOfLit++);
+					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::STR, IT::IDTYPE::L, std::string(tokenTable.table[index].token)));
+					std::cout << "String literal added with ID: " << id << std::endl;
 				}
 				LT::Add(lex.lextable, LT::CreateEntry(lexema, tokenTable.table[index].line, lex.idtable.size - 1));
 				break;
+
 			default:
 				LT::Add(lex.lextable, LT::CreateEntry(lexema, tokenTable.table[index].line));
 
-				switch (lexema)
+				if (lexema == LEX_LEFTBRACE_OPEN)
 				{
-				case LEX_LEFTBRACE_OPEN:
 					areaOfVisibility.push(lex.lextable.size - 1);
 					isNotGlobal++;
-					break;
-				case LEX_RIGHTBRACE_CLOSE:
+					std::cout << "Entering new scope, isNotGlobal: " << isNotGlobal << std::endl;
+				}
+				else if (lexema == LEX_RIGHTBRACE_CLOSE)
+				{
 					areaOfVisibility.pop();
 					isNotGlobal--;
-					break;
-				case LEX_INT:
-					idDataType = IT::IDDATATYPE::SHORT;
-					break;
-				case LEX_STR:
-					idDataType = IT::IDDATATYPE::STR;
-					break;
-				case LEX_BOOL:
-					idDataType = IT::IDDATATYPE::BOOL;
-					break;
-				case LEX_CHAR:
-					idDataType = IT::IDDATATYPE::CHAR;
-					break;
-				case LEX_MAIN:
-					if (isMain)
-						throw ERROR_THROW_IN(131, tokenTable.table[index].line, tokenTable.table[index].linePosition);
-					isMain = true;
-					if (!isNotGlobal)
-					{
-						globalAreaOfVisibility++;
-						if (areaOfVisibility.top() != 0)
-							areaOfVisibility.pop();
-						areaOfVisibility.push(globalAreaOfVisibility);
-					}
-					break;
-				default:
-					break;
+					std::cout << "Exiting scope, isNotGlobal: " << isNotGlobal << std::endl;
 				}
-
+				else if (lexema == LEX_MAIN)
+				{
+					if (isMain)
+					{
+						std::cout << "Error: Duplicate 'main' function, throwing error 131" << std::endl;
+						throw ERROR_THROW_IN(131, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+					}
+					isMain = true;
+					std::cout << "'main' function found at line " << tokenTable.table[index].line << std::endl;
+				}
 				break;
 			}
 		}
+
 		if (!isMain)
+		{
+			std::cout << "Error: 'main' function not found, throwing error 134" << std::endl;
 			throw ERROR_THROW(134);
+		}
+
+		std::cout << "FillingInTables completed successfully" << std::endl;
 		return lex;
 	}
+
+	//LEX FillingInTables(Tokens::TokenTable tokenTable)
+	//{
+	//	LEX lex = LEX(LT_MAXSIZE, TI_MAXSIZE);
+	//	char lexema;
+	//	string id;
+	//	int lineIT = TI_NULLIDX;
+	//	stack<int> areaOfVisibility;
+	//	areaOfVisibility.push(0);
+	//	int globalAreaOfVisibility = 0;
+	//	char* currentVisibility = new char[0];
+	//	IT::IDTYPE idType = IT::IDTYPE::P;
+	//	IT::IDDATATYPE idDataType = IT::IDDATATYPE::UNDF;
+	//	int isNotGlobal = 0;
+	//	bool isMain = false;
+	//	int numOfLit = 0;
+	//	bool isDeclare = false;
+	//	bool GlobalFunIsFound = false;
+
+	//	for (int index = 0; index < tokenTable.size; index++)
+	//	{
+	//		switch (lexema = LexType(tokenTable.table[index]))
+	//		{
+	//		case LEX_IDENTIFIER:
+	//			lineIT = SearchID(areaOfVisibility, string(tokenTable.table[index].token), lex.idtable);
+	//			// Если id переменной не найден в IT то ищем id функции
+	//			if (lineIT == TI_NULLIDX)
+	//			{
+	//				lineIT = SearchGlobalFunctionID(globalAreaOfVisibility, string(tokenTable.table[index].token), lex.idtable);
+	//				if (lineIT != TI_NULLIDX)
+	//					GlobalFunIsFound = true;
+	//			}
+	//			// Если id не найден в IT то это объявление
+	//			if (lineIT == TI_NULLIDX && isDeclare || lineIT == TI_NULLIDX && !isNotGlobal)
+	//			{
+	//				lineIT = lex.idtable.size;
+	//				id = string(tokenTable.table[index].token) + to_string(areaOfVisibility.top());
+	//				IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, idDataType, idType));
+	//			}
+	//			else if (lineIT == TI_NULLIDX)
+	//			{
+	//				throw ERROR_THROW_IN(135, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+	//			}
+	//			// Если id есть в IT
+	//			else if (lineIT != TI_NULLIDX && isDeclare)
+	//			{
+	//				if ((IT::GetEntry(lex.idtable, lineIT)).id == string(tokenTable.table[index].token) + to_string(areaOfVisibility.top()) || GlobalFunIsFound
+	//					|| (IT::GetEntry(lex.idtable, lineIT)).id == string(tokenTable.table[index].token) + to_string(globalAreaOfVisibility) && ((IT::GetEntry(lex.idtable, lineIT)).idType == IT::IDTYPE::F)
+	//					|| (IT::GetEntry(lex.idtable, lineIT)).id == string(tokenTable.table[index].token) + to_string(globalAreaOfVisibility) && ((IT::GetEntry(lex.idtable, lineIT)).idType == IT::IDTYPE::P) && (isNotGlobal == 1))
+	//				{
+	//					throw ERROR_THROW_IN(136, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+	//				}
+	//				else
+	//				{
+	//					lineIT = lex.idtable.size;
+	//					id = string(tokenTable.table[index].token) + to_string(areaOfVisibility.top());
+	//					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, idDataType, idType));
+	//				}
+	//			}
+	//			// Такая функция уже объявлена
+	//			else if (lineIT != TI_NULLIDX && idType == IT::IDTYPE::F)
+	//				throw ERROR_THROW_IN(143, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+
+
+	//			LT::Add(lex.lextable, LT::CreateEntry(lexema, tokenTable.table[index].line, lineIT));
+	//			idType = IT::IDTYPE::P;
+	//			idDataType = IT::IDDATATYPE::UNDF;
+	//			GlobalFunIsFound = false;
+	//			isDeclare = false;
+	//			break;
+	//		case LEX_LITERAL:
+	//			// Строковый литерал
+	//			if (tokenTable.table[index].token[0] == '"')
+	//			{
+	//				if (tokenTable.table[index].length == 2)
+	//				{
+	//					throw ERROR_THROW_IN(149, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+	//				}
+	//				id = "str" + to_string(numOfLit++);
+	//				IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::STR, IT::IDTYPE::L, string(tokenTable.table[index].token)));
+	//			}
+	//			// Литерал char
+	//			if (tokenTable.table[index].token[0] == '\'' && tokenTable.table[index].token[2] == '\'') {
+	//				char c = tokenTable.table[index].token[1];
+	//				id = "char" + to_string(numOfLit++);
+	//				IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::CHAR, IT::IDTYPE::L, c));
+	//			}
+	//			// Литерал bool
+	//			else if (tokenTable.table[index].token[0] == 't' || tokenTable.table[index].token[0] == 'f')
+	//			{
+	//				bool vBool;
+	//				if (tokenTable.table[index].token[0] == 't')
+	//					vBool = true;
+	//				else vBool = false;
+
+	//				id = "bool" + to_string(numOfLit++);
+	//				IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::BOOL, IT::IDTYPE::L, vBool));
+	//			}
+	//			// Целочисленный литерал
+	//			else
+	//			{
+	//				int vShort;
+	//				switch (tokenTable.table[index].token[strlen(tokenTable.table[index].token) - 1])
+	//				{
+	//				case 'B':
+	//					vShort = strtol(tokenTable.table[index].token, NULL, 2);
+	//					break;
+	//				case 'O':
+	//					vShort = strtol(tokenTable.table[index].token, NULL, 8);
+	//					break;
+	//				case 'H':
+	//					vShort = strtol(tokenTable.table[index].token, NULL, 16);
+	//					break;
+	//				default:
+	//					vShort = strtol(tokenTable.table[index].token, NULL, 10);
+	//					break;
+	//				}
+	//				if (vShort < -32768 || vShort > 32767)
+	//					throw ERROR_THROW_IN(133, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+	//				id = "short" + to_string(numOfLit++);
+	//				IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::SHORT, IT::IDTYPE::L, vShort));
+	//			}
+	//			LT::Add(lex.lextable, LT::CreateEntry(lexema, tokenTable.table[index].line, lex.idtable.size - 1));
+	//			break;
+	//		default:
+	//			LT::Add(lex.lextable, LT::CreateEntry(lexema, tokenTable.table[index].line));
+
+	//			switch (lexema)
+	//			{
+	//			case LEX_LEFTBRACE_OPEN:
+	//				areaOfVisibility.push(lex.lextable.size - 1);
+	//				isNotGlobal++;
+	//				break;
+	//			case LEX_RIGHTBRACE_CLOSE:
+	//				areaOfVisibility.pop();
+	//				isNotGlobal--;
+	//				break;
+	//			case LEX_INT:
+	//				idDataType = IT::IDDATATYPE::SHORT;
+	//				break;
+	//			case LEX_STR:
+	//				idDataType = IT::IDDATATYPE::STR;
+	//				break;
+	//			case LEX_BOOL:
+	//				idDataType = IT::IDDATATYPE::BOOL;
+	//				break;
+	//			case LEX_CHAR:
+	//				idDataType = IT::IDDATATYPE::CHAR;
+	//				break;
+	//			case LEX_MAIN:
+	//				if (isMain)
+	//					throw ERROR_THROW_IN(131, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+	//				isMain = true;
+	//				if (!isNotGlobal)
+	//				{
+	//					globalAreaOfVisibility++;
+	//					if (areaOfVisibility.top() != 0)
+	//						areaOfVisibility.pop();
+	//					areaOfVisibility.push(globalAreaOfVisibility);
+	//				}
+	//				break;
+	//			default:
+	//				break;
+	//			}
+
+	//			break;
+	//		}
+	//	}
+
+	//	if (!isMain)
+	//		throw ERROR_THROW(134);
+	//	return lex;
+	//}
 
 	// Поиск id в IT
 	int SearchID(stack<int> areaOfVisibility, string id, IT::IdTable& idtable)
