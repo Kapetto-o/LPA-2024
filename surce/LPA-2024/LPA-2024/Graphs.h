@@ -1,5 +1,5 @@
 #pragma once
-#include "stdafx.h"
+#include "FST.h"
 
 struct GRAPH
 {
@@ -244,6 +244,7 @@ struct GRAPH
 	FST::NODE()
 
 // Функции
+
 #define GRAPH_MAIN \
 	5, \
 	FST::NODE(1,FST::RELATION('m', 1)), \

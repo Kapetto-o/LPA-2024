@@ -6,35 +6,31 @@
 // ќднако изменение любого из приведенных здесь файлов между операци€ми сборки приведет к повторной компил€ции всех(!) этих файлов.
 // Ќе добавл€йте сюда файлы, которые планируете часто измен€ть, так как в этом случае выигрыша в производительности не будет.
 
-#ifndef STDAFX_H
-#define STDAFX_H
 
 #define LENGTHOF(x)(sizeof(x)/sizeof(*x))
 #define _CRT_SECURE_NO_WARNINGS
 #define _CRT_NONSTDC_NO_DEPRECATE
 
-#include <iostream>
-#include <cstring>
-#include <fstream>
-#include <string>
-#include <stack>
-
-#include "FST.h"
-#include "In.h"
-#include "Token.h"
-#include "Error.h"
-#include "LexicalAnalyzer.h"
-#include "Graphs.h"
-#include "IT.h"
-#include "LT.h"
-
-
-
 #include <SDKDDKVer.h>
 #include <stdio.h>
 #include <tchar.h>
+#include <iostream>
+#include <fstream>
 #include <ctime>
 #include <mbstring.h>
 #include <iomanip>
+#include <string>
+#include <stack>
 
-#endif // STDAFX_H
+#include "Log.h"
+#include "Error.h"
+#include "Parm.h"
+#include "In.h"
+#include "Token.h"
+#include "LexicalAnalyzer.h"
+#include "LT.h"
+#include "IT.h"
+#include "FST.h"
+#include "Graphs.h"
+
+

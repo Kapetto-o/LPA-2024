@@ -1,4 +1,7 @@
 #include "stdafx.h"
+#include "Error.h"
+#include <iostream>
+#include <cstring>
 
 namespace Error
 {

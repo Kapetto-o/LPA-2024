@@ -1,20 +1,46 @@
-﻿// LPA-2024.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿#include "stdafx.h"
+#include <locale>
+#include <cwchar>
 
-#include <iostream>
-
-int main()
+int _tmain(int argc, _TCHAR** argv)
 {
-    std::cout << "Hello World!\n";
+	//argc = 3;
+	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\ControlExample.txt";
+	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\SemErrors.txt";
+	//argv[2] = (_TCHAR*)L"-out:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\SIV_result.asm";
+	//argv[3] = (_TCHAR*)L"-log:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\Logger.txt";
+	//argv[4] = (_TCHAR*)L"-an:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\Analize.txt";
+
+	setlocale(LC_ALL, "rus");
+	Log::LOG log = Log::INITLOG;
+	try
+	{
+		Parm::PARM parm = Parm::getparm(argc, argv);
+		std::ofstream clearFile(parm.an, std::ios_base::trunc);
+		log = Log::getlog(parm.log);
+		Log::WriteLog(log);
+		Log::WriteParm(log, parm);
+
+		In::IN in = In::GetIn(parm.in, parm.out);
+		Log::WriteIn(log, in);
+		Log::WriteLine(log, "No forbidden characters\n", "");
+
+		Log::WriteLine(log, "Tokenization : ", "");
+		Tokens::TokenTable tokentable = Tokens::Tokenize(in);
+		Log::WriteLine(log, " Completed successfully\n", "");
+
+		Log::WriteLine(log, "Lexical analysis : ", "");
+		LA::LEX lex = LA::FillingInTables(tokentable);
+		Log::WriteLine(log, " Completed successfully\n", "");
+
+		LT::SaveToFile(lex.lextable, parm.an);
+		IT::SaveToFile(lex.idtable, parm.an);
+	}
+	catch (Error::ERROR e)
+	{
+		std::cout << "Произошла ошибка\n";
+		Log::WriteLine(log, "- ERROR\n", "");
+		Log::WriteError(log, e);
+	}
+	return 0;
 }
-
-// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
-
-// Советы по началу работы 
-//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-//   2. В окне Team Explorer можно подключиться к системе управления версиями.
-//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.

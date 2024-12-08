@@ -7,7 +7,6 @@
 
 namespace In
 {
-
 	IN GetIn(wchar_t infile[], wchar_t outfile[])
 	{
 		int currentLine = 0, currentCol = 0;

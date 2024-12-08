@@ -1,5 +1,4 @@
 #pragma once
-#include "stdafx.h"
 #define IN_MAX_LEN_TEXT 1024*1024
 #define IN_CODE_ENDL '\0'
 
@@ -17,7 +16,7 @@ N - Переход на новую строку
 /*0*/	IN::F,  IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::P, IN::N, IN::F, IN::F, IN::I, IN::F, IN::F,\
 /*1*/	IN::F,  IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F,\
 /*2*/	IN::P,  IN::S, IN::T, IN::F, IN::F, IN::S, IN::F, IN::T, IN::S, IN::S, IN::S, IN::S, IN::S, IN::S, IN::F, IN::S,\
-/*3*/	IN::T,  IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::F, IN::S, IN::S, IN::S, IN::S, IN::F,\
+/*3*/	IN::T,  IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::S, IN::S, IN::S, IN::S, IN::F,\
 /*4*/	IN::F,  IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
 /*5*/	IN::T,  IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::F, IN::F, IN::F, IN::F, IN::F,\
 /*6*/	IN::F,  IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
@@ -35,7 +34,7 @@ N - Переход на новую строку
 
 namespace In
 {
-	unsigned char c = ':';
+	extern unsigned char c;
 	struct IN
 	{
 		enum { T = 1024, F = 2048, I = 4096, S = 8192, P = 16384, N = 32768 };

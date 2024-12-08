@@ -150,7 +150,7 @@ namespace Tokens
 	// Проверка на сепараторы
 	bool IsSeparator(char ch)
 	{
-		char separators[] = TOKEN_SEPARATORS;
+		char separators[] = TOKEN_SEPARATORS ;
 		int index = 0;
 
 		while (separators[index] != IN_CODE_ENDL)

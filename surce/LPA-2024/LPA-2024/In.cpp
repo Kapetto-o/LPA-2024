@@ -1,7 +1,13 @@
 #include "stdafx.h"
+#include "In.h"
+#include "Error.h"
+#include <fstream>
+#include <string>
+#include <iostream>
 
 namespace In
 {
+	unsigned char c = ':';
 
 	IN GetIn(wchar_t infile[], wchar_t outfile[])
 	{

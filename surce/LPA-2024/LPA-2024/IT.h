@@ -1,5 +1,4 @@
 #pragma once
-#include "stdafx.h"
 
 #define TI_MAXSIZE      4096                    
 #define TI_INT_DEFAULT  0x00000000              
