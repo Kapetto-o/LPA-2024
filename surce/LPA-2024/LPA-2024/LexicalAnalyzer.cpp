@@ -4,7 +4,7 @@ using namespace std;
 
 namespace LA
 {
-	// Конструктор таблиц
+	// КОнструктор таблиц
 	LEX::LEX(int lexTableSize, int idTableSize)
 	{
 		this->lextable = LT::Create(lexTableSize);
@@ -163,10 +163,10 @@ namespace LA
 				isDeclare = false;
 				break;
 			case LEX_LITERAL:
-				// Символьный литерал
-				if (tokenTable.table[index].token[0] == '\'' && tokenTable.table[index].length == 3 && tokenTable.table[index].token[2] == '\'')
+				if (tokenTable.table[index].token[0] == '\'' && tokenTable.table[index].token[2] == '\'' && tokenTable.table[index].length == 3)
 				{
-					char vChar = tokenTable.table[index].token[1]; // Извлекаем символ между одинарными кавычками
+					// Литерал char
+					char vChar = tokenTable.table[index].token[1];
 					id = "char" + to_string(numOfLit++);
 					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::CHAR, IT::IDTYPE::L, vChar));
 				}
@@ -242,6 +242,20 @@ namespace LA
 				case LEX_CHAR:
 					idDataType = IT::IDDATATYPE::CHAR;
 					break;
+				//case LEX_NEW:
+				//	idType = IT::IDTYPE::V;
+				//	isDeclare = true;
+				//	break;
+				//case LEX_FUNCTION:
+				//	idType = IT::IDTYPE::F;
+				//	if (!isNotGlobal)
+				//	{
+				//		globalAreaOfVisibility++;
+				//		if (areaOfVisibility.top() != 0)
+				//			areaOfVisibility.pop();
+				//		areaOfVisibility.push(globalAreaOfVisibility);
+				//	}
+					break;
 				case LEX_MAIN:
 					if (isMain)
 						throw ERROR_THROW_IN(131, tokenTable.table[index].line, tokenTable.table[index].linePosition);
@@ -261,7 +275,6 @@ namespace LA
 				break;
 			}
 		}
-
 		if (!isMain)
 			throw ERROR_THROW(134);
 		return lex;

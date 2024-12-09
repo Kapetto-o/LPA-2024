@@ -23,10 +23,10 @@ namespace IT
 			int vshort;				// целочисленное значение
 			struct
 			{
-				int len;			// длина строки
+				int len;			// длин астроки
 				std::string str;	// строка
 			} vstr;
-			char vchar;
+			char vchar;            // значение типа char
 		} value;
 	};
 

@@ -2,7 +2,6 @@
 #include "stdafx.h"
 #include "IT.h"
 #include "LT.h"
-
 using namespace std;
 
 namespace LA

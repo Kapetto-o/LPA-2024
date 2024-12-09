@@ -51,6 +51,17 @@ namespace IT
 		delete[] idtable.table;
 	}
 
+	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, char vchar)
+	{
+		Entry result;
+		result.idxfirstLE = lineLT;
+		result.id = id;
+		result.idDataType = idDataType;
+		result.idType = idType;
+		result.value.vchar = vchar;
+		return result;
+	}
+
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType)
 	{
 		Entry result;
@@ -84,26 +95,11 @@ namespace IT
 		return result;
 	}
 
-	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, char vchar)
-	{
-		Entry result;
-		result.idxfirstLE = lineLT;
-		result.id = id;
-		result.idDataType = idDataType;
-		result.idType = idType;
-		result.value.vchar = vchar;
-		return result;
-	}
-
 	void SaveToFile(IdTable& idtable, wchar_t outfile[])
 	{
 		std::ofstream file(outfile, std::ios_base::app);
 		if (!file.is_open())
 			throw ERROR_THROW(23);
-
-		int iddatatype;
-		int idtype;
-		int counter = 0;
 
 		file << std::setfill('=') << std::setw(43) << "ID TABLE" << std::setw(48) << "\n\n";
 		file << '+' << std::setfill('-') << std::setw(6) << '+' << std::setw(13) << '+' << std::setw(16) << '+' << std::setw(16) << '+'
@@ -114,8 +110,8 @@ namespace IT
 
 		for (int i = 0; i < idtable.size; i++)
 		{
-			iddatatype = idtable.table[i].idDataType;
-			idtype = idtable.table[i].idType;
+			int iddatatype = idtable.table[i].idDataType;
+			int idtype = idtable.table[i].idType;
 			file << '|' << std::setfill(' ') << std::setw(5) << std::left << i;
 			file << '|' << std::setfill(' ') << std::setw(12) << std::left << idtable.table[i].id;
 
@@ -140,17 +136,17 @@ namespace IT
 
 			switch (iddatatype)
 			{
-			case IDDATATYPE::SHORT:
-				file << '|' << std::setw(15) << std::left << "Int";
-				break;
 			case IDDATATYPE::STR:
 				file << '|' << std::setw(15) << std::left << "Str";
 				break;
-			case IDDATATYPE::CHAR:
-				file << '|' << std::setw(15) << std::left << "Char";
+			case IDDATATYPE::SHORT:
+				file << '|' << std::setw(15) << std::left << "Int";
 				break;
 			case IDDATATYPE::BOOL:
 				file << '|' << std::setw(15) << std::left << "Bool";
+				break;
+			case IDDATATYPE::CHAR:
+				file << '|' << std::setw(15) << std::left << "Char";
 				break;
 			case IDDATATYPE::UNDF:
 				file << '|' << std::setw(15) << std::left << "Undefined";
@@ -163,6 +159,9 @@ namespace IT
 			{
 				switch (iddatatype)
 				{
+				case IDDATATYPE::BOOL:
+					file << '|' << std::setw(20) << std::left << (idtable.table[i].value.vshort ? "true" : "false");
+					break;
 				case IDDATATYPE::SHORT:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vshort;
 					break;
@@ -172,18 +171,13 @@ namespace IT
 				case IDDATATYPE::CHAR:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vchar;
 					break;
-				case IDDATATYPE::BOOL:
-					if (idtable.table[i].value.vshort)
-						file << '|' << std::setw(20) << std::left << "true";
-					else
-						file << '|' << std::setw(20) << std::left << "false";
-					break;
 				}
 			}
 			else
 			{
 				file << '|' << std::setw(20) << std::left << '-';
 			}
+
 			file << '|';
 			file << std::endl;
 		}

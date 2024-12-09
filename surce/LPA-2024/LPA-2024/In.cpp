@@ -7,7 +7,7 @@
 
 namespace In
 {
-	unsigned char c = ':';
+    unsigned char c = ':';
 
     IN GetIn(wchar_t infile[], wchar_t outfile[])
     {

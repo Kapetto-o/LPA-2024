@@ -140,31 +140,35 @@ namespace Tokens
 				continue;
 			}
 
-			if (in.text[CharPointer] == '\"')
+			// создание токена для литерала char
+			if (in.text[CharPointer] == '\'')
 			{
 				if (NumOfCharRecorded)
-					throw ERROR_THROW_IN(120, CurrentLine, LinePosition);
+					throw ERROR_THROW_IN(140, CurrentLine, LinePosition);
 
-				do
+				buffer[NumOfCharRecorded++] = in.text[CharPointer++]; // Добавляем открывающую кавычку
+				LinePosition++;
+
+				if (in.text[CharPointer] == '\\') // Обработка escape-последовательностей
 				{
-					if (in.text[CharPointer] == '\n')
-						throw ERROR_THROW_IN(121, CurrentLine, 0);
-					if (NumOfCharRecorded == 256)
-						throw ERROR_THROW_IN(130, CurrentLine, 0);
-
-					buffer[NumOfCharRecorded] = in.text[CharPointer];
-					CharPointer++;
-					NumOfCharRecorded++;
+					buffer[NumOfCharRecorded++] = in.text[CharPointer++]; // Добавляем '\'
 					LinePosition++;
-				} while (in.text[CharPointer] != '\"');
+				}
 
-				buffer[NumOfCharRecorded] = in.text[CharPointer];
-				NumOfCharRecorded++;
+				if (in.text[CharPointer] == '\n' || in.text[CharPointer] == IN_CODE_ENDL)
+					throw ERROR_THROW_IN(141, CurrentLine, LinePosition);
 
+				buffer[NumOfCharRecorded++] = in.text[CharPointer++]; // Добавляем символ
+				LinePosition++;
+
+				if (in.text[CharPointer] != '\'') // Закрывающая кавычка
+					throw ERROR_THROW_IN(142, CurrentLine, LinePosition);
+
+				buffer[NumOfCharRecorded++] = in.text[CharPointer]; // Добавляем закрывающую кавычку
 				buffer[NumOfCharRecorded] = IN_CODE_ENDL;
+
 				AddToken(tokens, buffer, CurrentLine, LinePosition - NumOfCharRecorded, NumOfCharRecorded);
 				NumOfCharRecorded = 0;
-
 				continue;
 			}
 
@@ -178,7 +182,7 @@ namespace Tokens
 	// Проверка на сепараторы
 	bool IsSeparator(char ch)
 	{
-		char separators[] = TOKEN_SEPARATORS ;
+		char separators[] = TOKEN_SEPARATORS;
 		int index = 0;
 
 		while (separators[index] != IN_CODE_ENDL)

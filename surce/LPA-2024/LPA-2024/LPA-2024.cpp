@@ -44,7 +44,6 @@ int _tmain(int argc, _TCHAR** argv)
 		Log::WriteLine(log, " Completed successfully\n", "");
 
 		Log::WriteLine(log, "Polish notation  : ", "");
-		Polish::CallPolishNotation(lex.lextable, lex.idtable);
 		Log::WriteLine(log, " Completed successfully\n", "");
 
 		LT::SaveToFile(lex.lextable, parm.an);

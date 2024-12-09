@@ -60,7 +60,6 @@ namespace LT
 		}
 		out.close();
 	}
-
 	void SaveToFile(LexTable& lextable, wchar_t outfile[])
 	{
 		std::ofstream file(outfile, std::ios_base::app);
@@ -68,20 +67,50 @@ namespace LT
 			throw ERROR_THROW(22);
 
 		file << std::setfill('=') << std::setw(23) << "LEX TABLE" << std::setw(17) << "\n\n";
-		file << '+' << std::setfill('-') << std::setw(6) << '+' << std::setw(10) <<
-			'+' << std::setw(10) << '+' << std::setw(11) << '+' << std::endl;
-		file << '|' << std::setfill(' ') << std::setw(5) << std::left << "№" << '|' << std::setw(9) << std::left << "Line" << '|'
-			<< std::setw(9) << std::left << "Lexema" << '|' << std::setw(10) << std::left << "ID from IT" << '|' << std::endl;
+		file << '+' << std::setfill('-') << std::setw(6) << '+' << std::setw(10)
+			<< '+' << std::setw(10) << '+' << std::setw(11) << '+' << std::endl;
+		file << '|' << std::setfill(' ') << std::setw(5) << std::left << "№" << '|'
+			<< std::setw(9) << std::left << "Line" << '|'
+			<< std::setw(9) << std::left << "Lexema" << '|'
+			<< std::setw(10) << std::left << "ID from IT" << '|' << std::endl;
 
 		for (int i = 0; i < lextable.size; i++)
 		{
-			file << '|' << std::setfill(' ') << std::setw(5) << std::left << i << '|' << std::setw(9) << std::left << lextable.table[i].sn << '|'
-				<< std::setw(9) << std::left << lextable.table[i].lexema << '|';
+			file << '|' << std::setfill(' ') << std::setw(5) << std::left << i
+				<< '|' << std::setw(9) << std::left << lextable.table[i].sn
+				<< '|';
 
+			// Определение типа лексемы
+			switch (lextable.table[i].lexema)
+			{
+			case LEX_INT:
+				file << std::setw(9) << std::left << "Short";
+				break;
+			case LEX_STR:
+				file << std::setw(9) << std::left << "String";
+				break;
+			case LEX_BOOL:
+				file << std::setw(9) << std::left << "Bool";
+				break;
+			case LEX_IDENTIFIER:
+				file << std::setw(9) << std::left << "ID";
+				break;
+			case LEX_LITERAL:
+				file << std::setw(9) << std::left << "Literal";
+				break;
+			case LEX_CHAR: // Новый случай для типа char
+				file << std::setw(9) << std::left << "Char";
+				break;
+			default:
+				file << std::setw(9) << std::left << "Unknown";
+				break;
+			}
+
+			// Запись индекса из IT
 			if (lextable.table[i].idxTI == TI_NULLIDX)
-				file << std::setw(10) << std::left << '-' << '|' << std::endl;
+				file << '|' << std::setw(10) << std::left << '-' << '|' << std::endl;
 			else
-				file << std::setw(10) << std::left << lextable.table[i].idxTI << '|' << std::endl;
+				file << '|' << std::setw(10) << std::left << lextable.table[i].idxTI << '|' << std::endl;
 		}
 
 		file.close();
