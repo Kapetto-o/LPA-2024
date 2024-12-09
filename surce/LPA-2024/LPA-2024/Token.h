@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+#include "In.h"
 
 #define TOKEN_SEPARATORS " \t\n+-*/%=<>(){},;!"
 #define TOKEN_MAXSIZE 4096

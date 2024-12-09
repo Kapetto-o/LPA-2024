@@ -15,7 +15,7 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 {
 	for (int i = 0; i < lextable.size; i++)
 	{
-		if (lextable.table[i].lexema == LEX_EQUAL)
+		if (lextable.table[i].lexema == LEX_EQUALS)
 		{
 			if (idtable.table[lextable.table[i - 1].idxTI].idType != IT::IDTYPE::V && idtable.table[lextable.table[i - 1].idxTI].idType != IT::IDTYPE::P)
 				throw ERROR_THROW_IN(142, lextable.table[i - 1].sn, 0);
@@ -31,11 +31,11 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 
 				while (lextable.table[i + indexB].lexema != LEX_SEMICOLON)
 				{
-					if (lextable.table[i + indexB].lexema == LEX_PLUS || lextable.table[i + indexB].lexema == LEX_MINUS
-						|| lextable.table[i + indexB].lexema == LEX_DIRSLASH || lextable.table[i + indexB].lexema == LEX_STAR || lextable.table[i + indexB].lexema == LEX_REMDIV)
+					if (lextable.table[i + indexB].lexema == LEX_ADDITION || lextable.table[i + indexB].lexema == LEX_SUBSTRACTION
+						|| lextable.table[i + indexB].lexema == LEX_DIVISION || lextable.table[i + indexB].lexema == LEX_MULTIPLICATION || lextable.table[i + indexB].lexema == LEX_REMAINDERDIVISION)
 						throw ERROR_THROW_IN(602, lextable.table[i + indexB].sn, 0);
 
-					if (lextable.table[i + indexB].lexema == LEX_ID || lextable.table[i + indexB].lexema == LEX_LITERAL)
+					if (lextable.table[i + indexB].lexema == LEX_IDENTIFIER || lextable.table[i + indexB].lexema == LEX_LITERAL)
 					{
 						if (isFirst)
 						{
@@ -48,14 +48,14 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 							if (idtable.table[lextable.table[i + indexB].idxTI].idDataType != type)
 								throw ERROR_THROW_IN(137, lextable.table[i + indexB].sn, 0);
 							int countOfHesis = 0;
-							if (lextable.table[i + indexB + 1].lexema != LEX_LEFTHESIS)
+							if (lextable.table[i + indexB + 1].lexema != LEX_LEFTHESIS_OPEN)
 								throw ERROR_THROW_IN(144, lextable.table[i + indexB].sn, 0);
 							do
 							{
 								indexB++;
-								if (lextable.table[i + indexB].lexema == LEX_LEFTHESIS)
+								if (lextable.table[i + indexB].lexema == LEX_LEFTHESIS_OPEN)
 									countOfHesis++;
-								if (lextable.table[i + indexB].lexema == LEX_RIGHTHESIS)
+								if (lextable.table[i + indexB].lexema == LEX_RIGHTHESIS_CLOSE)
 									countOfHesis--;
 							} while (countOfHesis != 0);
 						}
@@ -63,7 +63,7 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 						{
 							if (lextable.table[i + indexB + 1].lexema != LEX_MORE || lextable.table[i + indexB + 1].lexema != LEX_LESS ||
 								lextable.table[i + indexB + 1].lexema != LEX_MOREEQUAL || lextable.table[i + indexB + 1].lexema != LEX_LESSEQUAL ||
-								lextable.table[i + indexB + 1].lexema != LEX_EQUALEQUAL || lextable.table[i + indexB + 1].lexema != LEX_NOTEQUAL)
+								lextable.table[i + indexB + 1].lexema != LEX_INEQUALITY || lextable.table[i + indexB + 1].lexema != LEX_NOTEQUALS)
 								throw ERROR_THROW_IN(137, lextable.table[i + indexB].sn, 0);
 						}
 						else if (idtable.table[lextable.table[i + indexB].idxTI].idDataType != type1)
@@ -76,28 +76,28 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 			case IT::IDDATATYPE::STR:
 				for (int j = 0; lextable.table[i + j].lexema != LEX_SEMICOLON; j++)
 				{
-					if (lextable.table[i + j].lexema == LEX_PLUS || lextable.table[i + j].lexema == LEX_MINUS
-						|| lextable.table[i + j].lexema == LEX_DIRSLASH || lextable.table[i + j].lexema == LEX_STAR
-						|| lextable.table[i + j].lexema == LEX_REMDIV || lextable.table[i + j].lexema == LEX_LESS
-						|| lextable.table[i + j].lexema == LEX_MORE || lextable.table[i + j].lexema == LEX_EQUALEQUAL
-						|| lextable.table[i + j].lexema == LEX_NOTEQUAL || lextable.table[i + j].lexema == LEX_LESSEQUAL
+					if (lextable.table[i + j].lexema == LEX_ADDITION || lextable.table[i + j].lexema == LEX_SUBSTRACTION
+						|| lextable.table[i + j].lexema == LEX_DIVISION || lextable.table[i + j].lexema == LEX_MULTIPLICATION
+						|| lextable.table[i + j].lexema == LEX_REMAINDERDIVISION || lextable.table[i + j].lexema == LEX_LESS
+						|| lextable.table[i + j].lexema == LEX_MORE || lextable.table[i + j].lexema == LEX_INEQUALITY
+						|| lextable.table[i + j].lexema == LEX_NOTEQUALS || lextable.table[i + j].lexema == LEX_LESSEQUAL
 						|| lextable.table[i + j].lexema == LEX_MOREEQUAL)
 						throw ERROR_THROW_IN(146, lextable.table[i + j].sn, 0);
-					if (lextable.table[i + j].lexema == LEX_ID || lextable.table[i + j].lexema == LEX_LITERAL)
+					if (lextable.table[i + j].lexema == LEX_IDENTIFIER || lextable.table[i + j].lexema == LEX_LITERAL)
 					{
 						if (idtable.table[lextable.table[i + j].idxTI].idType == IT::IDTYPE::F)
 						{
 							if (idtable.table[lextable.table[i + j].idxTI].idDataType != type)
 								throw ERROR_THROW_IN(137, lextable.table[i + j].sn, 0);
 							int countOfHesis = 0;
-							if (lextable.table[i + j + 1].lexema != LEX_LEFTHESIS)
+							if (lextable.table[i + j + 1].lexema != LEX_LEFTHESIS_OPEN)
 								throw ERROR_THROW_IN(144, lextable.table[i + j].sn, 0);
 							do
 							{
 								j++;
-								if (lextable.table[i + j].lexema == LEX_LEFTHESIS)
+								if (lextable.table[i + j].lexema == LEX_LEFTHESIS_OPEN)
 									countOfHesis++;
-								if (lextable.table[i + j].lexema == LEX_RIGHTHESIS)
+								if (lextable.table[i + j].lexema == LEX_RIGHTHESIS_CLOSE)
 									countOfHesis--;
 							} while (countOfHesis != 0);
 						}
@@ -111,33 +111,33 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 				int index = 0;
 				while (lextable.table[i + index].lexema != LEX_SEMICOLON)
 				{
-					if ((lextable.table[i + index].lexema == LEX_DIRSLASH || lextable.table[i + index].lexema == LEX_REMDIV) && idtable.table[lextable.table[i + index + 1].idxTI].value.vshort == 0)
+					if ((lextable.table[i + index].lexema == LEX_DIVISION || lextable.table[i + index].lexema == LEX_REMAINDERDIVISION) && idtable.table[lextable.table[i + index + 1].idxTI].value.vshort == 0)
 					{
 						throw ERROR_THROW_IN(148, lextable.table[i + index].sn, 0);
 					}
 					if (lextable.table[i + index].lexema == LEX_LESS || lextable.table[i + index].lexema == LEX_MORE
-						|| lextable.table[i + index].lexema == LEX_EQUALEQUAL || lextable.table[i + index].lexema == LEX_NOTEQUAL)
+						|| lextable.table[i + index].lexema == LEX_INEQUALITY || lextable.table[i + index].lexema == LEX_NOTEQUALS)
 						throw ERROR_THROW_IN(602, lextable.table[i + index].sn, 0);
-					if (lextable.table[i + index].lexema == LEX_ID || lextable.table[i + index].lexema == LEX_LITERAL
-						|| lextable.table[i + index].lexema == LEX_POW || lextable.table[i + index].lexema == LEX_ABS)
+					if (lextable.table[i + index].lexema == LEX_IDENTIFIER || lextable.table[i + index].lexema == LEX_LITERAL
+						|| lextable.table[i + index].lexema == LEX_STRDUPLICATE || lextable.table[i + index].lexema == LEX_STRLENGTH)
 					{
 						if (idtable.table[lextable.table[i + index].idxTI].idType == IT::IDTYPE::F)
 						{
 							if (idtable.table[lextable.table[i + index].idxTI].idDataType != type)
 								throw ERROR_THROW_IN(137, lextable.table[i + index].sn, 0);
 							int countOfHesis = 0;
-							if (lextable.table[i + index + 1].lexema != LEX_LEFTHESIS)
+							if (lextable.table[i + index + 1].lexema != LEX_LEFTHESIS_OPEN)
 								throw ERROR_THROW_IN(144, lextable.table[i + index].sn, 0);
 							do
 							{
 								index++;
-								if (lextable.table[i + index].lexema == LEX_LEFTHESIS)
+								if (lextable.table[i + index].lexema == LEX_LEFTHESIS_OPEN)
 									countOfHesis++;
-								if (lextable.table[i + index].lexema == LEX_RIGHTHESIS)
+								if (lextable.table[i + index].lexema == LEX_RIGHTHESIS_CLOSE)
 									countOfHesis--;
 							} while (countOfHesis != 0);
 						}
-						else if (lextable.table[i + index].lexema == LEX_POW || lextable.table[i + index].lexema == LEX_ABS)
+						else if (lextable.table[i + index].lexema == LEX_STRDUPLICATE || lextable.table[i + index].lexema == LEX_STRLENGTH)
 						{
 							if (type != IT::IDDATATYPE::SHORT)
 								throw ERROR_THROW_IN(137, lextable.table[i + index].sn, 0);
@@ -145,9 +145,9 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 							do
 							{
 								index++;
-								if (lextable.table[i + index].lexema == LEX_LEFTHESIS)
+								if (lextable.table[i + index].lexema == LEX_LEFTHESIS_OPEN)
 									countOfHesis++;
-								if (lextable.table[i + index].lexema == LEX_RIGHTHESIS)
+								if (lextable.table[i + index].lexema == LEX_RIGHTHESIS_CLOSE)
 									countOfHesis--;
 							} while (countOfHesis != 0);
 						}
@@ -164,20 +164,20 @@ void CheckTypeMatching(LT::LexTable& lextable, IT::IdTable& idtable)
 				break;
 			}
 		}
-		if (lextable.table[i].lexema == LEX_IF)
-		{
-			if (idtable.table[lextable.table[i + 2].idxTI].idDataType == IT::IDDATATYPE::STR || idtable.table[lextable.table[i + 4].idxTI].idDataType == IT::IDDATATYPE::STR)
-			{
-				throw ERROR_THROW_IN(606, lextable.table[i].sn, 0);
-			}
-			else if (idtable.table[lextable.table[i + 2].idxTI].idDataType == IT::IDDATATYPE::SHORT)
-			{
-				if (!(lextable.table[i + 3].lexema == LEX_MORE || lextable.table[i + 3].lexema == LEX_LESS || lextable.table[i + 3].lexema == LEX_MOREEQUAL || lextable.table[i + 3].lexema == LEX_LESSEQUAL ||
-					lextable.table[i + 3].lexema == LEX_EQUALEQUAL || lextable.table[i + 3].lexema == LEX_NOTEQUAL))
-					throw ERROR_THROW_IN(606, lextable.table[i].sn, 0);
+		//if (lextable.table[i].lexema == LEX_IF)
+		//{
+		//	if (idtable.table[lextable.table[i + 2].idxTI].idDataType == IT::IDDATATYPE::STR || idtable.table[lextable.table[i + 4].idxTI].idDataType == IT::IDDATATYPE::STR)
+		//	{
+		//		throw ERROR_THROW_IN(606, lextable.table[i].sn, 0);
+		//	}
+		//	else if (idtable.table[lextable.table[i + 2].idxTI].idDataType == IT::IDDATATYPE::SHORT)
+		//	{
+		//		if (!(lextable.table[i + 3].lexema == LEX_MORE || lextable.table[i + 3].lexema == LEX_LESS || lextable.table[i + 3].lexema == LEX_MOREEQUAL || lextable.table[i + 3].lexema == LEX_LESSEQUAL ||
+		//			lextable.table[i + 3].lexema == LEX_EQUALEQUAL || lextable.table[i + 3].lexema == LEX_NOTEQUAL))
+		//			throw ERROR_THROW_IN(606, lextable.table[i].sn, 0);
 
-			}
-		}
+		//	}
+		//}
 	}
 }
 
@@ -214,9 +214,9 @@ void CheckFuncParam(Functions& functions, IT::IdTable& idtable, LT::LexTable& le
 			if (lextable.table[j].idxTI == functions.table[i].index)
 			{
 				Entry temp = {};
-				for (int k = 1; lextable.table[j + k].lexema != LEX_RIGHTHESIS; k++)
+				for (int k = 1; lextable.table[j + k].lexema != LEX_RIGHTHESIS_CLOSE; k++)
 				{
-					if (lextable.table[j + k].lexema == LEX_ID || lextable.table[j + k].lexema == LEX_LITERAL)
+					if (lextable.table[j + k].lexema == LEX_IDENTIFIER || lextable.table[j + k].lexema == LEX_LITERAL)
 					{
 						if (temp.countOfParam > MAX_FUNCTION_PARAMS_COUNT)
 							throw ERROR_THROW_IN(138, lextable.table[j].sn, 0);
@@ -236,25 +236,25 @@ void CheckFuncParamCount(LT::LexTable& lextable, IT::IdTable& idtable)
 {
 	for (int i = 0; i < lextable.size; i++)
 	{
-		if (lextable.table[i].lexema == LEX_POW || lextable.table[i].lexema == LEX_ABS)
+		if (lextable.table[i].lexema == LEX_STRDUPLICATE || lextable.table[i].lexema == LEX_STRLENGTH)
 		{
 			int countOfParam = 0;
 			int index = i;
-			while (lextable.table[i + 1].lexema != LEX_RIGHTHESIS)
+			while (lextable.table[i + 1].lexema != LEX_RIGHTHESIS_CLOSE)
 			{
 				if (idtable.table[lextable.table[i + 1].idxTI].idDataType == IT::IDDATATYPE::STR)
 					throw ERROR_THROW_IN(141, lextable.table[i].sn, 0);
-				if (lextable.table[i + 1].lexema == LEX_ID || lextable.table[i + 1].lexema == LEX_LITERAL)
+				if (lextable.table[i + 1].lexema == LEX_IDENTIFIER || lextable.table[i + 1].lexema == LEX_LITERAL)
 					countOfParam++;
 				i++;
 			}
 			switch (lextable.table[index].lexema)
 			{
-			case LEX_POW:
+			case LEX_STRDUPLICATE:
 				if (countOfParam != 2)
 					throw ERROR_THROW_IN(141, lextable.table[i].sn, 0);
 				continue;
-			case LEX_ABS:
+			case LEX_STRLENGTH:
 				if (countOfParam != 1)
 					throw ERROR_THROW_IN(141, lextable.table[i].sn, 0);
 				continue;

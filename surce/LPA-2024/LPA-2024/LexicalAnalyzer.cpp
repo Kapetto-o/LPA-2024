@@ -10,7 +10,7 @@ namespace LA
 		this->lextable = LT::Create(lexTableSize);
 		this->idtable = IT::Create(idTableSize);
 	};
-	LEX::LEX() { };
+	LEX::LEX() : lextable(), idtable() { }
 
 	GRAPH graph[] =
 	{
@@ -42,7 +42,6 @@ namespace LA
 		{ LEX_RETURN, FST::FST(GRAPH_RETURN) },
 		{ LEX_STRDUPLICATE, FST::FST(GRAPH_STRDUPLICATE) },
 		{ LEX_STRLENGTH, FST::FST(GRAPH_STRLENGTH) },
-		{ LEX_STRTRANSINT, FST::FST(GRAPH_STRTRANSINT) },
 		{ LEX_STRTRANSINT, FST::FST(GRAPH_STRTRANSINT) },
 
 		// Операторы вывода и цикла

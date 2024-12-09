@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\SIV-2023.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:SIV-2023.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\In.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:In.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LexAnalyzer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LexAnalyzer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Tokenization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Tokenization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LexAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LexAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\In.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:In.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -47,20 +71,8 @@
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Polish.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\SIV-2023.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:SIV-2023.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Error.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -69,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Tokenization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Tokenization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Greibach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -111,10 +119,6 @@
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LexAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LexAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\FST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:FST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -129,10 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\FST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:FST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\CodeGeneration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -150,11 +150,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Greibach.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Greibach.h",
               "RelativeDocumentMoniker": "Greibach.h",
@@ -167,19 +167,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "SIV-2023.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\SIV-2023.cpp",
               "RelativeDocumentMoniker": "SIV-2023.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\SIV-2023.cpp",
               "RelativeToolTip": "SIV-2023.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:56:15.742Z"
+              "WhenOpened": "2024-12-07T23:56:15.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "In.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\In.h",
               "RelativeDocumentMoniker": "In.h",
@@ -192,19 +193,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "In.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\In.cpp",
               "RelativeDocumentMoniker": "In.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\In.cpp",
               "RelativeToolTip": "In.cpp",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAABBwBEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-03T22:24:53.104Z"
+              "WhenOpened": "2024-12-03T22:24:53.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Log.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Log.h",
               "RelativeDocumentMoniker": "Log.h",
@@ -212,23 +214,25 @@
               "RelativeToolTip": "Log.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:24:27.224Z"
+              "WhenOpened": "2024-12-03T22:24:27.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Graphs.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Graphs.h",
               "RelativeDocumentMoniker": "Graphs.h",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Graphs.h",
               "RelativeToolTip": "Graphs.h",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAAAMIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAYBAAAAAAAAAAAxwMIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T23:09:18.394Z"
+              "WhenOpened": "2024-12-07T23:09:18.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "pch.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\pch.h",
               "RelativeDocumentMoniker": "pch.h",
@@ -236,11 +240,12 @@
               "RelativeToolTip": "pch.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:24:37.325Z"
+              "WhenOpened": "2024-12-03T22:24:37.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Greibach.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Greibach.cpp",
               "RelativeDocumentMoniker": "Greibach.cpp",
@@ -248,11 +253,12 @@
               "RelativeToolTip": "Greibach.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:55:27.21Z"
+              "WhenOpened": "2024-12-07T23:55:27.21Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Semantic.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Semantic.h",
               "RelativeDocumentMoniker": "Semantic.h",
@@ -260,11 +266,12 @@
               "RelativeToolTip": "Semantic.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T23:16:28.028Z"
+              "WhenOpened": "2024-12-07T23:16:28.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Polish.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Polish.h",
               "RelativeDocumentMoniker": "Polish.h",
@@ -272,11 +279,12 @@
               "RelativeToolTip": "Polish.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:24:39.5Z"
+              "WhenOpened": "2024-12-03T22:24:39.5Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Rules.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Rules.h",
               "RelativeDocumentMoniker": "Rules.h",
@@ -284,11 +292,12 @@
               "RelativeToolTip": "Rules.h",
               "ViewState": "AgIAAEsAAAAAAAAAAAAUwGEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:24:40.938Z"
+              "WhenOpened": "2024-12-03T22:24:40.938Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Parm.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Parm.h",
               "RelativeDocumentMoniker": "Parm.h",
@@ -296,11 +305,12 @@
               "RelativeToolTip": "Parm.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T23:20:39.664Z"
+              "WhenOpened": "2024-12-07T23:20:39.664Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "MFST.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\MFST.h",
               "RelativeDocumentMoniker": "MFST.h",
@@ -308,36 +318,38 @@
               "RelativeToolTip": "MFST.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:24:29.645Z"
+              "WhenOpened": "2024-12-03T22:24:29.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "LT.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LT.h",
               "RelativeDocumentMoniker": "LT.h",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LT.h",
               "RelativeToolTip": "LT.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-06T19:25:51.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "Semantic.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Semantic.cpp",
               "RelativeDocumentMoniker": "Semantic.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Semantic.cpp",
               "RelativeToolTip": "Semantic.cpp",
-              "ViewState": "AgIAAAgBAAAAAAAAAAAMwBsBAACUAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAASwHEAAACwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T19:25:59.157Z"
+              "WhenOpened": "2024-12-06T19:25:59.157Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "Tokenization.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Tokenization.cpp",
               "RelativeDocumentMoniker": "Tokenization.cpp",
@@ -345,11 +357,12 @@
               "RelativeToolTip": "Tokenization.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:01:36.513Z"
+              "WhenOpened": "2024-12-07T23:01:36.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Tokenization.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Tokenization.h",
               "RelativeDocumentMoniker": "Tokenization.h",
@@ -357,24 +370,25 @@
               "RelativeToolTip": "Tokenization.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:24:45.165Z"
+              "WhenOpened": "2024-12-03T22:24:45.165Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "IT.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.h",
               "RelativeDocumentMoniker": "IT.h",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.h",
               "RelativeToolTip": "IT.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-12-03T22:24:24.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Log.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Log.cpp",
               "RelativeDocumentMoniker": "Log.cpp",
@@ -382,11 +396,12 @@
               "RelativeToolTip": "Log.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:59:20.044Z"
+              "WhenOpened": "2024-12-07T23:59:20.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "SIV_lib.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\SIV_lib.cpp",
               "RelativeDocumentMoniker": "SIV_lib.cpp",
@@ -394,11 +409,12 @@
               "RelativeToolTip": "SIV_lib.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T22:08:14.05Z"
+              "WhenOpened": "2024-12-06T22:08:14.05Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 9,
               "Title": "LexAnalyzer.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LexAnalyzer.h",
               "RelativeDocumentMoniker": "LexAnalyzer.h",
@@ -406,11 +422,12 @@
               "RelativeToolTip": "LexAnalyzer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T18:51:48.474Z"
+              "WhenOpened": "2024-12-06T18:51:48.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "FST.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\FST.h",
               "RelativeDocumentMoniker": "FST.h",
@@ -418,11 +435,12 @@
               "RelativeToolTip": "FST.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T23:51:32.765Z"
+              "WhenOpened": "2024-12-07T23:51:32.765Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Error.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Error.h",
               "RelativeDocumentMoniker": "Error.h",
@@ -430,11 +448,12 @@
               "RelativeToolTip": "Error.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T12:44:43.043Z"
+              "WhenOpened": "2024-12-06T12:44:43.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "pch.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\pch.cpp",
               "RelativeDocumentMoniker": "pch.cpp",
@@ -442,11 +461,12 @@
               "RelativeToolTip": "pch.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:51:11.635Z"
+              "WhenOpened": "2024-12-07T23:51:11.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Parm.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Parm.cpp",
               "RelativeDocumentMoniker": "Parm.cpp",
@@ -454,11 +474,12 @@
               "RelativeToolTip": "Parm.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:19:36.946Z"
+              "WhenOpened": "2024-12-07T23:19:36.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "LT.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LT.cpp",
               "RelativeDocumentMoniker": "LT.cpp",
@@ -466,37 +487,38 @@
               "RelativeToolTip": "LT.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:57:35.444Z"
+              "WhenOpened": "2024-12-07T23:57:35.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "IT.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.cpp",
               "RelativeDocumentMoniker": "IT.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\IT.cpp",
               "RelativeToolTip": "IT.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAASwJ4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-06T12:32:08.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "LexAnalyzer.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LexAnalyzer.cpp",
               "RelativeDocumentMoniker": "LexAnalyzer.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\LexAnalyzer.cpp",
               "RelativeToolTip": "LexAnalyzer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAASwEkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-06T18:53:40.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "FST.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\FST.cpp",
               "RelativeDocumentMoniker": "FST.cpp",
@@ -504,11 +526,12 @@
               "RelativeToolTip": "FST.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:55:21.951Z"
+              "WhenOpened": "2024-12-07T23:55:21.951Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "Error.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Error.cpp",
               "RelativeDocumentMoniker": "Error.cpp",
@@ -516,23 +539,25 @@
               "RelativeToolTip": "Error.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T12:44:14.226Z"
+              "WhenOpened": "2024-12-06T12:44:14.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 3,
               "Title": "MFST.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\MFST.cpp",
               "RelativeDocumentMoniker": "MFST.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\MFST.cpp",
               "RelativeToolTip": "MFST.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:21:34.524Z"
+              "WhenOpened": "2024-12-07T23:21:34.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Polish.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\Polish.cpp",
               "RelativeDocumentMoniker": "Polish.cpp",
@@ -540,7 +565,8 @@
               "RelativeToolTip": "Polish.cpp",
               "ViewState": "AgIAAAoAAAAAAAAAAAAUwB8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T19:25:55.181Z"
+              "WhenOpened": "2024-12-06T19:25:55.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -552,19 +578,21 @@
               "RelativeToolTip": "CodeGeneration.h",
               "ViewState": "AgIAAA4AAAAAAAAAAAASwCcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T22:07:04.549Z"
+              "WhenOpened": "2024-12-06T22:07:04.549Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 5,
               "Title": "CodeGeneration.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\CodeGeneration.cpp",
               "RelativeDocumentMoniker": "CodeGeneration.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\CodeGeneration.cpp",
               "RelativeToolTip": "CodeGeneration.cpp",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAMwG8AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAASwNgAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T19:25:49.169Z"
+              "WhenOpened": "2024-12-06T19:25:49.169Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -574,9 +602,10 @@
               "RelativeDocumentMoniker": "SIV_result.asm",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\references\\2023\\SIV-2023\\SIV_result.asm",
               "RelativeToolTip": "SIV_result.asm",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-07T23:09:10.296Z"
+              "WhenOpened": "2024-12-07T23:09:10.296Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,0 @@
-main
-{
-	writeline "Hello World!!";
-}

@@ -1,4 +1,4 @@
-﻿Сборка начата 09.12.2024 11:34:11.
+﻿Сборка начата 09.12.2024 17:42:22.
 Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" в узле 2 (целевые объекты Build).
      1>PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
@@ -6,35 +6,23 @@
          Создание "x64\Debug\LPA-2024.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "x64\Debug\LPA-2024.tlog\unsuccessfulbuild".
        ClCompile:
-         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"stdafx.h" /Fp"x64\Debug\LPA-2024.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt Error.cpp FST.cpp IT.cpp In.cpp "LPA-2024.cpp" LT.cpp LexicalAnalyzer.cpp Log.cpp Parm.cpp Polish.cpp Token.cpp stdafx.cpp
-         Error.cpp
-         FST.cpp
-     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\FST.cpp(128,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
-         IT.cpp
-     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\IT.cpp(94,36): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-         In.cpp
-     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\In.cpp(70,46): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+         D:\Programs\VisualStudio\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"stdafx.h" /Fp"x64\Debug\LPA-2024.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt "LPA-2024.cpp"
          LPA-2024.cpp
-         LT.cpp
-         LexicalAnalyzer.cpp
-         Log.cpp
-         Parm.cpp
-         Polish.cpp
-     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,32): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
-     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,47): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
-         Token.cpp
-         stdafx.cpp
        Link:
-         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.exe" /INCREMENTAL /ILK:"x64\Debug\LPA-2024.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.lib" /MACHINE:X64 x64\Debug\Error.obj
+         D:\Programs\VisualStudio\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.exe" /INCREMENTAL /ILK:"x64\Debug\LPA-2024.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.lib" /MACHINE:X64 x64\Debug\CodeGeneration.obj
+         x64\Debug\Error.obj
          x64\Debug\FST.obj
+         x64\Debug\Greibach.obj
          x64\Debug\In.obj
          x64\Debug\IT.obj
          x64\Debug\LexicalAnalyzer.obj
          x64\Debug\Log.obj
          "x64\Debug\LPA-2024.obj"
          x64\Debug\LT.obj
+         x64\Debug\MFST.obj
          x64\Debug\Parm.obj
          x64\Debug\Polish.obj
+         x64\Debug\Semantic.obj
          x64\Debug\stdafx.obj
          x64\Debug\Token.obj
          LPA-2024.vcxproj -> D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\LPA-2024.exe
@@ -44,16 +32,7 @@
      1>Сборка проекта "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
-
-       "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" (целевой объект Build ) (1) ->
-       (Целевой объект ClCompile) -> 
-         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\FST.cpp(128,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
-         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\IT.cpp(94,36): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\In.cpp(70,46): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,32): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
-         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,47): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
-
-    Предупреждений: 5
+    Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:10.77
+Прошло времени 00:00:04.94

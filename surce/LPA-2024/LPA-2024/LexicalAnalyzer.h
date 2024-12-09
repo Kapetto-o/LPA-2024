@@ -1,5 +1,6 @@
 #pragma once
 #include "stdafx.h"
+#include "Token.h"
 #include "IT.h"
 #include "LT.h"
 using namespace std;

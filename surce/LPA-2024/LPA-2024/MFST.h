@@ -2,7 +2,7 @@
 #include <stack>
 #include <iomanip>
 #include "Greibach.h"
-#include "LexAnalyzer.h"
+#include "LexicalAnalyzer.h"
 
 #define MFST_DIAGN_MAXSIZE 2*ERROR_MAXSIZE_MESSAGE
 #define MFST_DIAGN_NUMBER 3
