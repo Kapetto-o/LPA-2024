@@ -1,0 +1,610 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Binar\\Desktop\\SIV-2023\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\In.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:In.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Parm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Parm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Semantic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Semantic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Tokenization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Tokenization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Polish.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Polish.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\MFST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:MFST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72E098DC-EB4D-4A6A-B0CF-AFAE96BA4C25}|SIV-2023_LIB\\SIV-2023_LIB.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV_lib.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{72E098DC-EB4D-4A6A-B0CF-AFAE96BA4C25}|SIV-2023_LIB\\SIV-2023_LIB.vcxproj|solutionrelative:SIV_lib.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\FST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:FST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\LT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Polish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Polish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV-2023.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:SIV-2023.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\LexAnalyzer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LexAnalyzer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Parm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Parm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\LexAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LexAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Greibach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Greibach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\FST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:FST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Error.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Error.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\CodeGeneration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:CodeGeneration.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Tokenization.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Tokenization.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\Error.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{95805182-8F23-4316-B571-97DD371E5952}|SIV-2023.vcxproj|solutionrelative:Error.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4261E5CF-98CE-4918-860E-2AAB5955CE49}|SIV-2023_ASM\\SIV-2023_ASM.vcxproj|C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV_result.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4261E5CF-98CE-4918-860E-2AAB5955CE49}|SIV-2023_ASM\\SIV-2023_ASM.vcxproj|solutionrelative:SIV_result.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Greibach.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Greibach.h",
+              "RelativeDocumentMoniker": "Greibach.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Greibach.h",
+              "RelativeToolTip": "Greibach.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-08T01:03:22.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SIV-2023.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV-2023.cpp",
+              "RelativeDocumentMoniker": "SIV-2023.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV-2023.cpp",
+              "RelativeToolTip": "SIV-2023.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:56:15.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "In.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\In.h",
+              "RelativeDocumentMoniker": "In.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\In.h",
+              "RelativeToolTip": "In.h",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAcwCQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-01T21:51:48.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "In.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\In.cpp",
+              "RelativeDocumentMoniker": "In.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\In.cpp",
+              "RelativeToolTip": "In.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T22:24:53.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Log.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Log.h",
+              "RelativeDocumentMoniker": "Log.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Log.h",
+              "RelativeToolTip": "Log.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:27.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Graphs.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Graphs.h",
+              "RelativeDocumentMoniker": "Graphs.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Graphs.h",
+              "RelativeToolTip": "Graphs.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-07T23:09:18.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\pch.h",
+              "RelativeDocumentMoniker": "pch.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\pch.h",
+              "RelativeToolTip": "pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:37.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Greibach.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Greibach.cpp",
+              "RelativeDocumentMoniker": "Greibach.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Greibach.cpp",
+              "RelativeToolTip": "Greibach.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:55:27.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Semantic.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Semantic.h",
+              "RelativeDocumentMoniker": "Semantic.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Semantic.h",
+              "RelativeToolTip": "Semantic.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-07T23:16:28.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Polish.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Polish.h",
+              "RelativeDocumentMoniker": "Polish.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Polish.h",
+              "RelativeToolTip": "Polish.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:39.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Rules.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Rules.h",
+              "RelativeDocumentMoniker": "Rules.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Rules.h",
+              "RelativeToolTip": "Rules.h",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAUwGEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:40.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Parm.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Parm.h",
+              "RelativeDocumentMoniker": "Parm.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Parm.h",
+              "RelativeToolTip": "Parm.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-07T23:20:39.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MFST.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\MFST.h",
+              "RelativeDocumentMoniker": "MFST.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\MFST.h",
+              "RelativeToolTip": "MFST.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:29.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LT.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LT.h",
+              "RelativeDocumentMoniker": "LT.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LT.h",
+              "RelativeToolTip": "LT.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-06T19:25:51.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Semantic.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Semantic.cpp",
+              "RelativeDocumentMoniker": "Semantic.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Semantic.cpp",
+              "RelativeToolTip": "Semantic.cpp",
+              "ViewState": "AgIAAFwAAAAAAAAAAAASwHEAAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T19:25:59.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tokenization.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Tokenization.cpp",
+              "RelativeDocumentMoniker": "Tokenization.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Tokenization.cpp",
+              "RelativeToolTip": "Tokenization.cpp",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAowLsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:01:36.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Tokenization.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Tokenization.h",
+              "RelativeDocumentMoniker": "Tokenization.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Tokenization.h",
+              "RelativeToolTip": "Tokenization.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:45.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IT.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\IT.h",
+              "RelativeDocumentMoniker": "IT.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\IT.h",
+              "RelativeToolTip": "IT.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:24:24.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Log.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Log.cpp",
+              "RelativeDocumentMoniker": "Log.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Log.cpp",
+              "RelativeToolTip": "Log.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:59:20.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SIV_lib.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV_lib.cpp",
+              "RelativeDocumentMoniker": "SIV_lib.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV_lib.cpp",
+              "RelativeToolTip": "SIV_lib.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T22:08:14.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LexAnalyzer.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LexAnalyzer.h",
+              "RelativeDocumentMoniker": "LexAnalyzer.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LexAnalyzer.h",
+              "RelativeToolTip": "LexAnalyzer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-06T18:51:48.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FST.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\FST.h",
+              "RelativeDocumentMoniker": "FST.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\FST.h",
+              "RelativeToolTip": "FST.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-07T23:51:32.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Error.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Error.h",
+              "RelativeDocumentMoniker": "Error.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Error.h",
+              "RelativeToolTip": "Error.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-06T12:44:43.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\pch.cpp",
+              "RelativeDocumentMoniker": "pch.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\pch.cpp",
+              "RelativeToolTip": "pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:51:11.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Parm.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Parm.cpp",
+              "RelativeDocumentMoniker": "Parm.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Parm.cpp",
+              "RelativeToolTip": "Parm.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:19:36.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LT.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LT.cpp",
+              "RelativeDocumentMoniker": "LT.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LT.cpp",
+              "RelativeToolTip": "LT.cpp",
+              "ViewState": "AgIAADcAAAAAAAAAAAAUwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:57:35.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IT.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\IT.cpp",
+              "RelativeDocumentMoniker": "IT.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\IT.cpp",
+              "RelativeToolTip": "IT.cpp",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAcwIQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T12:32:08.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LexAnalyzer.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LexAnalyzer.cpp",
+              "RelativeDocumentMoniker": "LexAnalyzer.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\LexAnalyzer.cpp",
+              "RelativeToolTip": "LexAnalyzer.cpp",
+              "ViewState": "AgIAAOsAAAAAAAAAAIAwwOAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T18:53:40.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FST.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\FST.cpp",
+              "RelativeDocumentMoniker": "FST.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\FST.cpp",
+              "RelativeToolTip": "FST.cpp",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwHcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:55:21.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Error.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Error.cpp",
+              "RelativeDocumentMoniker": "Error.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Error.cpp",
+              "RelativeToolTip": "Error.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T12:44:14.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MFST.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\MFST.cpp",
+              "RelativeDocumentMoniker": "MFST.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\MFST.cpp",
+              "RelativeToolTip": "MFST.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:21:34.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Polish.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Polish.cpp",
+              "RelativeDocumentMoniker": "Polish.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\Polish.cpp",
+              "RelativeToolTip": "Polish.cpp",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwB8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T19:25:55.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CodeGeneration.h",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\CodeGeneration.h",
+              "RelativeDocumentMoniker": "CodeGeneration.h",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\CodeGeneration.h",
+              "RelativeToolTip": "CodeGeneration.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-06T22:07:04.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CodeGeneration.cpp",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\CodeGeneration.cpp",
+              "RelativeDocumentMoniker": "CodeGeneration.cpp",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\CodeGeneration.cpp",
+              "RelativeToolTip": "CodeGeneration.cpp",
+              "ViewState": "AgIAAOoAAAAAAAAAAAASwNgAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T19:25:49.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SIV_result.asm",
+              "DocumentMoniker": "C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV_result.asm",
+              "RelativeDocumentMoniker": "SIV_result.asm",
+              "ToolTip": "C:\\Users\\Binar\\Desktop\\SIV-2023\\SIV_result.asm",
+              "RelativeToolTip": "SIV_result.asm",
+              "ViewState": "AgIAAEYAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-07T23:09:10.296Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
