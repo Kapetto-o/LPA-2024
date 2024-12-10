@@ -1,16 +1,15 @@
 -------------- Протокол ----------------
-Дата: 10.12.2024 03:25:04
+Дата: 10.12.2024 15:07:58
 ------------- Параметры ----------------
--in: in.txt
--log: in.txt.log
--out: out.txt
--an: in.txt.an.txt
+-in: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\in.txt
+-log: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\in.txt.log
+-out: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\out.txt
+-an: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\x64\Debug\in.txt.an.txt
 ---------- Исходные данные -------------
-Количество символов: 8
+Количество символов: 22
 Проигнорировано:     0
-Количество строк:    3
+Количество строк:    4
 ----------------------------------------
 No forbidden characters
 Tokenization :  Completed successfully
-Lexical analysis : - ERROR
-Ошибка 117: Ошибка лексического анализатора: Не удалось определить тип лексемы, строка 1, позиция 1
+Lexical analysis : 

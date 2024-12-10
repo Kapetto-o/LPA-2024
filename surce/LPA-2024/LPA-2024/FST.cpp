@@ -68,7 +68,7 @@ namespace FST
 	}
 
 	// ¬ыполнение шага из одного массива в другой
-	bool step(FST& fst, short*& rstates)
+	static bool step(FST& fst, short*& rstates)
 	{
 		bool rc = false;
 		std::swap(rstates, fst.rstates);
