@@ -84,17 +84,6 @@ namespace IT
 		return result;
 	}
 
-	Entry CreateEntry(int lineLT, std::string& id, IDDATATYPE idDataType, IDTYPE idType, char vchar)
-	{
-		Entry result;
-		result.idxfirstLE = lineLT;
-		result.id = id;
-		result.idDataType = idDataType;
-		result.idType = idType;
-		result.value.vchar = vchar;
-		return result;
-	}
-
 	void SaveToFile(IdTable& idtable, wchar_t outfile[])
 	{
 		std::ofstream file(outfile, std::ios_base::app);
@@ -150,7 +139,7 @@ namespace IT
 				file << '|' << std::setw(15) << std::left << "Bool";
 				break;
 			case IDDATATYPE::CHAR:
-				file << '|' << std::setw(15) << std::left << "Char";
+				file << '|' << std::setw(15) << std::left << "Bool";
 				break;
 			case IDDATATYPE::UNDF:
 				file << '|' << std::setw(15) << std::left << "Undefined";
@@ -174,9 +163,6 @@ namespace IT
 					break;
 				case IDDATATYPE::STR:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vstr.str;
-					break;
-				case IDDATATYPE::CHAR:
-					file << L'|' << std::setw(20) << std::left << idtable.table[i].value.vchar;
 					break;
 				}
 			}

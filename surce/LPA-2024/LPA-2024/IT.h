@@ -21,12 +21,12 @@ namespace IT
 		struct
 		{
 			int vshort;				// целочисленное значение
+			char vchar;				// символ
 			struct
 			{
 				int len;			// длин астроки
 				std::string str;	// строка
 			} vstr;
-			char vchar;            // значение типа char
 		} value;
 	};
 
@@ -49,5 +49,4 @@ namespace IT
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType);
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, int vint);
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, std::string vstr);
-
 }

@@ -1,0 +1,82 @@
+﻿Сборка начата 08.12.2024 03:13:30.
+Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\SIV-2023.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Обращение к "SIV-2023\x64\Debug\SIV-2023.tlog\unsuccessfulbuild".
+       ClCompile:
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"pch.h" /Fp"SIV-2023\x64\Debug\SIV-2023.pch" /Fo"SIV-2023\x64\Debug\\" /Fd"SIV-2023\x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt pch.cpp
+         pch.cpp
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yu"pch.h" /Fp"SIV-2023\x64\Debug\SIV-2023.pch" /Fo"SIV-2023\x64\Debug\\" /Fd"SIV-2023\x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt CodeGeneration.cpp Error.cpp FST.cpp Greibach.cpp In.cpp IT.cpp LexAnalyzer.cpp Log.cpp LT.cpp MFST.cpp Parm.cpp Polish.cpp Semantic.cpp "SIV-2023.cpp" Tokenization.cpp
+         CodeGeneration.cpp
+         Error.cpp
+         FST.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\FST.cpp(95,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+         (компиляция исходного файла "/FST.cpp")
+         
+         Greibach.cpp
+         In.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\In.cpp(62,40): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+         (компиляция исходного файла "/In.cpp")
+         
+         IT.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\IT.cpp(83,36): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+         (компиляция исходного файла "/IT.cpp")
+         
+         LexAnalyzer.cpp
+         Log.cpp
+         LT.cpp
+         MFST.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\MFST.cpp(232,66): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+         (компиляция исходного файла "/MFST.cpp")
+         
+         Parm.cpp
+         Polish.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Polish.cpp(23,32): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+         (компиляция исходного файла "/Polish.cpp")
+         
+     1>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Polish.cpp(23,47): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+         (компиляция исходного файла "/Polish.cpp")
+         
+         Semantic.cpp
+         SIV-2023.cpp
+         Tokenization.cpp
+         Создание кода...
+       Link:
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\x64\Debug\SIV-2023.exe" /INCREMENTAL /ILK:"SIV-2023\x64\Debug\SIV-2023.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\x64\Debug\SIV-2023.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\x64\Debug\SIV-2023.lib" /MACHINE:X64 "SIV-2023\x64\Debug\CodeGeneration.obj"
+         "SIV-2023\x64\Debug\Error.obj"
+         "SIV-2023\x64\Debug\FST.obj"
+         "SIV-2023\x64\Debug\Greibach.obj"
+         "SIV-2023\x64\Debug\In.obj"
+         "SIV-2023\x64\Debug\IT.obj"
+         "SIV-2023\x64\Debug\LexAnalyzer.obj"
+         "SIV-2023\x64\Debug\Log.obj"
+         "SIV-2023\x64\Debug\LT.obj"
+         "SIV-2023\x64\Debug\MFST.obj"
+         "SIV-2023\x64\Debug\Parm.obj"
+         "SIV-2023\x64\Debug\pch.obj"
+         "SIV-2023\x64\Debug\Polish.obj"
+         "SIV-2023\x64\Debug\Semantic.obj"
+         "SIV-2023\x64\Debug\SIV-2023.obj"
+         "SIV-2023\x64\Debug\Tokenization.obj"
+         SIV-2023.vcxproj -> D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\x64\Debug\SIV-2023.exe
+       FinalizeBuildStatus:
+         Файл "SIV-2023\x64\Debug\SIV-2023.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "SIV-2023\x64\Debug\SIV-2023.tlog\SIV-2023.lastbuildstate".
+     1>Сборка проекта "D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\SIV-2023.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+       "D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\SIV-2023.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\FST.cpp(95,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+         D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\In.cpp(62,40): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+         D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\IT.cpp(83,36): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+         D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\MFST.cpp(232,66): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+         D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Polish.cpp(23,32): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+         D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Polish.cpp(23,47): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+
+    Предупреждений: 6
+    Ошибок: 0
+
+Прошло времени 00:00:03.31

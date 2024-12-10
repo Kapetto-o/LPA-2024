@@ -39,7 +39,7 @@ namespace In
 			}
 			else if (Info.code[(unsigned char)fulltext[i]] == IN::I)
 				++Info.ignor;
-			else if (Info.code[(unsigned char)fulltext[i]] == IN::T || Info.code[(unsigned char)fulltext[i]] == IN::S || Info.code[(unsigned char)fulltext[i]] == IN::P || Info.code[(unsigned char)fulltext[i]] == IN::N)
+			else if (Info.code[(unsigned char)fulltext[i]] == IN::T)
 			{
 				*Ptemp = fulltext[i];
 				++Ptemp;
@@ -57,6 +57,8 @@ namespace In
 			else
 				++currentCol;
 		}
+
+
 
 		*Ptemp = IN_CODE_ENDL;
 		Info.size = strlen((char*)Info.text) - Info.lines;

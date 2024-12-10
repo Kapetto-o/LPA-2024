@@ -22,15 +22,17 @@
 #include <string>
 #include <stack>
 
+
+#include "Log.h"
 #include "Error.h"
+#include "Parm.h"
+#include "In.h"
+#include "Token.h"
+#include "LexicalAnalyzer.h"
+#include "LT.h"
+#include "IT.h"
 #include "FST.h"
 #include "Graphs.h"
-#include "IT.h"
-#include "LexicalAnalyzer.h"
-#include "Log.h"
-#include "LT.h"
-#include "Parm.h"
-#include "Token.h"
 
 
 #endif //STDAFX_H

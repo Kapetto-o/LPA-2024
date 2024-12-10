@@ -140,38 +140,6 @@ namespace Tokens
 				continue;
 			}
 
-			// создание токена для литерала char
-			if (in.text[CharPointer] == '\'')
-			{
-				if (NumOfCharRecorded)
-					throw ERROR_THROW_IN(140, CurrentLine, LinePosition);
-
-				buffer[NumOfCharRecorded++] = in.text[CharPointer++]; // Добавляем открывающую кавычку
-				LinePosition++;
-
-				if (in.text[CharPointer] == '\\') // Обработка escape-последовательностей
-				{
-					buffer[NumOfCharRecorded++] = in.text[CharPointer++]; // Добавляем '\'
-					LinePosition++;
-				}
-
-				if (in.text[CharPointer] == '\n' || in.text[CharPointer] == IN_CODE_ENDL)
-					throw ERROR_THROW_IN(141, CurrentLine, LinePosition);
-
-				buffer[NumOfCharRecorded++] = in.text[CharPointer++]; // Добавляем символ
-				LinePosition++;
-
-				if (in.text[CharPointer] != '\'') // Закрывающая кавычка
-					throw ERROR_THROW_IN(142, CurrentLine, LinePosition);
-
-				buffer[NumOfCharRecorded++] = in.text[CharPointer]; // Добавляем закрывающую кавычку
-				buffer[NumOfCharRecorded] = IN_CODE_ENDL;
-
-				AddToken(tokens, buffer, CurrentLine, LinePosition - NumOfCharRecorded, NumOfCharRecorded);
-				NumOfCharRecorded = 0;
-				continue;
-			}
-
 			buffer[NumOfCharRecorded] = in.text[CharPointer];
 			NumOfCharRecorded++;
 			LinePosition++;
