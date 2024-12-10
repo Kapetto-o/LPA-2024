@@ -1,8 +1,9 @@
 #pragma once
 #include "stdafx.h"
-#include "Token.h"
 #include "IT.h"
 #include "LT.h"
+#include "Token.h"
+
 using namespace std;
 
 namespace LA

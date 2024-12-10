@@ -5,37 +5,63 @@
 #define LT_MAXSIZE 4096                 
 #define LT_TI_NULLTDX 0xffffffff        
 
-#define LEX_INT					'e'
-#define LEX_CHAR				'n'
+// Типы данных
+
+#define LEX_SHORT				'd'
+#define LEX_CHAR				'c'
 #define LEX_STR					's'
 #define LEX_BOOL				'b'
+
+// Идентификаторы и литералы
 #define LEX_IDENTIFIER			'i'
 #define LEX_LITERAL				'l'
-#define LEX_FUNCTION			'f'
-#define LEX_MAIN				'm'
-#define LEX_RETURN				'r'
-#define LEX_STRDUPLICATE		'd'
-#define LEX_STRLENGTH			'r'
+
+// Функции
+
+#define LEX_STRDUPLICATE		'g'
+#define LEX_STRLENGTH			'h'
 #define LEX_STRTRANSINT			't'
+#define LEX_MAIN				'm'
+
+// Ключевые слова
+#define LEX_NEW					'n'
+
+#define LEX_FUNCTION			'f'
+#define LEX_RETURN				'r'
+
+// Операторы вывода в консоль и цикла
+
 #define LEX_WRITELINE			'w'
 #define LEX_WRITE				'v'
-#define LEX_CYCLE				'c'
+#define LEX_CYCLE				'p'
+
+// Скобки
+
 #define LEX_LEFTBRACE_OPEN		'{'
 #define LEX_RIGHTBRACE_CLOSE	'}'
 #define LEX_LEFTHESIS_OPEN		'('
 #define LEX_RIGHTHESIS_CLOSE	')'
+
+// Арифметические операторы
+
 #define LEX_ADDITION			'+'
 #define LEX_SUBSTRACTION		'-'
 #define LEX_MULTIPLICATION		'*'
 #define LEX_DIVISION			'/'
 #define LEX_REMAINDERDIVISION	'%'
 #define LEX_EQUALS				'='
+
+// Логические операторы
+
 #define LEX_MORE				'>'
 #define LEX_LESS				'<'
 #define LEX_MOREEQUAL			']'
 #define LEX_LESSEQUAL			'['
 #define LEX_INEQUALITY			'#'
 #define LEX_NOTEQUALS			'!'
+
+// Разное
+
 #define LEX_COMMA				','
 #define LEX_SEMICOLON			';'
 

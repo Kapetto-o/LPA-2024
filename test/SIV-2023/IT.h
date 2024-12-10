@@ -8,7 +8,7 @@
 
 namespace IT
 {
-	enum IDDATATYPE { UNDF = 0, SHORT = 1, STR = 2, BOOL = 3, CHAR = 4 };
+	enum IDDATATYPE { UNDF = 0, SHORT = 1, STR = 2, BOOL = 3 };
 
 	enum IDTYPE { N = 0, F = 1, V = 2, P = 3, L = 4 };		// типы идентификаторов: переменная, функция, параметр, литерал, не определено
 
@@ -26,7 +26,6 @@ namespace IT
 				int len;			// длин астроки
 				std::string str;	// строка
 			} vstr;
-			char vchar;            // значение типа char
 		} value;
 	};
 

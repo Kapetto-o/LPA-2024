@@ -8,7 +8,6 @@
 #define LEX_SHORT		'd'             
 #define LEX_STRING      's'             
 #define LEX_BOOL		'b'				
-#define LEX_CHAR		't'
 #define LEX_ID          'i'            
 #define LEX_LITERAL     'l'            
 #define LEX_IF			'c'				

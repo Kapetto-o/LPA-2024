@@ -72,53 +72,20 @@ namespace FST
 	{
 		bool rc = false;
 		std::swap(rstates, fst.rstates);
-
 		for (short i = 0; i < fst.nstates; i++)
 		{
 			if (rstates[i] == fst.position)
-			{
 				for (short j = 0; j < fst.nodes[i].n_relation; j++)
 				{
-					// Совпадение простого символа
 					if (fst.nodes[i].relations[j].symbol == fst.string[fst.position])
 					{
 						fst.rstates[fst.nodes[i].relations[j].nnode] = fst.position + 1;
 						rc = true;
 					}
-					// Совпадение литерала 'a'
-					else if (fst.string[fst.position] == '\'' && fst.string[fst.position + 2] == '\'')
-					{
-						if (fst.nodes[i].relations[j].symbol == fst.string[fst.position + 1]) // Символ внутри кавычек
-						{
-							fst.rstates[fst.nodes[i].relations[j].nnode] = fst.position + 3; // Пропуск 3 символов
-							rc = true;
-						}
-					}
-					// Совпадение экранированного символа '\n', '\t', '\''
-					else if (fst.string[fst.position] == '\'' && fst.string[fst.position + 1] == '\\')
-					{
-						char escaped_char;
-						switch (fst.string[fst.position + 2]) // Определение экранированного символа
-						{
-						case 'n': escaped_char = '\n'; break;
-						case 't': escaped_char = '\t'; break;
-						case '\'': escaped_char = '\''; break;
-						default: escaped_char = fst.string[fst.position + 2]; break; // Поддержка других символов
-						}
-
-						if (fst.nodes[i].relations[j].symbol == escaped_char)
-						{
-							fst.rstates[fst.nodes[i].relations[j].nnode] = fst.position + 4; // Пропуск 4 символов
-							rc = true;
-						}
-					}
 				}
-			}
 		}
-
 		return rc;
-	}
-
+	};
 
 	// Выполнение распознавания цепочки с помощью алгоритма двух массивов
 	bool execute(FST& fst)

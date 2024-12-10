@@ -3,6 +3,78 @@
   "WorkspaceRootPath": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Parm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Polish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\in.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\in.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LexicalAnalyzer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Token.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LPA-2024.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LPA-2024.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,56 +87,16 @@
       "RelativeMoniker": "D:0:0:{F83F5165-8C47-434D-9357-4E947A46D972}|LPA-2024_LIB\\LPA-2024_LIB.vcxproj|solutionrelative:LPA-2024_LIB\\LPA-2024_LIB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Token.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\CodeGeneration.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Parm.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Token.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\In.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\IT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\in.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\in.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Polish.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Semantic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Rules.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -73,14 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\MFST.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Greibach.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -95,32 +119,12 @@
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Error.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\stdafx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Semantic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\Polish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\MFST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\LexicalAnalyzer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|solutionrelative:LPA-2024\\IT.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEABC73B-5726-4B4C-9A47-0FF8F16D5FA2}|LPA-2024\\LPA-2024.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -146,33 +150,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LPA-2024_LIB.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024_LIB\\LPA-2024_LIB.cpp",
-              "RelativeDocumentMoniker": "LPA-2024_LIB\\LPA-2024_LIB.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024_LIB\\LPA-2024_LIB.cpp",
-              "RelativeToolTip": "LPA-2024_LIB\\LPA-2024_LIB.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T14:33:33.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LT.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.h",
-              "RelativeDocumentMoniker": "LPA-2024\\LT.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.h",
-              "RelativeToolTip": "LPA-2024\\LT.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAADAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IT.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.h",
+              "RelativeDocumentMoniker": "LPA-2024\\IT.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.h",
+              "RelativeToolTip": "LPA-2024\\IT.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAQwBoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T13:51:03.096Z",
+              "WhenOpened": "2024-12-06T12:31:41.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Log.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.cpp",
               "RelativeDocumentMoniker": "LPA-2024\\Log.cpp",
@@ -185,72 +176,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LT.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\LT.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.cpp",
+              "RelativeToolTip": "LPA-2024\\LT.cpp",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAQwGUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T10:37:31.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LPA-2024.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LPA-2024.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\LPA-2024.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LPA-2024.cpp",
-              "RelativeToolTip": "LPA-2024\\LPA-2024.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Title": "IT.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\IT.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.cpp*",
+              "RelativeToolTip": "LPA-2024\\IT.cpp*",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAALkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-08T23:01:35.463Z",
+              "WhenOpened": "2024-12-06T12:31:29.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Token.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\Token.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.cpp",
-              "RelativeToolTip": "LPA-2024\\Token.cpp",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAL0AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T10:23:20.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Semantic.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\Semantic.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.cpp",
-              "RelativeToolTip": "LPA-2024\\Semantic.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T08:58:17.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "MFST.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\MFST.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.cpp",
-              "RelativeToolTip": "LPA-2024\\MFST.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T08:37:00.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Parm.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\Parm.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.cpp",
-              "RelativeToolTip": "LPA-2024\\Parm.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:20:20.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 9,
               "Title": "Polish.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.cpp",
               "RelativeDocumentMoniker": "LPA-2024\\Polish.cpp",
@@ -263,254 +215,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CodeGeneration.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.h",
-              "RelativeDocumentMoniker": "LPA-2024\\CodeGeneration.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.h",
-              "RelativeToolTip": "LPA-2024\\CodeGeneration.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T08:40:23.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "LT.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\LT.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.cpp",
-              "RelativeToolTip": "LPA-2024\\LT.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T10:37:31.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "In.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.cpp",
               "RelativeDocumentMoniker": "LPA-2024\\In.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.cpp",
               "RelativeToolTip": "LPA-2024\\In.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAQwD4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-06T10:20:54.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LexicalAnalyzer.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\LexicalAnalyzer.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.cpp",
-              "RelativeToolTip": "LPA-2024\\LexicalAnalyzer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T18:52:45.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IT.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\IT.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.cpp",
-              "RelativeToolTip": "LPA-2024\\IT.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T12:31:29.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Greibach.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\Greibach.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.cpp",
-              "RelativeToolTip": "LPA-2024\\Greibach.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T08:38:01.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "FST.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\FST.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.cpp",
-              "RelativeToolTip": "LPA-2024\\FST.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-03T22:39:06.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Error.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\Error.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.cpp",
-              "RelativeToolTip": "LPA-2024\\Error.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-06T12:44:29.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CodeGeneration.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\CodeGeneration.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.cpp",
-              "RelativeToolTip": "LPA-2024\\CodeGeneration.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-09T08:40:05.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Error.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Error.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.h",
-              "RelativeToolTip": "LPA-2024\\Error.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T12:44:41.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FST.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.h",
-              "RelativeDocumentMoniker": "LPA-2024\\FST.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.h",
-              "RelativeToolTip": "LPA-2024\\FST.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-03T22:26:57.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Graphs.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Graphs.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h",
-              "RelativeToolTip": "LPA-2024\\Graphs.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T08:36:16.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Greibach.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Greibach.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.h",
-              "RelativeToolTip": "LPA-2024\\Greibach.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T08:37:52.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "In.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.h",
-              "RelativeDocumentMoniker": "LPA-2024\\In.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.h",
-              "RelativeToolTip": "LPA-2024\\In.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-01T21:32:04.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IT.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.h",
-              "RelativeDocumentMoniker": "LPA-2024\\IT.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\IT.h",
-              "RelativeToolTip": "LPA-2024\\IT.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T12:31:41.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Log.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Log.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.h",
-              "RelativeToolTip": "LPA-2024\\Log.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T23:22:31.844Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MFST.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h",
-              "RelativeDocumentMoniker": "LPA-2024\\MFST.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h",
-              "RelativeToolTip": "LPA-2024\\MFST.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T08:37:24.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Parm.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Parm.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.h",
-              "RelativeToolTip": "LPA-2024\\Parm.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-07T23:20:29.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Polish.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Polish.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.h",
-              "RelativeToolTip": "LPA-2024\\Polish.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-08T14:22:08.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "Rules.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Rules.h",
               "RelativeDocumentMoniker": "LPA-2024\\Rules.h",
@@ -523,20 +241,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Semantic.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Semantic.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.h",
-              "RelativeToolTip": "LPA-2024\\Semantic.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAArAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "LT.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.h",
+              "RelativeDocumentMoniker": "LPA-2024\\LT.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LT.h",
+              "RelativeToolTip": "LPA-2024\\LT.h",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-09T08:58:42.115Z",
+              "WhenOpened": "2024-12-09T13:51:03.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "In.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.h",
+              "RelativeDocumentMoniker": "LPA-2024\\In.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\In.h",
+              "RelativeToolTip": "LPA-2024\\In.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-01T21:32:04.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Greibach.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Greibach.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.h",
+              "RelativeToolTip": "LPA-2024\\Greibach.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T08:37:52.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Token.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Token.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.h",
+              "RelativeToolTip": "LPA-2024\\Token.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-06T12:32:56.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Parm.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\Parm.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.cpp",
+              "RelativeToolTip": "LPA-2024\\Parm.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:20:20.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Semantic.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\Semantic.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.cpp",
+              "RelativeToolTip": "LPA-2024\\Semantic.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T08:58:17.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "stdafx.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\stdafx.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.cpp",
+              "RelativeToolTip": "LPA-2024\\stdafx.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-07T23:09:43.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LexicalAnalyzer.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.h",
+              "RelativeDocumentMoniker": "LPA-2024\\LexicalAnalyzer.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.h",
+              "RelativeToolTip": "LPA-2024\\LexicalAnalyzer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T21:03:39.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Log.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Log.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Log.h",
+              "RelativeToolTip": "LPA-2024\\Log.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-07T23:22:31.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Token.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\Token.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.cpp",
+              "RelativeToolTip": "LPA-2024\\Token.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T10:23:20.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "stdafx.h",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.h",
               "RelativeDocumentMoniker": "LPA-2024\\stdafx.h",
@@ -549,29 +384,196 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Token.h",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.h",
-              "RelativeDocumentMoniker": "LPA-2024\\Token.h",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Token.h",
-              "RelativeToolTip": "LPA-2024\\Token.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-12-06T12:32:56.939Z",
+              "DocumentIndex": 18,
+              "Title": "LPA-2024.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LPA-2024.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\LPA-2024.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LPA-2024.cpp",
+              "RelativeToolTip": "LPA-2024\\LPA-2024.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-08T23:01:35.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "stdafx.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.cpp",
-              "RelativeDocumentMoniker": "LPA-2024\\stdafx.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\stdafx.cpp",
-              "RelativeToolTip": "LPA-2024\\stdafx.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "LPA-2024_LIB.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024_LIB\\LPA-2024_LIB.cpp",
+              "RelativeDocumentMoniker": "LPA-2024_LIB\\LPA-2024_LIB.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024_LIB\\LPA-2024_LIB.cpp",
+              "RelativeToolTip": "LPA-2024_LIB\\LPA-2024_LIB.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-12-07T23:09:43.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:33:33.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MFST.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\MFST.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.cpp",
+              "RelativeToolTip": "LPA-2024\\MFST.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T08:37:00.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CodeGeneration.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.h",
+              "RelativeDocumentMoniker": "LPA-2024\\CodeGeneration.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.h",
+              "RelativeToolTip": "LPA-2024\\CodeGeneration.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T08:40:23.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LexicalAnalyzer.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\LexicalAnalyzer.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\LexicalAnalyzer.cpp",
+              "RelativeToolTip": "LPA-2024\\LexicalAnalyzer.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T18:52:45.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Greibach.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\Greibach.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Greibach.cpp",
+              "RelativeToolTip": "LPA-2024\\Greibach.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T08:38:01.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FST.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\FST.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.cpp",
+              "RelativeToolTip": "LPA-2024\\FST.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-03T22:39:06.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Error.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\Error.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.cpp",
+              "RelativeToolTip": "LPA-2024\\Error.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-06T12:44:29.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CodeGeneration.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.cpp",
+              "RelativeDocumentMoniker": "LPA-2024\\CodeGeneration.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\CodeGeneration.cpp",
+              "RelativeToolTip": "LPA-2024\\CodeGeneration.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-09T08:40:05.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Error.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Error.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Error.h",
+              "RelativeToolTip": "LPA-2024\\Error.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-06T12:44:41.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FST.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.h",
+              "RelativeDocumentMoniker": "LPA-2024\\FST.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\FST.h",
+              "RelativeToolTip": "LPA-2024\\FST.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-03T22:26:57.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Graphs.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Graphs.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Graphs.h",
+              "RelativeToolTip": "LPA-2024\\Graphs.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T08:36:16.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MFST.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h",
+              "RelativeDocumentMoniker": "LPA-2024\\MFST.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\MFST.h",
+              "RelativeToolTip": "LPA-2024\\MFST.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T08:37:24.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Parm.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Parm.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Parm.h",
+              "RelativeToolTip": "LPA-2024\\Parm.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-07T23:20:29.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Polish.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Polish.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Polish.h",
+              "RelativeToolTip": "LPA-2024\\Polish.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-08T14:22:08.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Semantic.h",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.h",
+              "RelativeDocumentMoniker": "LPA-2024\\Semantic.h",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\LPA-2024\\Semantic.h",
+              "RelativeToolTip": "LPA-2024\\Semantic.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-09T08:58:42.115Z"
             }
           ]
         }

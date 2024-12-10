@@ -4,13 +4,13 @@ using namespace std;
 
 namespace LA
 {
-	// КОнструктор таблиц
+	// Конструктор таблиц
 	LEX::LEX(int lexTableSize, int idTableSize)
 	{
 		this->lextable = LT::Create(lexTableSize);
 		this->idtable = IT::Create(idTableSize);
 	};
-	LEX::LEX() : lextable(), idtable() { }
+	LEX::LEX() { };
 
 	GRAPH graph[] =
 	{
@@ -18,7 +18,7 @@ namespace LA
 
 		// Типы данных
 
-		{ LEX_INT, FST::FST(GRAPH_INT) },
+		{ LEX_SHORT, FST::FST(GRAPH_SHORT) },
 		{ LEX_CHAR, FST::FST(GRAPH_CHAR) },
 		{ LEX_STR, FST::FST(GRAPH_STR) },
 		{ LEX_BOOL, FST::FST(GRAPH_BOOL) },
@@ -31,15 +31,20 @@ namespace LA
 
 		{ LEX_LITERAL, FST::FST(GRAPH_BOOL_TRUE) },
 		{ LEX_LITERAL, FST::FST(GRAPH_BOOL_FALSE) },
-		{ LEX_LITERAL, FST::FST(GRAPH_INT_LITERAL_8) },
-		{ LEX_LITERAL, FST::FST(GRAPH_INT_LITERAL_10) },
+		{ LEX_LITERAL, FST::FST(GRAPH_SHORT_LITERAL_8) },
+		{ LEX_LITERAL, FST::FST(GRAPH_SHORT_LITERAL_10) },
 		{ LEX_LITERAL, FST::FST(GRAPH_STRING_LITERAL) },
 		{ LEX_LITERAL, FST::FST(GRAPH_CHAR_LITERAL) },
+
+		// Ключевые слова
+
+		{ LEX_FUNCTION, FST::FST(GRAPH_FUNCTION) },
+		{ LEX_NEW, FST::FST(GRAPH_NEW) },
+		{ LEX_RETURN, FST::FST(GRAPH_RETURN) },
 
 		// Функции
 
 		{ LEX_MAIN, FST::FST(GRAPH_MAIN) },
-		{ LEX_RETURN, FST::FST(GRAPH_RETURN) },
 		{ LEX_STRDUPLICATE, FST::FST(GRAPH_STRDUPLICATE) },
 		{ LEX_STRLENGTH, FST::FST(GRAPH_STRLENGTH) },
 		{ LEX_STRTRANSINT, FST::FST(GRAPH_STRTRANSINT) },
@@ -162,15 +167,8 @@ namespace LA
 				isDeclare = false;
 				break;
 			case LEX_LITERAL:
-				if (tokenTable.table[index].token[0] == '\'' && tokenTable.table[index].token[2] == '\'' && tokenTable.table[index].length == 3)
-				{
-					// Литерал char
-					char vChar = tokenTable.table[index].token[1];
-					id = "char" + to_string(numOfLit++);
-					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::CHAR, IT::IDTYPE::L, vChar));
-				}
 				// Строковый литерал
-				else if (tokenTable.table[index].token[0] == '"')
+				if (tokenTable.table[index].token[0] == '"')
 				{
 					if (tokenTable.table[index].length == 2)
 					{
@@ -229,7 +227,7 @@ namespace LA
 					areaOfVisibility.pop();
 					isNotGlobal--;
 					break;
-				case LEX_INT:
+				case LEX_SHORT:
 					idDataType = IT::IDDATATYPE::SHORT;
 					break;
 				case LEX_STR:
@@ -238,22 +236,19 @@ namespace LA
 				case LEX_BOOL:
 					idDataType = IT::IDDATATYPE::BOOL;
 					break;
-				case LEX_CHAR:
-					idDataType = IT::IDDATATYPE::CHAR;
+				case LEX_NEW:
+					idType = IT::IDTYPE::V;
+					isDeclare = true;
 					break;
-				//case LEX_NEW:
-				//	idType = IT::IDTYPE::V;
-				//	isDeclare = true;
-				//	break;
-				//case LEX_FUNCTION:
-				//	idType = IT::IDTYPE::F;
-				//	if (!isNotGlobal)
-				//	{
-				//		globalAreaOfVisibility++;
-				//		if (areaOfVisibility.top() != 0)
-				//			areaOfVisibility.pop();
-				//		areaOfVisibility.push(globalAreaOfVisibility);
-				//	}
+				case LEX_FUNCTION:
+					idType = IT::IDTYPE::F;
+					if (!isNotGlobal)
+					{
+						globalAreaOfVisibility++;
+						if (areaOfVisibility.top() != 0)
+							areaOfVisibility.pop();
+						areaOfVisibility.push(globalAreaOfVisibility);
+					}
 					break;
 				case LEX_MAIN:
 					if (isMain)

@@ -29,39 +29,12 @@ int _tmain(int argc, _TCHAR** argv)
 		Tokens::TokenTable tokentable = Tokens::Tokenize(in);
 		Log::WriteLine(log, " Completed successfully\n", "");
 
-		// Проблемы после этого
 		Log::WriteLine(log, "Lexical analysis : ", "");
 		LA::LEX lex = LA::FillingInTables(tokentable);
 		Log::WriteLine(log, " Completed successfully\n", "");
-		cout << "ТЕСТ" << endl;
 
 		LT::SaveToFile(lex.lextable, parm.an);
 		IT::SaveToFile(lex.idtable, parm.an);
-		cout << "ТЕСТ" << endl;
-
-		ofstream fs(parm.an, std::ios_base::app);
-		Log::WriteLine(log, "Syntax analysis : ", "");
-		MFST_TRACE_START(fs)
-			MFST::Mfst mfst(lex, GRB::getGreibach());
-		mfst.start(fs);
-		mfst.savededucation();
-		mfst.printrules(fs);
-		Log::WriteLine(log, " Completed successfully\n", "");
-
-		Log::WriteLine(log, "Semantic analysis : ", "");
-		CallSemantic(lex.lextable, lex.idtable);
-		Log::WriteLine(log, " Completed successfully\n", "");
-
-		Log::WriteLine(log, "Polish notation  : ", "");
-		Polish::CallPolishNotation(lex.lextable, lex.idtable);
-		Log::WriteLine(log, " Completed successfully\n", "");
-
-		LT::SaveToFile(lex.lextable, parm.an);
-
-		Log::WriteLine(log, "Code generation : ", "");
-		CodeGeneration::CodeGeneration(lex, parm.out);
-		Log::WriteLine(log, " Completed successfully\n", "");
-
 
 		Log::Close(log);
 		std::cout << "Code translation completed successfully\n";

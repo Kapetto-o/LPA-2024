@@ -15,7 +15,6 @@ namespace LA
 	{
 		// Каждой лексеме соответсвует своя цепочка разбора
 		{ LEX_SHORT, FST::FST(GRAPH_SHORT) },
-		{ LEX_CHAR, FST::FST(GRAPH_CHAR) },
 		{ LEX_STRING, FST::FST(GRAPH_STRING) },
 		{ LEX_BOOL, FST::FST(GRAPH_BOOL) },
 		{ LEX_FUNCTION, FST::FST(GRAPH_FUNCTION) },
@@ -140,15 +139,8 @@ namespace LA
 				isDeclare = false;
 				break;
 			case LEX_LITERAL:
-				if (tokenTable.table[index].token[0] == '\'' && tokenTable.table[index].token[2] == '\'' && tokenTable.table[index].length == 3)
-				{
-					// Литерал char
-					char vChar = tokenTable.table[index].token[1];
-					id = "char" + to_string(numOfLit++);
-					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::CHAR, IT::IDTYPE::L, vChar));
-				}
 				// Строковый литерал
-				else if (tokenTable.table[index].token[0] == '"')
+				if (tokenTable.table[index].token[0] == '"')
 				{
 					if (tokenTable.table[index].length == 2)
 					{
@@ -215,9 +207,6 @@ namespace LA
 					break;
 				case LEX_BOOL:
 					idDataType = IT::IDDATATYPE::BOOL;
-					break;
-				case LEX_CHAR:
-					idDataType = IT::IDDATATYPE::CHAR;
 					break;
 				case LEX_NEW:
 					idType = IT::IDTYPE::V;

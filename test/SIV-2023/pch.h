@@ -22,6 +22,7 @@
 #include <string>
 #include <stack>
 
+
 #include "Log.h"
 #include "Error.h"
 #include "Parm.h"
@@ -32,11 +33,6 @@
 #include "IT.h"
 #include "FST.h"
 #include "Graphs.h"
-#include "Greibach.h"
-#include "MFST.h"
-#include "Polish.h"
-#include "Semantic.h"
-#include "CodeGeneration.h"
 
 
 #endif //PCH_H

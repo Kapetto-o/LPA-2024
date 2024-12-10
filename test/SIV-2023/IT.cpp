@@ -51,17 +51,6 @@ namespace IT
 		delete[] idtable.table;
 	}
 
-	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, char vchar)
-	{
-		Entry result;
-		result.idxfirstLE = lineLT;
-		result.id = id;
-		result.idDataType = idDataType;
-		result.idType = idType;
-		result.value.vchar = vchar;
-		return result;
-	}
-
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType)
 	{
 		Entry result;
@@ -101,6 +90,10 @@ namespace IT
 		if (!file.is_open())
 			throw ERROR_THROW(23);
 
+		int iddatatype;
+		int idtype;
+		int counter = 0;
+
 		file << std::setfill('=') << std::setw(43) << "ID TABLE" << std::setw(48) << "\n\n";
 		file << '+' << std::setfill('-') << std::setw(6) << '+' << std::setw(13) << '+' << std::setw(16) << '+' << std::setw(16) << '+'
 			<< std::setw(16) << '+' << std::setw(21) << '+' << std::endl;
@@ -110,8 +103,8 @@ namespace IT
 
 		for (int i = 0; i < idtable.size; i++)
 		{
-			int iddatatype = idtable.table[i].idDataType;
-			int idtype = idtable.table[i].idType;
+			iddatatype = idtable.table[i].idDataType;
+			idtype = idtable.table[i].idType;
 			file << '|' << std::setfill(' ') << std::setw(5) << std::left << i;
 			file << '|' << std::setfill(' ') << std::setw(12) << std::left << idtable.table[i].id;
 
@@ -145,9 +138,6 @@ namespace IT
 			case IDDATATYPE::BOOL:
 				file << '|' << std::setw(15) << std::left << "Bool";
 				break;
-			case IDDATATYPE::CHAR:
-				file << '|' << std::setw(15) << std::left << "Char";
-				break;
 			case IDDATATYPE::UNDF:
 				file << '|' << std::setw(15) << std::left << "Undefined";
 				break;
@@ -160,7 +150,10 @@ namespace IT
 				switch (iddatatype)
 				{
 				case IDDATATYPE::BOOL:
-					file << '|' << std::setw(20) << std::left << (idtable.table[i].value.vshort ? "true" : "false");
+					if (idtable.table[i].value.vshort)
+						file << '|' << std::setw(20) << std::left << "true";
+					else
+						file << '|' << std::setw(20) << std::left << "false";
 					break;
 				case IDDATATYPE::SHORT:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vshort;
@@ -168,16 +161,12 @@ namespace IT
 				case IDDATATYPE::STR:
 					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vstr.str;
 					break;
-				case IDDATATYPE::CHAR:
-					file << '|' << std::setw(20) << std::left << idtable.table[i].value.vchar;
-					break;
 				}
 			}
 			else
 			{
 				file << '|' << std::setw(20) << std::left << '-';
 			}
-
 			file << '|';
 			file << std::endl;
 		}

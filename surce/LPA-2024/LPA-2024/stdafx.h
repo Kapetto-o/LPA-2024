@@ -22,20 +22,14 @@
 #include <string>
 #include <stack>
 
-#include "CodeGeneration.h"
 #include "Error.h"
 #include "FST.h"
 #include "Graphs.h"
-#include "Greibach.h"
-#include "In.h"
 #include "IT.h"
 #include "LexicalAnalyzer.h"
 #include "Log.h"
 #include "LT.h"
-#include "MFST.h"
 #include "Parm.h"
-#include "Polish.h"
-#include "Semantic.h"
 #include "Token.h"
 
 
