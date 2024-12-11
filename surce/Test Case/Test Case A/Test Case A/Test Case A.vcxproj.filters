@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Test Case A.cpp">
+    <ClCompile Include="Robust.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

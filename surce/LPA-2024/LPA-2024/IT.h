@@ -8,7 +8,7 @@
 
 namespace IT
 {
-	enum IDDATATYPE { UNDF = 0, SHORT = 1, STR = 2, BOOL = 3, CHAR = 4 };
+	enum IDDATATYPE { UNDF = 0, SHORT = 1, STR = 2, BOOL = 3 };
 
 	enum IDTYPE { N = 0, F = 1, V = 2, P = 3, L = 4 };		// типы идентификаторов: переменная, функция, параметр, литерал, не определено
 
@@ -21,7 +21,6 @@ namespace IT
 		struct
 		{
 			int vshort;				// целочисленное значение
-			char vchar;				// символ
 			struct
 			{
 				int len;			// длин астроки
@@ -49,4 +48,5 @@ namespace IT
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType);
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, int vint);
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, std::string vstr);
+
 }

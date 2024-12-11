@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{447CE095-45FE-49B1-BD9A-1DB9E2202088}|semantic errors\\semantic errors.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\semantic errors\\semantic-errors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{447CE095-45FE-49B1-BD9A-1DB9E2202088}|semantic errors\\semantic errors.vcxproj|solutionrelative:semantic errors\\semantic-errors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{BE4981E2-CAC8-4E5B-8CC1-70CDCC7540BD}|Test Case A\\Test Case A.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\Test Case A\\robust.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BE4981E2-CAC8-4E5B-8CC1-70CDCC7540BD}|Test Case A\\Test Case A.vcxproj|solutionrelative:Test Case A\\robust.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE4981E2-CAC8-4E5B-8CC1-70CDCC7540BD}|Test Case A\\Test Case A.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\Test Case A\\Test Case A.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{BE4981E2-CAC8-4E5B-8CC1-70CDCC7540BD}|Test Case A\\Test Case A.vcxproj|solutionrelative:Test Case A\\Test Case A.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{447CE095-45FE-49B1-BD9A-1DB9E2202088}|semantic errors\\semantic errors.vcxproj|D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\semantic errors\\semantic-errors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{447CE095-45FE-49B1-BD9A-1DB9E2202088}|semantic errors\\semantic errors.vcxproj|solutionrelative:semantic errors\\semantic-errors.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "semantic-errors.cpp",
               "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\semantic errors\\semantic-errors.cpp",
               "RelativeDocumentMoniker": "semantic errors\\semantic-errors.cpp",
               "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\semantic errors\\semantic-errors.cpp",
               "RelativeToolTip": "semantic errors\\semantic-errors.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACIAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-29T09:24:07.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Test Case A.cpp",
-              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\Test Case A\\Test Case A.cpp",
-              "RelativeDocumentMoniker": "Test Case A\\Test Case A.cpp",
-              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\Test Case A\\Test Case A.cpp",
-              "RelativeToolTip": "Test Case A\\Test Case A.cpp",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowFYAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Robust.cpp",
+              "DocumentMoniker": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\Test Case A\\Robust.cpp",
+              "RelativeDocumentMoniker": "Test Case A\\Robust.cpp",
+              "ToolTip": "D:\\GitHub\\Course-Work_KPO_2-1\\surce\\Test Case\\Test Case A\\Test Case A\\Robust.cpp",
+              "RelativeToolTip": "Test Case A\\Robust.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwEEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-31T08:14:33.631Z"
+              "WhenOpened": "2024-10-31T08:14:33.631Z",
+              "EditorCaption": ""
             }
           ]
         }

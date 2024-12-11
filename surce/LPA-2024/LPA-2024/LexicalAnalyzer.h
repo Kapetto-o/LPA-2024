@@ -2,8 +2,6 @@
 #include "stdafx.h"
 #include "IT.h"
 #include "LT.h"
-#include "Token.h"
-
 using namespace std;
 
 namespace LA

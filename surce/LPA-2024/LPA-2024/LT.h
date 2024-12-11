@@ -12,8 +12,10 @@
 #define LEX_STR					's'
 #define LEX_BOOL				'b'
 
-// Идентификаторы и литералы
+// Идентификаторы
 #define LEX_IDENTIFIER			'i'
+
+// Литералы
 #define LEX_LITERAL				'l'
 
 // Функции
@@ -25,7 +27,6 @@
 
 // Ключевые слова
 #define LEX_NEW					'n'
-
 #define LEX_FUNCTION			'f'
 #define LEX_RETURN				'r'
 

@@ -1,1 +1,0 @@
-LPA-2024.exe -in:in.txt -out:out.txt

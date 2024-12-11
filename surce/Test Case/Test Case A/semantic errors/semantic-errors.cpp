@@ -1,38 +1,41 @@
-int testfunc1(int a, int b)
+int function testfunc1(int a, int b)
 {
-	int res = a + b;
+	new int res = a + b;
 	return res;
 };
 
-str testfunc1(str parm1)		// Ошибка 130 (существующий идентификатор функции)
+str function testfunc1(str parm1)		// Ошибка 130 (существующий идентификатор функции)
 {
-	str parm2 = "TestText20";
+	new str parm2 = "TestText20";
 
 	strcopy(parm1, parm2);		// Копирование строки parm2 в parm1
 
 	return parm1;
 };
-char testfunc3(char simbol)
+
+char function testfunc3(char simbol)
 {
-	int i = 0;
+	new int i = 0;
 	cycle(i < 10) {
 		write simbol;
 		i = i + 1;
 	}
 }
-bool testfunc4(int chetnoe)
+
+bool function testfunc4(int chetnoe)
 {
 	return chetnoe % 2 == 0;
 }
+
 main
 {
 	writeline "Арифметические операции:";
 
-	int a;
-	int b = 15;					
-	str c = "text";
+	new int a;
+	new int b = 15;					
+	new str c = "text";
 	
-	int a = 10 * 5;	// Умножение. Ошибка 131 (повторное объявление идентификатора)
+	a = 10 * 5;		// Умножение
 	write a;
 	a = 10 / 5;		// Деление
 	write a;
@@ -42,8 +45,6 @@ main
 	write a;
 	a = 10 - 5;		// Разница
 	write a;
-
-	d = c + 10;		// Ошибка 132 (оператор не предназначен для работы со строками
 
 	writeline "Вызов функций:";
 
