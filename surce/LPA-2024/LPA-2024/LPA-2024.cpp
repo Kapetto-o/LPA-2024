@@ -11,7 +11,7 @@ int _tmain(int argc, _TCHAR** argv)
 	//argv[3] = (_TCHAR*)L"-log:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\Logger.txt";
 	//argv[4] = (_TCHAR*)L"-an:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\Analize.txt";
 
-	setlocale(LC_ALL, "rus");
+	setlocale(0, "Rus");
 	Log::LOG log = Log::INITLOG;
 	try
 	{

@@ -70,7 +70,7 @@ namespace LT
 		file << std::setfill('=') << std::setw(23) << "LEX TABLE" << std::setw(17) << "\n\n";
 		file << '+' << std::setfill('-') << std::setw(6) << '+' << std::setw(10) <<
 			'+' << std::setw(10) << '+' << std::setw(11) << '+' << std::endl;
-		file << '|' << std::setfill(' ') << std::setw(5) << std::left << "¹" << '|' << std::setw(9) << std::left << "Line" << '|'
+		file << '|' << std::setfill(' ') << std::setw(5) << std::left << "#" << '|' << std::setw(9) << std::left << "Line" << '|'
 			<< std::setw(9) << std::left << "Lexema" << '|' << std::setw(10) << std::left << "ID from IT" << '|' << std::endl;
 
 		for (int i = 0; i < lextable.size; i++)

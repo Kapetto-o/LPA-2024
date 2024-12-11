@@ -2,11 +2,11 @@
 #define IN_MAX_LEN_TEXT 1024*1024
 #define IN_CODE_ENDL '\0'
 
-// 0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15
+			// 0      1      2      3      4      5      6      7      8      9     10     11     12     13     14     15
 #define IN_CODE_TABLE {\
 	/*00*/	IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::T, IN::T, IN::F, IN::F, IN::F, IN::F, IN::F,\
 	/*16*/	IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F,\
-	/*32*/	IN::T, IN::T, IN::T, IN::F, IN::F, IN::T, IN::F, IN::F, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
+	/*32*/	IN::T, IN::T, IN::T, IN::F, IN::F, IN::T, IN::F, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
 	/*48*/	IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
 	/*64*/	IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T,\
 	/*80*/	IN::F, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::I, IN::T, IN::T, IN::F, IN::F, IN::F, IN::F, IN::F,\

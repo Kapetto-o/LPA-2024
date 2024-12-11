@@ -138,6 +138,9 @@ namespace IT
 			case IDDATATYPE::BOOL:
 				file << '|' << std::setw(15) << std::left << "Bool";
 				break;
+			case IDDATATYPE::CHAR:
+				file << '|' << std::setw(15) << std::left << "Bool";
+				break;
 			case IDDATATYPE::UNDF:
 				file << '|' << std::setw(15) << std::left << "Undefined";
 				break;

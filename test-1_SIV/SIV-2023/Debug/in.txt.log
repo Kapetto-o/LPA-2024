@@ -1,14 +1,14 @@
 -------------- Протокол ----------------
-Дата: 10.12.2024 18:43:19
+Дата: 11.12.2024 17:27:06
 ------------- Параметры ----------------
--in: D:\GitHub\Course-Work_KPO_2-1\test\SIV-2023\Debug\in.txt
--log: D:\GitHub\Course-Work_KPO_2-1\test\SIV-2023\Debug\in.txt.log
--out: D:\GitHub\Course-Work_KPO_2-1\test\SIV-2023\Debug\out.txt
--an: D:\GitHub\Course-Work_KPO_2-1\test\SIV-2023\Debug\in.txt.an.txt
+-in: in.txt
+-log: in.txt.log
+-out: out.txt
+-an: in.txt.an.txt
 ---------- Исходные данные -------------
-Количество символов: 8
+Количество символов: 616
 Проигнорировано:     0
-Количество строк:    3
+Количество строк:    42
 ----------------------------------------
 No forbidden characters
 Tokenization :  Completed successfully
