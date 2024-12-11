@@ -61,6 +61,17 @@ namespace IT
 		return result;
 	}
 
+	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, char vchar)
+	{
+		Entry result;
+		result.idxfirstLE = lineLT;
+		result.id = id;
+		result.idDataType = idDataType;
+		result.idType = idType;
+		result.value.vchar = vchar;
+		return result;
+	}
+
 	Entry CreateEntry(int lineLT, std::string id, IDDATATYPE idDataType, IDTYPE idType, int vint)
 	{
 		Entry result;
@@ -139,7 +150,7 @@ namespace IT
 				file << '|' << std::setw(15) << std::left << "Bool";
 				break;
 			case IDDATATYPE::CHAR:
-				file << '|' << std::setw(15) << std::left << "Bool";
+				file << '|' << std::setw(15) << std::left << "Char";
 				break;
 			case IDDATATYPE::UNDF:
 				file << '|' << std::setw(15) << std::left << "Undefined";

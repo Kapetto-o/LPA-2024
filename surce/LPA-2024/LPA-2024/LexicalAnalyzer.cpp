@@ -13,42 +13,59 @@ namespace LA
 
 	GRAPH graph[] =
 	{
-		// Каждой лексеме соответсвует своя цепочка разбора
+		// Типы данных:
 		{ LEX_SHORT, FST::FST(GRAPH_SHORT) },
 		{ LEX_STR, FST::FST(GRAPH_STR) },
+		{ LEX_CHAR, FST::FST(GRAPH_CHAR) },
 		{ LEX_BOOL, FST::FST(GRAPH_BOOL) },
+
+		// Ключевые слова:
 		{ LEX_FUNCTION, FST::FST(GRAPH_FUNCTION) },
 		{ LEX_NEW, FST::FST(GRAPH_NEW) },
 		{ LEX_RETURN, FST::FST(GRAPH_RETURN) },
-		{ LEX_WRITELINE, FST::FST(GRAPH_WRITELINE) },
 		{ LEX_MAIN, FST::FST(GRAPH_MAIN) },
+
+		{ LEX_CYCLE, FST::FST(GRAPH_CYCLE) },
+		{ LEX_WRITELINE, FST::FST(GRAPH_WRITELINE) },
+		{ LEX_WRITE, FST::FST(GRAPH_WRITE) },
+
+		{ LEX_STRDUPLICATE, FST::FST(GRAPH_STRDUPLICATE) },
+		{ LEX_STRLENGTH, FST::FST(GRAPH_STRLENGTH) },
+		{ LEX_STRTRANSINT, FST::FST(GRAPH_STRTRANSINT) },
+
+		// Литералы:
 		{ LEX_LITERAL, FST::FST(GRAPH_SHORT_LITERAL_10) },
+		{ LEX_LITERAL, FST::FST(GRAPH_SHORT_LITERAL_8) },
 		{ LEX_LITERAL, FST::FST(GRAPH_STRING_LITERAL) },
 		{ LEX_LITERAL, FST::FST(GRAPH_BOOL_TRUE) },
 		{ LEX_LITERAL, FST::FST(GRAPH_BOOL_FALSE) },
+		{ LEX_LITERAL, FST::FST(GRAPH_CHAR_LITERAL) },
+
+		// Разделители:
 		{ LEX_SEMICOLON, FST::FST(GRAPH_SEMICOLON) },
 		{ LEX_COMMA, FST::FST(GRAPH_COMMA) },
 		{ LEX_LEFTBRACE_OPEN, FST::FST(GRAPH_LEFTBRACE_OPEN) },
 		{ LEX_RIGHTBRACE_CLOSE, FST::FST(GRAPH_RIGHTBRACE_CLOSE) },
 		{ LEX_LEFTHESIS_OPEN, FST::FST(GRAPH_LEFTHESIS_OPEN) },
 		{ LEX_RIGHTHESIS_CLOSE, FST::FST(GRAPH_RIGHTHESIS_CLOSE) },
+
+		// Арифметические операторы:
 		{ LEX_ADDITION, FST::FST(GRAPH_ADDITION) },
 		{ LEX_SUBSTRACTION, FST::FST(GRAPH_SUBSTRACTION) },
 		{ LEX_MULTIPLICATION, FST::FST(GRAPH_MULTIPLICATION) },
 		{ LEX_DIVISION, FST::FST(GRAPH_DIVISION) },
 		{ LEX_REMAINDERDIVISION, FST::FST(GRAPH_REMAINDERDIVISION) },
+
+		// Операторы сравнения:
 		{ LEX_LESS, FST::FST(GRAPH_LESS) },
 		{ LEX_LESSEQUAL, FST::FST(GRAPH_LESSEQUAL) },
 		{ LEX_MORE, FST::FST(GRAPH_MORE) },
 		{ LEX_MOREEQUAL, FST::FST(GRAPH_MOREEQUAL) },
-		{ LEX_EQUALS, FST::FST(GRAPH_EQUALS) },
 		{ LEX_INEQUALITY, FST::FST(GRAPH_INEQUALITY) },
+		{ LEX_EQUALS, FST::FST(GRAPH_EQUALS) },
 		{ LEX_NOTEQUALS, FST::FST(GRAPH_NOTEQUALS) },
-		//{ LEX_IF, FST::FST(GRAPH_IF) },
-		//{ LEX_ELSE, FST::FST(GRAPH_ELSE) },
-		{ LEX_LITERAL, FST::FST(GRAPH_SHORT_LITERAL_8) },
-		//{ LEX_ABS, FST::FST(GRAPH_ABS) },
-		//{ LEX_POW, FST::FST(GRAPH_POW) },
+
+		// Идентификатор в самом конце:
 		{ LEX_IDENTIFIER, FST::FST(GRAPH_IDENTIFIER) }
 	};
 
@@ -157,6 +174,15 @@ namespace LA
 					id = "bool" + to_string(numOfLit++);
 					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::BOOL, IT::IDTYPE::L, vBool));
 				}
+				// Cимвольный литерал
+				else if (tokenTable.table[index].token[0] == '\'')
+				{
+					if (tokenTable.table[index].length != 3) // Формат 'a'
+						throw ERROR_THROW_IN(150, tokenTable.table[index].line, tokenTable.table[index].linePosition);
+					char vChar = tokenTable.table[index].token[1];
+					id = "char" + to_string(numOfLit++);
+					IT::Add(lex.idtable, IT::CreateEntry(lex.lextable.size, id, IT::IDDATATYPE::CHAR, IT::IDTYPE::L, vChar));
+				}
 				// Целочисленный литерал
 				else
 				{
@@ -204,6 +230,9 @@ namespace LA
 					break;
 				case LEX_BOOL:
 					idDataType = IT::IDDATATYPE::BOOL;
+					break;
+				case LEX_CHAR:
+					idDataType = IT::IDDATATYPE::CHAR;
 					break;
 				case LEX_NEW:
 					idType = IT::IDTYPE::V;

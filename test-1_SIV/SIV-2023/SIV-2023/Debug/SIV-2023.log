@@ -1,25 +1,26 @@
-﻿Сборка начата 11.12.2024 17:24:22.
+﻿Сборка начата 12.12.2024 01:07:33.
 Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\SIV-2023.vcxproj" в узле 2 (целевые объекты Build).
      1>PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
        InitializeBuildStatus:
          Обращение к "SIV-2023\Debug\SIV-2023.tlog\unsuccessfulbuild".
        ClCompile:
-         D:\Programs\VisualStudio\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"pch.h" /Fp"SIV-2023\Debug\SIV-2023.pch" /Fo"SIV-2023\Debug\\" /Fd"SIV-2023\Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Error.cpp FST.cpp In.cpp IT.cpp LexAnalyzer.cpp Log.cpp LT.cpp Parm.cpp "SIV-2023.cpp" Tokenization.cpp
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Yc"pch.h" /Fp"SIV-2023\Debug\SIV-2023.pch" /Fo"SIV-2023\Debug\\" /Fd"SIV-2023\Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Error.cpp FST.cpp IT.cpp In.cpp LT.cpp LexAnalyzer.cpp Log.cpp Parm.cpp "SIV-2023.cpp" Tokenization.cpp pch.cpp
          Error.cpp
          FST.cpp
      1>D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\FST.cpp(95,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+         IT.cpp
          In.cpp
      1>D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\In.cpp(34,21): warning C4018: <: несоответствие типов со знаком и без знака
-         IT.cpp
+         LT.cpp
          LexAnalyzer.cpp
          Log.cpp
-         LT.cpp
          Parm.cpp
          SIV-2023.cpp
          Tokenization.cpp
+         pch.cpp
        Link:
-         D:\Programs\VisualStudio\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\Debug\SIV-2023.exe" /INCREMENTAL /ILK:"SIV-2023\Debug\SIV-2023.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\Debug\SIV-2023.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\Debug\SIV-2023.lib" /MACHINE:X86 "SIV-2023\Debug\Error.obj"
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\Debug\SIV-2023.exe" /INCREMENTAL /ILK:"SIV-2023\Debug\SIV-2023.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\Debug\SIV-2023.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\test-1_SIV\SIV-2023\Debug\SIV-2023.lib" /MACHINE:X86 "SIV-2023\Debug\Error.obj"
          "SIV-2023\Debug\FST.obj"
          "SIV-2023\Debug\In.obj"
          "SIV-2023\Debug\IT.obj"
@@ -46,4 +47,4 @@
     Предупреждений: 2
     Ошибок: 0
 
-Прошло времени 00:00:15.40
+Прошло времени 00:00:11.23

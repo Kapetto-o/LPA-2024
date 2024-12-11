@@ -1,16 +1,15 @@
 -------------- Протокол ----------------
-Дата: 11.12.2024 17:15:08
+Дата: 12.12.2024 02:50:30
 ------------- Параметры ----------------
--in: in.txt
--log: in.txt.log
--out: out.txt
--an: in.txt.an.txt
+-in: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt
+-log: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.log
+-out: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\out.txt
+-an: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.an.txt
 ---------- Исходные данные -------------
-Количество символов: 740
+Количество символов: 1379
 Проигнорировано:     0
-Количество строк:    60
+Количество строк:    88
 ----------------------------------------
 No forbidden characters
 Tokenization :  Completed successfully
-Lexical analysis : - ERROR
-Ошибка 135: Ошибка семантического анализа: Идентификатор с таким именем не найден, строка 3, позиция 2
+Lexical analysis :  Completed successfully

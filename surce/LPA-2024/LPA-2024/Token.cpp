@@ -112,6 +112,33 @@ namespace Tokens
 				LinePosition++;
 				continue;
 			}
+			// Создание токена символьного литерала
+			if (in.text[CharPointer] == '\'')
+			{
+				if (NumOfCharRecorded)
+					throw ERROR_THROW_IN(120, CurrentLine, LinePosition);
+				do
+				{
+					if (in.text[CharPointer] == '\n')
+						throw ERROR_THROW_IN(121, CurrentLine, 0);
+					if (NumOfCharRecorded == 256)
+						throw ERROR_THROW_IN(130, CurrentLine, 0);
+
+					buffer[NumOfCharRecorded] = in.text[CharPointer];
+					CharPointer++;
+					NumOfCharRecorded++;
+					LinePosition++;
+				} while (in.text[CharPointer] != '\'');
+
+				buffer[NumOfCharRecorded] = in.text[CharPointer];
+				NumOfCharRecorded++;
+
+				buffer[NumOfCharRecorded] = IN_CODE_ENDL;
+				AddToken(tokens, buffer, CurrentLine, LinePosition - NumOfCharRecorded, NumOfCharRecorded);
+				NumOfCharRecorded = 0;
+
+				continue;
+			}
 			// создание токена для строкового литерала
 			if (in.text[CharPointer] == '\"')
 			{

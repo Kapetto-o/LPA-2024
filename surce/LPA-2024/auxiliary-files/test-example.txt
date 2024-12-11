@@ -64,6 +64,7 @@ main
 
 	new str stroka = "Тестовая строчка";
 	new str strokachislo = "125";
+	new copystr;
 
 	strduplicate(copystr, stroka);		// Копирование строки stroka в copystr
 	writeline copystr;
