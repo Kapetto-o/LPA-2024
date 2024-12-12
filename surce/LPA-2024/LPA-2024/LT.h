@@ -25,7 +25,6 @@
 
 // Ключевые слова
 #define LEX_NEW					'n'
-
 #define LEX_FUNCTION			'f'
 #define LEX_RETURN				'r'
 
