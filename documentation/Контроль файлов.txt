@@ -1,0 +1,69 @@
+// ПО ЛАБАМ
+Error.cpp
+Parm.cpp
+In.cpp
+Log.cpp
+FST.cpp
+LT.cpp
+IT.cpp
+stdafx.cpp
+SE_Lab.cpp
+// То, чего нету сейчас:
+Greibach.cpp
+MFST.cpp
+rule?
+PolishNotation.cpp
+
+Error.h
+Parm.h
+In.h
+Log.h
+FST.h
+LT.h
+IT.h
+stdafx.h
+// То, чего нету сейчас
+Greibach.h
+MFST.h
+rule?
+PolishNotation.h
+
+// ПО РЕФЕРЕНСУ
+Error.cpp
+FST.cpp
+In.cpp
+IT.cpp
+LexicalAnalyzer.cpp
+Log.cpp
+LT.cpp
+Parm.cpp
+stdafx.cpp
+Token.cpp
+LPA-2024.cpp
+// НЕ РЕАЛИЗОВАНО
+5
+CodeGeneration.cpp
+Greibach.cpp
+MFST.cpp
+Polish.cpp
+Semantic.cpp
+
+Error.h
+FST.h
+In.h
+IT.h
+LexicalAnalyzer.h
+Log.h
+LT.h
+Parm.h
+stdafx.h
+Token.h
+Graphs.h
+// НЕ РЕАЛИЗОВАНО
+6
+CodeGeneration.h
+Greibach.h
+MFST.h
+Polish.h
+Rules.h
+Semantic.h
