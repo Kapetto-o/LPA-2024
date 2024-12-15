@@ -121,7 +121,7 @@ namespace Tokens
 				{
 					if (in.text[CharPointer] == '\n')
 						throw ERROR_THROW_IN(122, CurrentLine, 0);
-					if (NumOfCharRecorded == 1)
+					if (NumOfCharRecorded == 3)
 						throw ERROR_THROW_IN(150, CurrentLine, 0);
 
 					buffer[NumOfCharRecorded] = in.text[CharPointer];

@@ -1,0 +1,60 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.3">
+  <diagram id="x1eYCO6BcDUvM3w2Cnzk" name="Страница — 1">
+    <mxGraphModel dx="1619" dy="1083" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MSoQi3Mpmc3CimF_1GiR-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-400" y="-720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MSoQi3Mpmc3CimF_1GiR-1" value="начало" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="-800" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-400" y="-680" as="sourcePoint" />
+            <mxPoint x="-400" y="-640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="Y5qzkjbXReekt4aV3Svu-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-399.8275862068965" y="-570" as="targetPoint" />
+            <mxPoint x="-400" y="-600" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Y5qzkjbXReekt4aV3Svu-3" target="Y5qzkjbXReekt4aV3Svu-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Y5qzkjbXReekt4aV3Svu-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-560" y="-540" />
+              <mxPoint x="-560" y="-700" />
+            </Array>
+            <mxPoint x="-520" y="-700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-3" value="таблица лексем пуста?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="-560" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-5" value="конец" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-520" y="-480" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-8" value="НЕТ" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-560" y="-570" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y5qzkjbXReekt4aV3Svu-9" value="ДА" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-400" y="-510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="szoJ3qEmr_aOz3L7YBCY-1" value="читаем лексему из таблицы лексем" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="-720" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="szoJ3qEmr_aOz3L7YBCY-2" value="генерация кода для текущей лексемы" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="-640" width="240" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

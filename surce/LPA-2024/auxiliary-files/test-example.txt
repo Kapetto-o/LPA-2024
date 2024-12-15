@@ -26,6 +26,12 @@ bool function testfunc4(int chetnoe)
 }
 main
 {
+	writeline "Типы данных:";
+	new int it = 1;
+	new char ct = 'a';
+	new string st = "teststring";
+	new bool bt = true;
+
 	writeline "Арифметические операции:";
 
 	new int a;

@@ -1,0 +1,23 @@
+﻿Сборка начата 15.12.2024 04:29:35.
+Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024_ASM\LPA-2024_ASM.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
+         Обращение к "Debug\LPA-2024_ASM.tlog\unsuccessfulbuild".
+       _MASM:
+         Assembling LPA-2024_ASM.asm...
+         cmd.exe /C "C:\Users\Binar\AppData\Local\Temp\tmp31a79d20714b470c8c90446bb7514dd7.cmd"
+         ml.exe /c /nologo /Zi /Fo"Debug\LPA-2024_ASM.obj" /Fl"Debug\\" /W3 /errorReport:prompt  /Ta"LPA-2024_ASM.asm"
+       Link:
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.exe" /INCREMENTAL /ILK:"Debug\LPA-2024_ASM.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.lib" /MACHINE:X86 "Debug\LPA-2024_ASM.obj"
+         LPA-2024_ASM.vcxproj -> D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.exe
+       FinalizeBuildStatus:
+         Файл "Debug\LPA-2024_ASM.tlog\unsuccessfulbuild" удаляется.
+         Обращение к "Debug\LPA-2024_ASM.tlog\LPA-2024_ASM.lastbuildstate".
+     1>Сборка проекта "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024_ASM\LPA-2024_ASM.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+    Предупреждений: 0
+    Ошибок: 0
+
+Прошло времени 00:00:00.66

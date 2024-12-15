@@ -1,4 +1,4 @@
-﻿Сборка начата 12.12.2024 02:50:28.
+﻿Сборка начата 15.12.2024 04:06:26.
 Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" в узле 2 (целевые объекты Build).
      1>PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
@@ -6,27 +6,63 @@
          Создание "Debug\LPA-2024.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
          Обращение к "Debug\LPA-2024.tlog\unsuccessfulbuild".
        ClCompile:
-         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Error.cpp
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt Error.cpp FST.cpp Greibach.cpp In.cpp IT.cpp LexicalAnalyzer.cpp Log.cpp "LPA-2024.cpp" LT.cpp MFST.cpp Parm.cpp Polish.cpp Token.cpp
          Error.cpp
-       Link:
-         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024.exe" /INCREMENTAL /ILK:"Debug\LPA-2024.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024.lib" /MACHINE:X86 Debug\Error.obj
-         Debug\FST.obj
-         Debug\In.obj
-         Debug\IT.obj
-         Debug\LexicalAnalyzer.obj
-         Debug\Log.obj
-         "Debug\LPA-2024.obj"
-         Debug\LT.obj
-         Debug\Parm.obj
-         Debug\Token.obj
-         LPA-2024.vcxproj -> D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024.exe
-       FinalizeBuildStatus:
-         Файл "Debug\LPA-2024.tlog\unsuccessfulbuild" удаляется.
-         Обращение к "Debug\LPA-2024.tlog\LPA-2024.lastbuildstate".
-     1>Сборка проекта "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" завершена (целевые объекты Build).
+         FST.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\FST.cpp(95,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+         Greibach.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(54,19): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "TS"
+         (компиляция исходного файла "Greibach.cpp")
+         
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(54,19): error C2143: синтаксическая ошибка: отсутствие ")" перед "GRB::Rule::Chain::T"
+         (компиляция исходного файла "Greibach.cpp")
+         
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(54,19): error C2059: синтаксическая ошибка: GRB::Rule::Chain::T
+         (компиляция исходного файла "Greibach.cpp")
+         
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(65,3): error C2059: синтаксическая ошибка: )
+         (компиляция исходного файла "Greibach.cpp")
+         
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(156,2): error C2059: синтаксическая ошибка: )
+         (компиляция исходного файла "Greibach.cpp")
+         
+         In.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\In.cpp(34,21): warning C4018: <: несоответствие типов со знаком и без знака
+         IT.cpp
+         LexicalAnalyzer.cpp
+         Log.cpp
+         LPA-2024.cpp
+         LT.cpp
+         MFST.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\MFST.cpp(232,66): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+         Parm.cpp
+         Polish.cpp
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,32): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+     1>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,47): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+         Token.cpp
+         Создание кода...
+     1>Сборка проекта "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" завершена (целевые объекты Build) с ошибкой.
 
-Сборка успешно завершена.
-    Предупреждений: 0
-    Ошибок: 0
+Ошибка сборки.
 
-Прошло времени 00:00:01.68
+       "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\FST.cpp(95,17): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(54,19): warning C4002: слишком много аргументов для вызова макроса, подобного функции, "TS"
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\In.cpp(34,21): warning C4018: <: несоответствие типов со знаком и без знака
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\MFST.cpp(232,66): warning C4267: =: преобразование из "size_t" в "short"; возможна потеря данных
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,32): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Polish.cpp(23,47): warning C4838: Преобразование из "unsigned int" в "int" требует сужающего преобразования.
+
+
+       "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\LPA-2024.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект ClCompile) -> 
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(54,19): error C2143: синтаксическая ошибка: отсутствие ")" перед "GRB::Rule::Chain::T"
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(54,19): error C2059: синтаксическая ошибка: GRB::Rule::Chain::T
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(65,3): error C2059: синтаксическая ошибка: )
+         D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024\Rules.h(156,2): error C2059: синтаксическая ошибка: )
+
+    Предупреждений: 6
+    Ошибок: 4
+
+Прошло времени 00:00:12.15

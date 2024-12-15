@@ -1,0 +1,199 @@
+Microsoft (R) Macro Assembler Version 14.41.34123.0	    12/15/24 04:29:35
+LPA-2024_ASM.asm					     Page 1 - 1
+
+
+				.386
+				.model flat, stdcall
+				.stack 4096
+
+				includelib kernel32.lib
+				includelib user32.lib  ; Для использования MessageBoxA
+
+				ExitProcess PROTO :DWORD
+				MessageBoxA PROTO :DWORD, :DWORD, :DWORD, :DWORD
+				WriteConsoleA PROTO :DWORD, :DWORD, :DWORD, :DWORD, :DWORD
+				GetStdHandle PROTO :DWORD
+
+ 00000000			.data
+ 00000000 D2 E8 EF FB 20	    message1 db "Типы данных:", 0
+	   E4 E0 ED ED FB
+	   F5 3A 00
+ 0000000D C0 F0 E8 F4 EC	    message2 db "Арифметические операции:", 0
+	   E5 F2 E8 F7 E5
+	   F1 EA E8 E5 20
+	   EE EF E5 F0 E0
+	   F6 E8 E8 3A 00
+ 00000026 C2 FB E7 EE E2	    message3 db "Вызов функций:", 0
+	   20 F4 F3 ED EA
+	   F6 E8 E9 3A 00
+ 00000035 D6 E8 EA EB 3A	    message4 db "Цикл:", 0
+	   00
+ 0000003B 48 65 6C 6C 6F	    msgBoxText db "Hello, world!", 0
+	   2C 20 77 6F 72
+	   6C 64 21 00
+ 00000049 4D 65 73 73 61	    msgBoxTitle db "Message Box", 0
+	   67 65 20 42 6F
+	   78 00
+
+ 00000055 54 65 73 74 54	    parm1 db "TestText1", 0
+	   65 78 74 31 00
+ 0000005F 54 65 73 74 54	    parm2 db "TestText20", 0
+	   65 78 74 32 30
+	   00
+ 0000006A D2 E5 F1 F2 EE	    stroka db "Тестовая строчка", 0
+	   E2 E0 FF 20 F1
+	   F2 F0 EE F7 EA
+	   E0 00
+ 0000007B 31 32 35 00		    strokachislo db "125", 0
+ 0000007F			    copystr db 256 dup(0)
+
+ 0000017F 00000000		    hConsoleOutput dd 0   ; Хэндл консоли
+
+ 00000000			.code
+
+				; Функция testfunc1: int testfunc1(int a, int b) {
+				;     return a + b;
+				; }
+ 00000000			_testfunc1 proc
+ 00000000  55			    push ebp
+ 00000001  8B EC		    mov ebp, esp
+ 00000003  8B 45 08		    mov eax, [ebp+8] ; a
+ 00000006  03 45 0C		    add eax, [ebp+12] ; b
+ 00000009  5D			    pop ebp
+ 0000000A  C3			    ret
+ 0000000B			_testfunc1 endp
+
+				; Функция testfunc2: str testfunc2(str parm1) {
+				;     strduplicate(parm1, parm2);
+				;     return parm1;
+				; }
+ 0000000B			_testfunc2 proc
+ 0000000B  55			    push ebp
+ 0000000C  8B EC		    mov ebp, esp
+ 0000000E  8D 05 00000055 R	    lea eax, parm1
+ 00000014  8D 15 0000005F R	    lea edx, parm2
+				    ; Простое копирование через строку в память
+ 0000001A  B9 00000000		    mov ecx, 0
+ 0000001F			_copy_string:
+ 0000001F  8A 04 0A		    mov al, [edx+ecx]
+ 00000022  88 04 08		    mov [eax+ecx], al
+ 00000025  41			    inc ecx
+ 00000026  84 C0		    test al, al
+ 00000028  75 F5		    jnz _copy_string
+ 0000002A  B8 00000055 R	    mov eax, offset parm1
+ 0000002F  5D			    pop ebp
+ 00000030  C3			    ret
+ 00000031			_testfunc2 endp
+
+				; Функция testfunc3: char testfunc3(char simbol) {
+				;     cycle (i < 10) { write simbol; }
+				; }
+ 00000031			_testfunc3 proc
+ 00000031  55			    push ebp
+ 00000032  8B EC		    mov ebp, esp
+ 00000034  83 EC 04		    sub esp, 4 ; Выделяем место для i
+ 00000037  C7 45 FC		    mov dword ptr [ebp-4], 0 ; i = 0
+	   00000000
+
+ 0000003E			_cycle_start:
+ 0000003E  83 7D FC 0A		    cmp dword ptr [ebp-4], 10 ; i < 10 ?
+ 00000042  7D 1E		    jge _cycle_end
+
+				    ; Отправляем символ в консоль
+ 00000044  B8 00000001		    mov eax, 1        ; Количество символов
+ 00000049  8D 55 08		    lea edx, [ebp+8]  ; Адрес символа
+				    invoke WriteConsoleA, hConsoleOutput, edx, eax, 0, 0
+
+ 0000005D  FF 45 FC		    inc dword ptr [ebp-4] ; i++
+ 00000060  EB DC		    jmp _cycle_start
+
+ 00000062			_cycle_end:
+ 00000062  83 C4 04		    add esp, 4 ; Убираем i
+ 00000065  5D			    pop ebp
+ 00000066  C3			    ret
+ 00000067			_testfunc3 endp
+
+				; Основная функция main
+ 00000067			_main proc
+				    ; Получаем хэндл консоли
+				    invoke GetStdHandle, -11
+ 0000006E  A3 0000017F R	    mov [hConsoleOutput], eax
+
+				    ; Типы данных
+				    invoke MessageBoxA, 0, offset message1, offset msgBoxTitle, 0
+
+				    ; Арифметические операции
+				    invoke MessageBoxA, 0, offset message2, offset msgBoxTitle, 0
+
+				    ; Вызов функций
+				    invoke MessageBoxA, 0, offset message3, offset msgBoxTitle, 0
+
+				    ; Цикл
+				    invoke MessageBoxA, 0, offset message4, offset msgBoxTitle, 0
+
+				    ; Завершение программы
+				    invoke ExitProcess, 0
+ 000000C6			_main endp
+
+				end _main
+Microsoft (R) Macro Assembler Version 14.41.34123.0	    12/15/24 04:29:35
+LPA-2024_ASM.asm					     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+FLAT . . . . . . . . . . . . . .	GROUP
+STACK  . . . . . . . . . . . . .	32 Bit	 00001000 DWord	  Stack	  'STACK'	 
+_DATA  . . . . . . . . . . . . .	32 Bit	 00000183 DWord	  Public  'DATA'	
+_TEXT  . . . . . . . . . . . . .	32 Bit	 000000C6 DWord	  Public  'CODE'	
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+GetStdHandle . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+MessageBoxA  . . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+WriteConsoleA  . . . . . . . . .	P Near	 00000000 FLAT	Length= 00000000 External STDCALL
+_main  . . . . . . . . . . . . .	P Near	 00000067 _TEXT	Length= 0000005F Public STDCALL
+_testfunc1 . . . . . . . . . . .	P Near	 00000000 _TEXT	Length= 0000000B Public STDCALL
+_testfunc2 . . . . . . . . . . .	P Near	 0000000B _TEXT	Length= 00000026 Public STDCALL
+  _copy_string . . . . . . . . .	L Near	 0000001F _TEXT	
+_testfunc3 . . . . . . . . . . .	P Near	 00000031 _TEXT	Length= 00000036 Public STDCALL
+  _cycle_start . . . . . . . . .	L Near	 0000003E _TEXT	
+  _cycle_end . . . . . . . . . .	L Near	 00000062 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+@CodeSize  . . . . . . . . . . .	Number	 00000000h   
+@DataSize  . . . . . . . . . . .	Number	 00000000h   
+@Interface . . . . . . . . . . .	Number	 00000003h   
+@Model . . . . . . . . . . . . .	Number	 00000007h   
+@code  . . . . . . . . . . . . .	Text   	 _TEXT
+@data  . . . . . . . . . . . . .	Text   	 FLAT
+@fardata?  . . . . . . . . . . .	Text   	 FLAT
+@fardata . . . . . . . . . . . .	Text   	 FLAT
+@stack . . . . . . . . . . . . .	Text   	 FLAT
+copystr  . . . . . . . . . . . .	Byte	 0000007F _DATA	
+hConsoleOutput . . . . . . . . .	DWord	 0000017F _DATA	
+message1 . . . . . . . . . . . .	Byte	 00000000 _DATA	
+message2 . . . . . . . . . . . .	Byte	 0000000D _DATA	
+message3 . . . . . . . . . . . .	Byte	 00000026 _DATA	
+message4 . . . . . . . . . . . .	Byte	 00000035 _DATA	
+msgBoxText . . . . . . . . . . .	Byte	 0000003B _DATA	
+msgBoxTitle  . . . . . . . . . .	Byte	 00000049 _DATA	
+parm1  . . . . . . . . . . . . .	Byte	 00000055 _DATA	
+parm2  . . . . . . . . . . . . .	Byte	 0000005F _DATA	
+strokachislo . . . . . . . . . .	Byte	 0000007B _DATA	
+stroka . . . . . . . . . . . . .	Byte	 0000006A _DATA	
+
+	   0 Warnings
+	   0 Errors
