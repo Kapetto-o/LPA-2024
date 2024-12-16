@@ -33,6 +33,8 @@
 #include "IT.h"
 #include "FST.h"
 #include "Graphs.h"
-
+#include "Greibach.h"
+#include "MFST.h"
+#include "Polish.h"
 
 #endif //PCH_H

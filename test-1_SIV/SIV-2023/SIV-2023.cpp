@@ -36,6 +36,15 @@ int _tmain(int argc, _TCHAR** argv)
 		LT::SaveToFile(lex.lextable, parm.an);
 		IT::SaveToFile(lex.idtable, parm.an);
 
+		ofstream fs(parm.an, std::ios_base::app);
+		Log::WriteLine(log, "Syntax analysis : ", "");
+		MFST_TRACE_START(fs)
+			MFST::Mfst mfst(lex, GRB::getGreibach());
+		mfst.start(fs);
+		mfst.savededucation();
+		mfst.printrules(fs);
+		Log::WriteLine(log, " Completed successfully\n", "");
+
 		Log::Close(log);
 		std::cout << "Code translation completed successfully\n";
 	}

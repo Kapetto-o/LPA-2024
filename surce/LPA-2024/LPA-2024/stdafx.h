@@ -34,7 +34,7 @@
 #include "FST.h"
 #include "Graphs.h"
 #include "Greibach.h"
-//#include "MFST.h"
+#include "MFST.h"
 #include "Polish.h"
 
 #endif //STDAFX_H

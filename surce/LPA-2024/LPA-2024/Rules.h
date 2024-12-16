@@ -46,10 +46,10 @@ namespace GRB
 			Rule::Chain(3, TS(LEX_WRITE), NS('L'), TS(';')),
 			Rule::Chain(4, TS(LEX_WRITELINE), NS('L'), TS(';'), NS('N')),
 			Rule::Chain(3, TS(LEX_WRITELINE), NS('L'), TS(';')),
-			//Rule::Chain(6, TS(LEX_POW), TS('('), NS('W'), TS(')'), TS(';'), NS('N')),
-			//Rule::Chain(5, TS(LEX_POW), TS('('), NS('W'), TS(')'), TS(';')),
-			//Rule::Chain(6, TS(LEX_ABS), TS('('), NS('W'), TS(')'), TS(';'), NS('N')),
-			//Rule::Chain(5, TS(LEX_ABS), TS('('), NS('W'), TS(')'), TS(';')),
+			Rule::Chain(6, TS(LEX_STRDUPLICATE), TS('('), NS('W'), TS(')'), TS(';'), NS('N')),
+			Rule::Chain(5, TS(LEX_STRDUPLICATE), TS('('), NS('W'), TS(')'), TS(';')),
+			Rule::Chain(6, TS(LEX_STRLENGTH), TS('('), NS('W'), TS(')'), TS(';'), NS('N')),
+			Rule::Chain(5, TS(LEX_STRLENGTH), TS('('), NS('W'), TS(')'), TS(';')),
 			Rule::Chain(6, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')'), TS(';'), NS('N')),
 			Rule::Chain(5, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')'), TS(';')),
 			Rule::Chain(5, TS(LEX_IDENTIFIER), TS('('), TS(')'), TS(';'), NS('N')),
@@ -67,15 +67,15 @@ namespace GRB
 			Rule::Chain(3, TS('('), NS('E'), TS(')')),
 			Rule::Chain(4, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')')),
 			Rule::Chain(3, TS(LEX_IDENTIFIER), TS('('), TS(')')),
-			//Rule::Chain(4, TS(LEX_POW), TS('('), NS('W'), TS(')')),
+			Rule::Chain(4, TS(LEX_STRDUPLICATE), TS('('), NS('W'), TS(')')),
 			Rule::Chain(4, TS('a'), TS('('), NS('W'), TS(')')),
 			Rule::Chain(2, TS(LEX_IDENTIFIER), NS('M')),
 			Rule::Chain(2, TS(LEX_LITERAL), NS('M')),
 			Rule::Chain(4, TS('('), NS('E'), TS(')'), NS('M')),
 			Rule::Chain(5, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')'), NS('M')),
-			Rule::Chain(4, TS(LEX_IDENTIFIER), TS('('), TS(')'), NS('M'))
-			//Rule::Chain(5, TS(LEX_POW), TS('('), NS('W'), TS(')'), NS('M')),
-			//Rule::Chain(5, TS(LEX_ABS), TS('('), NS('W'), TS(')'), NS('M'))
+			Rule::Chain(4, TS(LEX_IDENTIFIER), TS('('), TS(')'), NS('M')),
+			Rule::Chain(5, TS(LEX_STRDUPLICATE), TS('('), NS('W'), TS(')'), NS('M')),
+			Rule::Chain(5, TS(LEX_STRLENGTH), TS('('), NS('W'), TS(')'), NS('M'))
 		),
 		Rule(
 			NS('F'), GRB_ERROR_SERIES + 3,    // Ошибка в параметрах функции
@@ -99,11 +99,11 @@ namespace GRB
 			Rule::Chain(3, TS(LEX_IDENTIFIER), TS('('), TS(')')),
 			Rule::Chain(5, TS(LEX_IDENTIFIER), TS('('), TS(')'), TS(','), NS('W')),
 			Rule::Chain(4, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')')),
-			Rule::Chain(6, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')'), TS(','), NS('W'))
-			//Rule::Chain(4, TS(LEX_POW), TS('('), NS('W'), TS(')')),
-			//Rule::Chain(6, TS(LEX_POW), TS('('), NS('W'), TS(')'), TS(','), NS('W')),
-			//Rule::Chain(4, TS(LEX_ABS), TS('('), NS('W'), TS(')')),
-			//Rule::Chain(6, TS(LEX_ABS), TS('('), NS('W'), TS(')'), TS(','), NS('W'))
+			Rule::Chain(6, TS(LEX_IDENTIFIER), TS('('), NS('W'), TS(')'), TS(','), NS('W')),
+			Rule::Chain(4, TS(LEX_STRDUPLICATE), TS('('), NS('W'), TS(')')),
+			Rule::Chain(6, TS(LEX_STRDUPLICATE), TS('('), NS('W'), TS(')'), TS(','), NS('W')),
+			Rule::Chain(4, TS(LEX_STRLENGTH), TS('('), NS('W'), TS(')')),
+			Rule::Chain(6, TS(LEX_STRLENGTH), TS('('), NS('W'), TS(')'), TS(','), NS('W'))
 		),
 		Rule(
 			NS('M'), GRB_ERROR_SERIES + 5,    // Оператор

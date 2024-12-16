@@ -1,5 +1,5 @@
 -------------- Протокол ----------------
-Дата: 12.12.2024 01:08:33
+Дата: 16.12.2024 16:55:06
 ------------- Параметры ----------------
 -in: in.txt
 -log: in.txt.log
@@ -13,3 +13,4 @@
 No forbidden characters
 Tokenization :  Completed successfully
 Lexical analysis :  Completed successfully
+Syntax analysis :  Completed successfully

@@ -107,17 +107,17 @@ namespace MFST
 		char* getCSt(char* buf);								// получить содержимое стека
 		char* getCLenta(char* buf, short pos, short n = 25);	// лента: n символов с pos
 		char* getDiagnosis(short n, char* buf);					// получить n-ю строку диагностики или 0х00
-		bool savestate(ofstream& sin);										// сохранить состояние автомата
-		bool reststate(ofstream& sin);										// восстановить состояние автомата
+		bool savestate(ofstream& sin);							// сохранить состояние автомата
+		bool reststate(ofstream& sin);							// восстановить состояние автомата
 		bool push_chain(										// поместить цепочку правила в стек
 			GRB::Rule::Chain chain								// цепочка правила
 		);
 		RC_STEP step(ofstream& sin);							// выполнить шаг автомата
-		bool start(ofstream& sin);							// запустить автомат
+		bool start(ofstream& sin);								// запустить автомат
 		bool savediagnosis(
-			RC_STEP pprc_step					// код завершения шага
+			RC_STEP pprc_step									// код завершения шага
 		);
-		void printrules(ofstream& sin);						// вывести последовательность правил
+		void printrules(ofstream& sin);							// вывести последовательность правил
 
 		struct Deducation						// вывод
 		{
