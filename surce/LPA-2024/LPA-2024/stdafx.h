@@ -37,5 +37,6 @@
 #include "MFST.h"
 #include "SemanticAnalyzer.h"
 #include "Polish.h"
+#include "CodeGeneration.h"
 
 #endif //STDAFX_H

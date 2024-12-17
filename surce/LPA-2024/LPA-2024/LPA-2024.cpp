@@ -55,6 +55,10 @@ int _tmain(int argc, _TCHAR** argv)
 
 		LT::SaveToFile(lex.lextable, parm.an);
 
+		Log::WriteLine(log, "Code generation : ", "");
+		CodeGeneration::CodeGeneration(lex, parm.out);
+		Log::WriteLine(log, " Completed successfully\n", "");
+
 		Log::Close(log);
 		std::cout << "Code translation completed successfully\n";
 	}

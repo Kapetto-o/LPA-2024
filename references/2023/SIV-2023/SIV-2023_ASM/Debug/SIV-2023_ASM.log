@@ -1,21 +1,26 @@
-﻿Сборка начата 18.12.2023 9:15:58.
-Уровень детализации журнала: Normal.     1>Проект "D:\KPO_3sem\SIV-2023\SIV-2023\SIV-2023_ASM\SIV-2023_ASM.vcxproj" в узле 2 (целевые объекты Build).
-     1>InitializeBuildStatus:
+﻿Сборка начата 17.12.2024 07:08:40.
+Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\SIV-2023_ASM\SIV-2023_ASM.vcxproj" в узле 2 (целевые объекты Build).
+     1>PrepareForBuild:
+         Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
+       InitializeBuildStatus:
          Создание "Debug\SIV-2023_ASM.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+         Обращение к "Debug\SIV-2023_ASM.tlog\unsuccessfulbuild".
        _MASM:
          Assembling ..\SIV_result.asm...
-         cmd.exe /C "C:\Users\Ваня\AppData\Local\Temp\tmp0187e727a00c4d429851f73aacc9ebe4.cmd"
+         cmd.exe /C "C:\Users\Binar\AppData\Local\Temp\tmpa1f8e521fc374f2285b7eb4b0314092b.cmd"
          ml.exe /c /nologo /Zi /Fo"Debug\SIV_result.obj" /Fl"Debug\\" /W3 /errorReport:prompt  /Ta..\SIV_result.asm
        Link:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_ASM.exe" /INCREMENTAL /ILK:"Debug\SIV-2023_ASM.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_ASM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_ASM.lib" /MACHINE:X86 D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_LIB.lib Debug\SIV_result.obj
-         SIV-2023_ASM.vcxproj -> D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_ASM.exe
-       FinalizeBuildStatus:
-         Файл "Debug\SIV-2023_ASM.tlog\unsuccessfulbuild" удаляется.
-         Обращение к "Debug\SIV-2023_ASM.tlog\SIV-2023_ASM.lastbuildstate".
-     1>Сборка проекта "D:\KPO_3sem\SIV-2023\SIV-2023\SIV-2023_ASM\SIV-2023_ASM.vcxproj" завершена (целевые объекты Build).
+         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Debug\SIV-2023_ASM.exe" /INCREMENTAL /ILK:"Debug\SIV-2023_ASM.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Debug\SIV-2023_ASM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Debug\SIV-2023_ASM.lib" /MACHINE:X86 D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_LIB.lib Debug\SIV_result.obj
+     1>LINK : fatal error LNK1104: не удается открыть файл "D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_LIB.lib"
+     1>Сборка проекта "D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\SIV-2023_ASM\SIV-2023_ASM.vcxproj" завершена (целевые объекты Build) с ошибкой.
 
-Сборка успешно завершена.
+Ошибка сборки.
+
+       "D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\SIV-2023_ASM\SIV-2023_ASM.vcxproj" (целевой объект Build ) (1) ->
+       (Целевой объект Link) -> 
+         LINK : fatal error LNK1104: не удается открыть файл "D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_LIB.lib"
+
     Предупреждений: 0
-    Ошибок: 0
+    Ошибок: 1
 
-Прошло времени 00:00:00.74
+Прошло времени 00:00:00.55

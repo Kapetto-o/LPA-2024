@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 14.33.31629.0	    12/18/23 09:15:58
+Microsoft (R) Macro Assembler Version 14.41.34123.0	    12/17/24 07:08:41
 ..\SIV_result.asm					     Page 1 - 1
 
 
@@ -297,7 +297,7 @@ Microsoft (R) Macro Assembler Version 14.33.31629.0	    12/18/23 09:15:58
  000002A8  E8 00000000 E		call ExitProcess
  000002AD			main ENDP
 				end main
-Microsoft (R) Macro Assembler Version 14.33.31629.0	    12/18/23 09:15:58
+Microsoft (R) Macro Assembler Version 14.41.34123.0	    12/17/24 07:08:41
 ..\SIV_result.asm					     Symbols 2 - 1
 
 

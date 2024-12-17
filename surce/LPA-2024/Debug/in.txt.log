@@ -1,5 +1,5 @@
 -------------- Протокол ----------------
-Дата: 17.12.2024 05:39:37
+Дата: 17.12.2024 08:28:17
 ------------- Параметры ----------------
 -in: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt
 -log: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.log
@@ -16,3 +16,4 @@ Lexical analysis :  Completed successfully
 Syntax analysis :  Completed successfully
 Semantic analysis :  Completed successfully
 Polish notation  :  Completed successfully
+Code generation :  Completed successfully
