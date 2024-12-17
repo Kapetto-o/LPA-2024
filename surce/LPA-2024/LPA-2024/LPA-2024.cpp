@@ -4,13 +4,6 @@
 
 int _tmain(int argc, _TCHAR** argv)
 {
-	//argc = 3;
-	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\ControlExample.txt";
-	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\SemErrors.txt";
-	//argv[2] = (_TCHAR*)L"-out:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\SIV_result.asm";
-	//argv[3] = (_TCHAR*)L"-log:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\Logger.txt";
-	//argv[4] = (_TCHAR*)L"-an:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\Analize.txt";
-
 	setlocale(0, "Rus");
 	Log::LOG log = Log::INITLOG;
 	try
