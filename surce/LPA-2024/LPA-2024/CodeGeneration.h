@@ -9,13 +9,13 @@
 "includelib kernel32.lib\n"\
 
 #define PROTOTYPES \
-"\nExitProcess PROTO:DWORD "\
-"\nSYSPAUSE PROTO "\
-"\nsoutl PROTO : BYTE "\
-"\nnoutl PROTO : SDWORD "\
-"\n__strduplicate PROTO  : BYTE, : BYTE "\
-"\n_strlength PROTO  : BYTE "\
-"\n_strtransint PROTO  : BYTE "\
+"\nExitProcess		PROTO :DWORD "\
+"\nSYSPAUSE		PROTO "\
+"\nsoutl			PROTO :BYTE "\
+"\nnoutl			PROTO :SDWORD "\
+"\n_strduplicate	PROTO :BYTE, :BYTE "\
+"\n_strlength		PROTO :BYTE "\
+"\n_strtransint	PROTO :BYTE "\
 "\n\n.STACK 4096\n\n"
 
 #define FINISH \
