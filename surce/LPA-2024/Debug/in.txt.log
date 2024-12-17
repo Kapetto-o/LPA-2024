@@ -1,14 +1,14 @@
 -------------- Протокол ----------------
-Дата: 17.12.2024 13:53:48
+Дата: 17.12.2024 19:10:57
 ------------- Параметры ----------------
--in: in.txt
--log: in.txt.log
--out: out.txt
--an: in.txt.an.txt
+-in: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt
+-log: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.log
+-out: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\out.txt
+-an: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.an.txt
 ---------- Исходные данные -------------
-Количество символов: 1610
+Количество символов: 1410
 Проигнорировано:     0
-Количество строк:    107
+Количество строк:    93
 ----------------------------------------
 No forbidden characters
 Tokenization :  Completed successfully

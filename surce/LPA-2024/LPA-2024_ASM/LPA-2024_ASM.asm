@@ -3,13 +3,13 @@
 includelib libucrt.lib
 includelib kernel32.lib
 
-ExitProcess PROTO:DWORD 
-SYSPAUSE PROTO 
-soutl PROTO : BYTE 
-noutl PROTO : SDWORD 
-_strduplicate PROTO  : BYTE, : BYTE 
-_strlength PROTO  : BYTE 
-_strtransint PROTO  : BYTE 
+ExitProcess		PROTO :DWORD 
+SYSPAUSE		PROTO 
+soutl			PROTO :BYTE 
+noutl			PROTO :SDWORD 
+_strduplicate	PROTO :BYTE, :BYTE 
+_strlength		PROTO :BYTE 
+_strtransint	PROTO :BYTE 
 
 .STACK 4096
 

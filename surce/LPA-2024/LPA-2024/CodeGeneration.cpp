@@ -31,7 +31,7 @@ namespace CodeGeneration
 				}
 				else if (lex.idtable.table[i].idDataType == IT::CHAR)
 				{
-					generation << " DWORD '" << (char)lex.idtable.table[i].value.vchar << "', 0\n";
+					generation << " DWORD " << (char)lex.idtable.table[i].value.vchar << "\n";
 				}
 				else
 				{
@@ -56,7 +56,7 @@ namespace CodeGeneration
 				}
 				else if (lex.idtable.table[i].idDataType == IT::CHAR)
 				{
-					generation << " DWORD 0, 0\n";
+					generation << " DWORD 0\n";
 				}
 				else if (lex.idtable.table[i].idDataType == IT::SHORT)
 				{

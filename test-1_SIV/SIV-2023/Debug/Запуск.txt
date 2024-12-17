@@ -1,1 +1,0 @@
-SIV-2023.exe -in:in.txt -out:out.txt
