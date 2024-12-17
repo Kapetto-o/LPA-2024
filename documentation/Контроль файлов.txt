@@ -8,11 +8,11 @@ LT.cpp
 IT.cpp
 stdafx.cpp
 SE_Lab.cpp
-// То, чего нету сейчас:
 Greibach.cpp
 MFST.cpp
-rule?
+Rule.h
 PolishNotation.cpp
+// То, чего нету сейчас:
 
 Error.h
 Parm.h
@@ -22,11 +22,11 @@ FST.h
 LT.h
 IT.h
 stdafx.h
-// То, чего нету сейчас
 Greibach.h
 MFST.h
-rule?
+Rule.h
 PolishNotation.h
+// То, чего нету сейчас
 
 // ПО РЕФЕРЕНСУ
 Error.cpp
@@ -40,13 +40,13 @@ Parm.cpp
 stdafx.cpp
 Token.cpp
 LPA-2024.cpp
-// НЕ РЕАЛИЗОВАНО
-5
-CodeGeneration.cpp
 Greibach.cpp
 MFST.cpp
-Polish.cpp
 Semantic.cpp
+Polish.cpp
+// НЕ РЕАЛИЗОВАНО
+1
+CodeGeneration.cpp
 
 Error.h
 FST.h
@@ -59,11 +59,11 @@ Parm.h
 stdafx.h
 Token.h
 Graphs.h
-// НЕ РЕАЛИЗОВАНО
-6
-CodeGeneration.h
 Greibach.h
 MFST.h
-Polish.h
 Rules.h
 Semantic.h
+Polish.h
+// НЕ РЕАЛИЗОВАНО
+1
+CodeGeneration.h

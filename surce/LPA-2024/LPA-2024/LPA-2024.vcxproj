@@ -139,6 +139,8 @@
     <ClCompile Include="LT.cpp" />
     <ClCompile Include="MFST.cpp" />
     <ClCompile Include="Parm.cpp" />
+    <ClCompile Include="Polish.cpp" />
+    <ClCompile Include="SemanticAnalyzer.cpp" />
     <ClCompile Include="Token.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,7 +155,9 @@
     <ClInclude Include="LT.h" />
     <ClInclude Include="MFST.h" />
     <ClInclude Include="Parm.h" />
+    <ClInclude Include="Polish.h" />
     <ClInclude Include="Rules.h" />
+    <ClInclude Include="SemanticAnalyzer.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Token.h" />
   </ItemGroup>

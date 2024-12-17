@@ -5,11 +5,11 @@
 int _tmain(int argc, _TCHAR** argv)
 {
 	//argc = 3;
-	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\ControlExample.txt";
-	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\SemErrors.txt";
-	//argv[2] = (_TCHAR*)L"-out:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\SIV_result.asm";
-	//argv[3] = (_TCHAR*)L"-log:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\Logger.txt";
-	//argv[4] = (_TCHAR*)L"-an:D:\\KPO_3sem\\SIV-2023\\SIV-2023\\Analize.txt";
+	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\ControlExample.txt";
+	//argv[1] = (_TCHAR*)L"-in:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\SemErrors.txt";
+	//argv[2] = (_TCHAR*)L"-out:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\SIV_result.asm";
+	//argv[3] = (_TCHAR*)L"-log:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\Logger.txt";
+	//argv[4] = (_TCHAR*)L"-an:D:\\KPO_3sem\\LPA-2024\\LPA-2024\\Analize.txt";
 
 	setlocale(0, "Rus");
 	Log::LOG log = Log::INITLOG;
@@ -44,6 +44,16 @@ int _tmain(int argc, _TCHAR** argv)
 		mfst.savededucation();
 		mfst.printrules(fs);
 		Log::WriteLine(log, " Completed successfully\n", "");
+
+		Log::WriteLine(log, "Semantic analysis : ", "");
+		CallSemantic(lex.lextable, lex.idtable);
+		Log::WriteLine(log, " Completed successfully\n", "");
+
+		Log::WriteLine(log, "Polish notation  : ", "");
+		Polish::CallPolishNotation(lex.lextable, lex.idtable);
+		Log::WriteLine(log, " Completed successfully\n", "");
+
+		LT::SaveToFile(lex.lextable, parm.an);
 
 		Log::Close(log);
 		std::cout << "Code translation completed successfully\n";
