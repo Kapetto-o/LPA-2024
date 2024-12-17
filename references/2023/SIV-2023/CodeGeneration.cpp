@@ -49,10 +49,6 @@ namespace CodeGeneration
 				{
 					generation << " DWORD ?\n";
 				}
-				if (lex.idtable.table[i].idDataType == IT::CHAR)
-				{
-					generation << " BYTE ?\n";
-				}
 				if (lex.idtable.table[i].idDataType == IT::SHORT)
 				{
 					generation << " SDWORD 0\n";
@@ -72,15 +68,6 @@ namespace CodeGeneration
 			flag_main = false,
 			flag_if = false,
 			flag_else = false;
-		// Стэки и счетчики для циклов
-		stack<int> cycleStack;
-		int num_of_cycle = 0;
-		bool flag_func = false,
-			flag_return = false,
-			flag_main = false;
-
-		string func_name = "";
-
 		generation << "\n.CODE\n\n";
 
 		for (int i = 0; i < lex.lextable.size; i++)

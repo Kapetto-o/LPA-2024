@@ -79,9 +79,12 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalOptions>D:\\GitHub\\Course-Work_KPO_2-1\\surce\\LPA-2024\\Debug\\LPA-2024_LIB.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_LIB.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/FORCE %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <MASM>
       <AssembledCodeListingFile>$(IntDir)</AssembledCodeListingFile>

@@ -15,6 +15,7 @@ namespace CodeGeneration
 		generation << "\tOVER_FLOW BYTE \'ERROR: OVERFLOW\', 0\n";
 		generation << "\ttrue BYTE \'true', 0\n";
 		generation << "\tfalse BYTE \'false', 0\n";
+
 		for (int i = 0; i < lex.idtable.size; i++)
 		{
 			if (lex.idtable.table[i].idType == IT::L)
@@ -26,11 +27,15 @@ namespace CodeGeneration
 				}
 				else if (lex.idtable.table[i].idDataType == IT::SHORT)
 				{
-					generation << " SDWORD " << lex.idtable.table[i].value.vshort << endl;
+					generation << " SDWORD " << lex.idtable.table[i].value.vshort << "\n";
+				}
+				else if (lex.idtable.table[i].idDataType == IT::CHAR)
+				{
+					generation << " DWORD '" << (char)lex.idtable.table[i].value.vchar << "', 0\n";
 				}
 				else
 				{
-					generation << " DWORD " << lex.idtable.table[i].value.vshort << endl;
+					generation << " DWORD " << lex.idtable.table[i].value.vshort << "\n";
 				}
 			}
 		}
@@ -45,33 +50,30 @@ namespace CodeGeneration
 				{
 					generation << " DWORD 0\n";
 				}
-				if (lex.idtable.table[i].idDataType == IT::STR)
+				else if (lex.idtable.table[i].idDataType == IT::STR)
 				{
 					generation << " DWORD ?\n";
 				}
-				if (lex.idtable.table[i].idDataType == IT::CHAR)
+				else if (lex.idtable.table[i].idDataType == IT::CHAR)
 				{
-					generation << " BYTE ?\n";
+					generation << " DWORD 0, 0\n";
 				}
-				if (lex.idtable.table[i].idDataType == IT::SHORT)
+				else if (lex.idtable.table[i].idDataType == IT::SHORT)
 				{
 					generation << " SDWORD 0\n";
 				}
 			}
 		}
 
-		stack<int> stk;
-		stack<int> ifi;
+		stack<int> cycleStack;
+		int num_of_cycle = 0;
+
 		int num_of_ret = 0,
-			num_of_logical = 0,
-			num_of_boolCompare = 0,
-			num_of_if = 0;
+			num_of_boolCompare = 0;
 		string func_name = "";
 		bool flag_func = false,
 			flag_return = false,
-			flag_main = false,
-			flag_if = false,
-			flag_else = false;
+			flag_main = false;
 
 		generation << "\n.CODE\n\n";
 
@@ -81,43 +83,66 @@ namespace CodeGeneration
 			{
 			case LEX_FUNCTION:
 			{
-				generation << (func_name = lex.idtable.table[lex.lextable.table[++i].idxTI].id) << " PROC ";
-				int ind = i;
-				for (; lex.lextable.table[ind].lexema != LEX_RIGHTHESIS_CLOSE; ind++);
+				// Следующий токен должен быть имя функции
+				i++;
+				func_name = lex.idtable.table[lex.lextable.table[i].idxTI].id;
+				i++;
+				// Теперь ищем '(' после имени функции
+				while (lex.lextable.table[i].lexema != LEX_LEFTHESIS_OPEN && i < lex.lextable.size) i++;
 
-				i = ind;
-				while (lex.lextable.table[ind].lexema != LEX_LEFTHESIS_OPEN)
+				generation << func_name << " PROC";
+
+				// Читаем параметры между '(' и ')'
+				i++; // пропускаем '('
+				bool firstParam = true;
+				while (lex.lextable.table[i].lexema != LEX_RIGHTHESIS_CLOSE && i < lex.lextable.size)
 				{
-					if (lex.idtable.table[lex.lextable.table[ind].idxTI].idType == IT::P)
+					if (lex.lextable.table[i].lexema == LEX_IDENTIFIER &&
+						lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::P)
 					{
-						generation << lex.idtable.table[lex.lextable.table[ind].idxTI].id << " : ";
-						if (lex.idtable.table[lex.lextable.table[ind].idxTI].idDataType == IT::SHORT)
+						// Это параметр
+						if (firstParam)
 						{
-							generation << "SDWORD";
-						}
-						else if (lex.idtable.table[lex.lextable.table[ind].idxTI].idDataType == IT::STR)
-						{
-							generation << "DWORD";
+							generation << " ";
+							firstParam = false;
 						}
 						else
 						{
+							generation << ", ";
+						}
+						generation << lex.idtable.table[lex.lextable.table[i].idxTI].id << " : ";
+						switch (lex.idtable.table[lex.lextable.table[i].idxTI].idDataType)
+						{
+						case IT::SHORT:
+							generation << "SDWORD";
+							break;
+						case IT::STR:
 							generation << "DWORD";
+							break;
+						case IT::CHAR:
+							generation << "DWORD";
+							break;
+						case IT::BOOL:
+							generation << "DWORD";
+							break;
+						default:
+							generation << "DWORD";
+							break;
 						}
 					}
-					if (lex.lextable.table[ind].lexema == LEX_COMMA)
-					{
-						generation << ", ";
-					}
-					ind--;
+					i++;
 				}
+				// вышли за ')'
+				i++;
+				generation << "\n";
 				flag_func = true;
-				generation << endl;
 				break;
 			}
 			case LEX_MAIN:
 			{
-				flag_main = true;
+				// Перед main не должно быть незакрытых функций
 				generation << "main PROC\n";
+				flag_main = true;
 				break;
 			}
 			case LEX_EQUALS:
@@ -138,103 +163,102 @@ namespace CodeGeneration
 						break;
 					case LEX_LITERAL:
 					{
-						if (lex.idtable.table[lex.lextable.table[i].idxTI].idDataType == IT::IDDATATYPE::STR)
+						if (lex.idtable.table[lex.lextable.table[i].idxTI].idDataType == IT::STR)
 						{
-							generation << "\tpush offset " << lex.idtable.table[lex.lextable.table[i].idxTI].id << endl;
-							break;
+							generation << "\tpush offset " << lex.idtable.table[lex.lextable.table[i].idxTI].id << "\n";
 						}
 						else
 						{
-							generation << "\tpush " << lex.idtable.table[lex.lextable.table[i].idxTI].id << endl;
-							break;
+							generation << "\tpush " << lex.idtable.table[lex.lextable.table[i].idxTI].id << "\n";
 						}
+						break;
 					}
 					case LEX_IDENTIFIER:
 					{
-						if (lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::IDTYPE::F)
+						if (lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::F)
 						{
 							generation << "\tcall " << lex.idtable.table[lex.lextable.table[i].idxTI].id << "\n\tpush eax\n";
-							break;
 						}
-						generation << "\tpush " << lex.idtable.table[lex.lextable.table[i].idxTI].id << endl;
+						else
+						{
+							generation << "\tpush " << lex.idtable.table[lex.lextable.table[i].idxTI].id << "\n";
+						}
 						break;
 					}
 					case LEX_MULTIPLICATION:
-					{
 						generation << "\tpop eax\n\tpop ebx\n";
 						generation << "\tmul ebx\n\tpush eax\n";
 						break;
-					}
 					case LEX_ADDITION:
-					{
 						generation << "\tpop eax\n\tpop ebx\n";
 						generation << "\tadd eax, ebx\n\tpush eax\n";
 						break;
-					}
 					case LEX_SUBSTRACTION:
-					{
 						generation << "\tpop ebx\n\tpop eax\n";
 						generation << "\tsub eax, ebx\n\tpush eax\n";
 						break;
-					}
 					case LEX_DIVISION:
-					{
 						generation << "\tpop ebx\n\tpop eax\n";
 						generation << "\tcmp ebx,0\n"\
 							"\tje SOMETHINGWRONG\n";
 						generation << "\tcdq\n";
 						generation << "\tidiv ebx\n\tpush eax\n";
 						break;
-					}
 					case LEX_REMAINDERDIVISION:
-					{
 						generation << "\tpop ebx\n\tpop eax\n";
 						generation << "\tcmp ebx,0\n"\
 							"\tje SOMETHINGWRONG\n";
 						generation << "\tcdq\n";
 						generation << "\tidiv ebx\n\tpush edx\n";
 						break;
-					}
 					default:
 						break;
 					}
 					i++;
 				}
-				if (lex.idtable.table[lex.lextable.table[result_position].idxTI].idDataType == IT::IDDATATYPE::SHORT)
+
+				if (lex.idtable.table[lex.lextable.table[result_position].idxTI].idDataType == IT::SHORT)
 				{
 					generation << "\tpop eax\n";
 					generation << "\tcmp eax, 32767\n";
 					generation << "\tjg overflow\n";
 					generation << "\tcmp eax, -32768\n";
 					generation << "\tjl overflow\n";
-					generation << "\tmov " << lex.idtable.table[lex.lextable.table[result_position].idxTI].id << ", eax";
+					generation << "\tmov " << lex.idtable.table[lex.lextable.table[result_position].idxTI].id << ", eax\n";
+				}
+				else if (lex.idtable.table[lex.lextable.table[result_position].idxTI].idDataType == IT::CHAR) // Добавлено для char
+				{
+					// Для char берём только младший байт
+					generation << "\tpop eax\n";
+					// Переменная типа char хранится как BYTE 0,0 => mov [var], al и mov [var+1],0
+					generation << "\tmov " << lex.idtable.table[lex.lextable.table[result_position].idxTI].id << ", al\n";
+					generation << "\tmov " << lex.idtable.table[lex.lextable.table[result_position].idxTI].id << "+1, 0\n";
 				}
 				else
 				{
 					generation << "\tpop " << lex.idtable.table[lex.lextable.table[result_position].idxTI].id << "\n";
 				}
-				generation << endl;
 				break;
 			}
 			case LEX_RETURN:
 			{
 				generation << "\tpush ";
 				i++;
-				if (lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::L && lex.idtable.table[lex.lextable.table[i].idxTI].idDataType == IT::IDDATATYPE::SHORT)
+				if (lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::L && lex.idtable.table[lex.lextable.table[i].idxTI].idDataType == IT::STR)
 				{
-					generation << lex.idtable.table[lex.lextable.table[i++].idxTI].value.vshort << endl;
+					generation << "OFFSET " << lex.idtable.table[lex.lextable.table[i++].idxTI].id << "\n";
 				}
-				else if (lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::L && lex.idtable.table[lex.lextable.table[i].idxTI].idDataType == IT::IDDATATYPE::STR)
+				else if (lex.idtable.table[lex.lextable.table[i].idxTI].idType == IT::L && lex.idtable.table[lex.lextable.table[i].idxTI].idDataType == IT::SHORT)
 				{
-					generation << "OFFSET " << lex.idtable.table[lex.lextable.table[i++].idxTI].id << endl;
+					generation << lex.idtable.table[lex.lextable.table[i++].idxTI].value.vshort << "\n";
 				}
 				else
 				{
-					generation << lex.idtable.table[lex.lextable.table[i++].idxTI].id << endl;
+					generation << lex.idtable.table[lex.lextable.table[i++].idxTI].id << "\n";
 				}
 				if (flag_func)
 				{
-					generation << "\tjmp local" << num_of_ret << endl;
+					generation << "\tjmp local" << num_of_ret << "\n";
 					flag_return = true;
 				}
 				if (flag_main)
@@ -246,16 +270,16 @@ namespace CodeGeneration
 			}
 			case LEX_RIGHTBRACE_CLOSE:
 			{
-				if (flag_main && !flag_func && lex.lextable.table[i + 1].lexema == LEX_SEMICOLON)
+				// Закрываем тело цикла если он есть
+				if (!cycleStack.empty())
 				{
-					if (flag_return)
-					{
-						generation << "theend:\n";
-						flag_return = false;
-					}
-					generation << FINISH;
-					break;
+					int currentCycle = cycleStack.top();
+					generation << "\tjmp cycle" << currentCycle << "\n";
+					generation << "cycleEnd" << currentCycle << ":\n";
+					cycleStack.pop();
 				}
+
+				// Закрываем функцию, если встречаем '}' и следующий ';'
 				if (flag_func && lex.lextable.table[i + 1].lexema == LEX_SEMICOLON)
 				{
 					if (flag_return)
@@ -267,27 +291,55 @@ namespace CodeGeneration
 					generation << func_name << " ENDP\n\n";
 					flag_func = false;
 				}
-				if (!stk.empty())
+
+				// Закрываем main, если это main и следующий символ ';'
+				if (flag_main && !flag_func && lex.lextable.table[i + 1].lexema == LEX_SEMICOLON)
 				{
-					switch (stk.top())
+					if (flag_return)
 					{
-					case 1:
-						if (lex.lextable.table[i + 1].lexema == LEX_ELSE)
-						{
-							generation << "\tjmp ifEnd" << ifi.top() << endl;
-						}
-						else
-						{
-							generation << "else" << ifi.top() << ":\n";
-							ifi.pop();
-						}
-						stk.pop();
+						generation << "theend:\n";
+						flag_return = false;
+					}
+					generation << FINISH;
+					flag_main = false;
+				}
+				break;
+			}
+			case LEX_CYCLE:
+			{
+				num_of_cycle++;
+				cycleStack.push(num_of_cycle);
+				generation << "cycle" << num_of_cycle << ":\n";
+				break;
+			}
+			case LEX_LEFTHESIS_OPEN:
+			{
+				// Если перед этим был цикл, генерируем проверку условия
+				if (!cycleStack.empty() && lex.lextable.table[i - 1].lexema == LEX_CYCLE)
+				{
+					int currentCycle = cycleStack.top();
+					generation << "\tmov eax, " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\n";
+					generation << "\tcmp eax, " << lex.idtable.table[lex.lextable.table[i + 3].idxTI].id << "\n";
+
+					switch (lex.lextable.table[i + 2].lexema)
+					{
+					case LEX_MORE:
+						generation << "\tjle cycleEnd" << currentCycle << "\n";
 						break;
-					case 2:
-						generation << "ifEnd" << ifi.top() << ":\n";
-						ifi.pop();
-						flag_else = false;
-						stk.pop();
+					case LEX_LESS:
+						generation << "\tjge cycleEnd" << currentCycle << "\n";
+						break;
+					case LEX_INEQUALITY:
+						generation << "\tjz cycleEnd" << currentCycle << "\n";
+						break;
+					case LEX_NOTEQUALS:
+						generation << "\tjnz cycleEnd" << currentCycle << "\n";
+						break;
+					case LEX_MOREEQUAL:
+						generation << "\tjl cycleEnd" << currentCycle << "\n";
+						break;
+					case LEX_LESSEQUAL:
+						generation << "\tjg cycleEnd" << currentCycle << "\n";
 						break;
 					default:
 						break;
@@ -295,100 +347,39 @@ namespace CodeGeneration
 				}
 				break;
 			}
-			case LEX_LEFTBRACE_OPEN:
-				if (num_of_if && !flag_else && flag_if)
-				{
-					generation << "ifi" << ifi.top() << ":\n";
-					flag_if = false;
-				}
-				if (flag_else && lex.lextable.table[i - 1].lexema == LEX_ELSE)
-				{
-					generation << "else" << ifi.top() << ":\n";
-				}
-				break;
-			case LEX_IF:
-			{
-				flag_if = true;
-				stk.push(1);
-				num_of_if++;
-				ifi.push(num_of_if);
-				break;
-			}
-			case LEX_LEFTHESIS_OPEN:
-			{
-				if (num_of_if && lex.lextable.table[i - 1].lexema == LEX_IF)
-				{
-					generation << "\tmov eax, " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << endl;
-					generation << "\tcmp eax, " << lex.idtable.table[lex.lextable.table[i + 3].idxTI].id << endl;
-					if (lex.lextable.table[i + 2].lexema == LEX_MORE)
-					{
-						generation << "\tjg ifi" << num_of_if << endl;
-						generation << "\tjle else" << num_of_if << endl;
-					}
-					else if (lex.lextable.table[i + 2].lexema == LEX_LESS)
-					{
-						generation << "\tjl ifi" << num_of_if << endl;
-						generation << "\tjge else" << num_of_if << endl;
-					}
-					else if (lex.lextable.table[i + 2].lexema == LEX_INEQUALITY)
-					{
-						generation << "\tjz ifi" << num_of_if << endl;
-						generation << "\tjnz else" << num_of_if << endl;
-					}
-					else if (lex.lextable.table[i + 2].lexema == LEX_NOTEQUALS)
-					{
-						generation << "\tjnz ifi" << num_of_if << endl;
-						generation << "\tjz else" << num_of_if << endl;
-					}
-					else if (lex.lextable.table[i + 2].lexema == LEX_MOREEQUAL)
-					{
-						generation << "\tjge ifi" << num_of_if << endl;
-						generation << "\tjl else" << num_of_if << endl;
-					}
-					else if (lex.lextable.table[i + 2].lexema == LEX_LESSEQUAL)
-					{
-						generation << "\tjle ifi" << num_of_if << endl;
-						generation << "\tjg else" << num_of_if << endl;
-					}
-				}
-				break;
-			}
-			case LEX_ELSE:
-			{
-				flag_else = true;
-				stk.push(2);
-				break;
-			}
-			case LEX_WRITE || LEX_WRITELINE:
+			case LEX_WRITELINE:
+			case LEX_WRITE:
 			{
 				switch (lex.idtable.table[lex.lextable.table[i + 1].idxTI].idDataType)
 				{
-				case IT::IDDATATYPE::SHORT:
+				case IT::SHORT:
 					generation << "\npush " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\ncall noutl\n";
 					break;
-				case IT::IDDATATYPE::BOOL:
-					generation << "\tmov eax, " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << endl;
-					generation << "\tcmp eax, 0" << endl;
-					generation << "\tjz " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "T" << endl;
-					generation << "\tjnz " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "F" << endl;
-					generation << "\n" << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "T:" << endl;;
-					generation << "\npush offset false" << "\ncall soutl\n";
-					generation << "\njmp " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << endl;
-					generation << "\n" << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "F:" << endl;;
-					generation << "\npush offset true" << "\ncall soutl\n";
-					generation << "\n" << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << ":" << endl;;
-
+				case IT::BOOL:
+					generation << "\tmov eax, " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\n";
+					generation << "\tcmp eax, 0\n";
+					generation << "\tjz " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "T\n";
+					generation << "\tjnz " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "F\n";
+					generation << "\n" << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "T:\n";
+					generation << "\npush offset false\ncall soutl\n";
+					generation << "\njmp " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "\n";
+					generation << "\n" << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << "F:\n";
+					generation << "\npush offset true\ncall soutl\n";
+					generation << "\n" << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << num_of_boolCompare << ":\n";
 					num_of_boolCompare++;
 					break;
-				case IT::IDDATATYPE::STR:
-					if (lex.idtable.table[lex.lextable.table[i + 1].idxTI].idType == IT::IDTYPE::L)
+				case IT::STR:
+					if (lex.idtable.table[lex.lextable.table[i + 1].idxTI].idType == IT::L)
 						generation << "\npush offset " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\ncall soutl\n";
 					else
 						generation << "\npush " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\ncall soutl\n";
 					break;
-				case IT::IDDATATYPE::CHAR:
-					generation << "\nmov al, " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\n";
-					generation << "\npush eax\ncall soutl\n";
+				case IT::CHAR: // Добавлено для char
+					// Поскольку char теперь хранится как 'c',0
+					// просто push offset var и call soutl
+					generation << "\npush offset " << lex.idtable.table[lex.lextable.table[i + 1].idxTI].id << "\ncall soutl\n";
+					break;
+				default:
 					break;
 				}
 				break;

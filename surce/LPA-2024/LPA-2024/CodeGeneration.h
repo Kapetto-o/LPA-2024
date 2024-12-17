@@ -13,9 +13,9 @@
 "\nSYSPAUSE PROTO "\
 "\nsoutl PROTO : BYTE "\
 "\nnoutl PROTO : SDWORD "\
-"\n_strduplicate PROTO  : SDWORD, : SDWORD "\
-"\n_strlength  PROTO  : BYTE "\
-"\n_strtransint  PROTO  : BYTE "\
+"\n__strduplicate PROTO  : BYTE, : BYTE "\
+"\n_strlength PROTO  : BYTE "\
+"\n_strtransint PROTO  : BYTE "\
 "\n\n.STACK 4096\n\n"
 
 #define FINISH \

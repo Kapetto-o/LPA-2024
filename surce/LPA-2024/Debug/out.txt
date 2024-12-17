@@ -7,7 +7,7 @@ ExitProcess PROTO:DWORD
 SYSPAUSE PROTO 
 soutl PROTO : BYTE 
 noutl PROTO : SDWORD 
-_strduplicate PROTO  : BYTE, : BYTE 
+__strduplicate PROTO  : BYTE, : BYTE 
 _strlength PROTO  : BYTE 
 _strtransint PROTO  : BYTE 
 
@@ -19,14 +19,14 @@ _strtransint PROTO  : BYTE
 	true BYTE 'true', 0
 	false BYTE 'false', 0
 	str0 BYTE "TestText20", 0
-	char1 BYTE 'М', 0
+	char1 DWORD 'e', 0
 	short2 SDWORD 0
 	short3 SDWORD 10
 	short4 SDWORD 1
 	short5 SDWORD 2
 	short6 SDWORD 0
 	short7 SDWORD 1
-	char8 BYTE 'М', 0
+	char8 DWORD 'a', 0
 	str9 BYTE "teststring", 0
 	bool10 DWORD 1
 	str11 BYTE "Арифметические операции:", 0
@@ -55,7 +55,7 @@ _strtransint PROTO  : BYTE
 	short34 SDWORD 5
 	str35 BYTE "Приоритет (=2):", 0
 	str36 BYTE "TestText1", 0
-	char37 BYTE 'М', 0
+	char37 DWORD 'a', 0
 	short38 SDWORD 0
 	short39 SDWORD 5
 	short40 SDWORD 10
@@ -70,13 +70,13 @@ _strtransint PROTO  : BYTE
 	i57 SDWORD 0
 	phah97 DWORD 0
 	it116 SDWORD 0
-	ct116 BYTE 0
+	ct116 DWORD 0, 0
 	st116 DWORD ?
 	bt116 DWORD 0
 	a116 SDWORD 0
 	b116 SDWORD 0
 	parm1116 DWORD ?
-	alpha116 BYTE 0
+	alpha116 DWORD 0, 0
 	number116 SDWORD 0
 	pravda116 DWORD 0
 	stroka116 DWORD ?
@@ -88,7 +88,7 @@ _strtransint PROTO  : BYTE
 
 .CODE
 
-testfunc11 PROC b1 : SDWORD, a1 : SDWORD
+testfunc11 PROC a1 : SDWORD, b1 : SDWORD
 	push a1
 	push b1
 	pop eax
@@ -111,7 +111,6 @@ testfunc11 ENDP
 testfunc22 PROC parm12 : DWORD
 	push offset str0
 	pop parm231
-
 	push parm12
 	jmp local1
 local1:
@@ -119,10 +118,11 @@ local1:
 	ret
 testfunc22 ENDP
 
-testfunc33 PROC simbol3 : BYTE
-	push -858993460
-	pop simbol3
-
+testfunc33 PROC simbol3 : DWORD
+	push char1
+	pop eax
+	mov simbol3, al
+	mov simbol3+1, 0
 	push short2
 	pop eax
 	cmp eax, 32767
@@ -130,15 +130,13 @@ testfunc33 PROC simbol3 : BYTE
 	cmp eax, -32768
 	jl overflow
 	mov i57, eax
-startCycle1:
+cycle1:
 	mov eax, i57
-	cmp eax, 10
-	jge endCycle1
-cycleBody1:
+	cmp eax, short3
+	jge cycleEnd1
 
-	mov al, simbol3
-	push eax
-	call soutl
+push offset simbol3
+call soutl
 	push i57
 	push short4
 	pop eax
@@ -151,6 +149,8 @@ cycleBody1:
 	cmp eax, -32768
 	jl overflow
 	mov i57, eax
+	jmp cycle1
+cycleEnd1:
 	push simbol3
 	jmp local2
 local2:
@@ -170,7 +170,6 @@ testfunc44 PROC chetnoe4 : SDWORD
 	push short5
 	push short6
 	pop phah97
-
 	push phah97
 	jmp local3
 local3:
@@ -186,15 +185,14 @@ main PROC
 	cmp eax, -32768
 	jl overflow
 	mov it116, eax
-	push -858993460
-	pop ct116
-
+	push char8
+	pop eax
+	mov ct116, al
+	mov ct116+1, 0
 	push offset str9
 	pop st116
-
 	push bool10
 	pop bt116
-
 
 push offset str11
 call soutl
@@ -352,10 +350,10 @@ push a116
 call noutl
 	push offset str36
 	pop parm1116
-
-	push -858993460
-	pop alpha116
-
+	push char37
+	pop eax
+	mov alpha116, al
+	mov alpha116+1, 0
 	push short38
 	push short39
 	call testfunc11
@@ -371,34 +369,36 @@ call noutl
 	push eax
 	pop pravda116
 
-
 push number116
 call noutl
 
 push parm1116
 call soutl
 
-	mov al, alpha116
-	push eax
-	call soutl
+push offset alpha116
+call soutl
 	mov eax, pravda116
 	cmp eax, 0
-	jz boolFalse0
+	jz pravda1160T
+	jnz pravda1160F
 
-push offset true
-call soutl
-	jmp boolEnd0
-boolFalse0:
+pravda1160T:
 
 push offset false
 call soutl
-boolEnd0:
+
+jmp pravda1160
+
+pravda1160F:
+
+push offset true
+call soutl
+
+pravda1160:
 	push offset str41
 	pop stroka116
-
 	push offset str42
 	pop strokachislo116
-
 	push stroka116
 	call _strlength
 	push eax
@@ -433,11 +433,10 @@ call noutl
 	cmp eax, -32768
 	jl overflow
 	mov i116, eax
-startCycle2:
+cycle2:
 	mov eax, i116
-	cmp eax, 10
-	jge endCycle2
-cycleBody2:
+	cmp eax, short44
+	jge cycleEnd2
 
 push i116
 call noutl
@@ -453,18 +452,21 @@ call noutl
 	cmp eax, -32768
 	jl overflow
 	mov i116, eax
+	jmp cycle2
+cycleEnd2:
 	call SYSPAUSE
 	push 0
 	call ExitProcess
 SOMETHINGWRONG::
 	push offset null_division
+	call soutl
 jmp THEEND
 overflow::
 	push offset OVER_FLOW
+	call soutl
 THEEND:
 	call SYSPAUSE
 	push -1
 	call ExitProcess
 main ENDP
-end main	jmp startCycle2
-endCycle2:
+end main

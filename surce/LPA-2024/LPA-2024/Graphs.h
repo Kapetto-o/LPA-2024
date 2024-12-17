@@ -63,55 +63,6 @@ struct GRAPH
 		FST::RELATION('8', 1), FST::RELATION('9', 1)), \
 	FST::NODE()
 
-//#define GRAPH_IDENTIFIER \
-//    3, \
-//	FST::NODE(52, \
-//        FST::RELATION('a', 1), FST::RELATION('b', 1), FST::RELATION('c', 1), \
-//        FST::RELATION('d', 1), FST::RELATION('e', 1), FST::RELATION('f', 1), \
-//        FST::RELATION('g', 1), FST::RELATION('h', 1), FST::RELATION('i', 1), \
-//		FST::RELATION('j', 1), FST::RELATION('k', 1), FST::RELATION('l', 1), \
-//		FST::RELATION('m', 1), FST::RELATION('n', 1), FST::RELATION('o', 1), \
-//		FST::RELATION('p', 1), FST::RELATION('q', 1), FST::RELATION('r', 1), \
-//		FST::RELATION('s', 1), FST::RELATION('t', 1), FST::RELATION('u', 1), \
-//		FST::RELATION('v', 1), FST::RELATION('w', 1), FST::RELATION('x', 1), \
-//		FST::RELATION('y', 1), FST::RELATION('z', 1), \
-//		FST::RELATION('a', 2), FST::RELATION('b', 2), FST::RELATION('c', 2), \
-//		FST::RELATION('d', 2), FST::RELATION('e', 2), FST::RELATION('f', 2), \
-//		FST::RELATION('g', 2), FST::RELATION('h', 2), FST::RELATION('i', 2), \
-//		FST::RELATION('j', 2), FST::RELATION('k', 2), FST::RELATION('l', 2), \
-//		FST::RELATION('m', 2), FST::RELATION('n', 2), FST::RELATION('o', 2), \
-//		FST::RELATION('p', 2), FST::RELATION('q', 2), FST::RELATION('r', 2), \
-//		FST::RELATION('s', 2), FST::RELATION('t', 2), FST::RELATION('u', 2), \
-//		FST::RELATION('v', 2), FST::RELATION('w', 2), FST::RELATION('x', 2), \
-//		FST::RELATION('y', 2), FST::RELATION('z', 2)), \
-//    FST::NODE(72, \
-//        FST::RELATION('a', 1), FST::RELATION('b', 1), FST::RELATION('c', 1), \
-//        FST::RELATION('d', 1), FST::RELATION('e', 1), FST::RELATION('f', 1), \
-//        FST::RELATION('g', 1), FST::RELATION('h', 1), FST::RELATION('i', 1), \
-//		FST::RELATION('j', 1), FST::RELATION('k', 1), FST::RELATION('l', 1), \
-//		FST::RELATION('m', 1), FST::RELATION('n', 1), FST::RELATION('o', 1), \
-//		FST::RELATION('p', 1), FST::RELATION('q', 1), FST::RELATION('r', 1), \
-//		FST::RELATION('s', 1), FST::RELATION('t', 1), FST::RELATION('u', 1), \
-//		FST::RELATION('v', 1), FST::RELATION('w', 1), FST::RELATION('x', 1), \
-//		FST::RELATION('y', 1), FST::RELATION('z', 1), FST::RELATION('0', 1), \
-//		FST::RELATION('1', 1), FST::RELATION('2', 1), FST::RELATION('3', 1), \
-//		FST::RELATION('4', 1), FST::RELATION('5', 1), FST::RELATION('6', 1), \
-//		FST::RELATION('7', 1), FST::RELATION('8', 1), FST::RELATION('9', 1), \
-//		\
-//		FST::RELATION('a', 2), FST::RELATION('b', 2), FST::RELATION('c', 2), \
-//        FST::RELATION('d', 2), FST::RELATION('e', 2), FST::RELATION('f', 2), \
-//        FST::RELATION('g', 2), FST::RELATION('h', 2), FST::RELATION('i', 2), \
-//		FST::RELATION('j', 2), FST::RELATION('k', 2), FST::RELATION('l', 2), \
-//		FST::RELATION('m', 2), FST::RELATION('n', 2), FST::RELATION('o', 2), \
-//		FST::RELATION('p', 2), FST::RELATION('q', 2), FST::RELATION('r', 2), \
-//		FST::RELATION('s', 2), FST::RELATION('t', 2), FST::RELATION('u', 2), \
-//		FST::RELATION('v', 2), FST::RELATION('w', 2), FST::RELATION('x', 2), \
-//		FST::RELATION('y', 2), FST::RELATION('z', 2), FST::RELATION('0', 2), \
-//		FST::RELATION('1', 2), FST::RELATION('2', 2), FST::RELATION('3', 2), \
-//		FST::RELATION('4', 2), FST::RELATION('5', 2), FST::RELATION('6', 2), \
-//		FST::RELATION('7', 2), FST::RELATION('8', 2), FST::RELATION('9', 2)), \
-//    FST::NODE()
-
 // Литералы
 
 #define GRAPH_BOOL_TRUE \
@@ -143,27 +94,6 @@ struct GRAPH
 	FST::NODE(1, FST::RELATION('O', 2)), \
 	FST::NODE()
 
-//#define GRAPH_SHORT_LITERAL_8 \
-//    5, \
-//    FST::NODE(3, \
-//        FST::RELATION('-', 1), FST::RELATION('0', 2), FST::RELATION('0', 4)), \
-//    FST::NODE(1, FST::RELATION('0', 2)), \
-//	FST::NODE(14, \
-//        FST::RELATION('1', 3), FST::RELATION('2', 3), FST::RELATION('3', 3), \
-//        FST::RELATION('4', 3), FST::RELATION('5', 3), FST::RELATION('6', 3), \
-//        FST::RELATION('7', 3), \
-//		FST::RELATION('1', 4), FST::RELATION('2', 4), FST::RELATION('3', 4), \
-//		FST::RELATION('4', 4), FST::RELATION('5', 4), FST::RELATION('6', 4), \
-//		FST::RELATION('7', 4)), \
-//    FST::NODE(16, \
-//        FST::RELATION('0', 3), FST::RELATION('1', 3), FST::RELATION('2', 3), \
-//        FST::RELATION('3', 3), FST::RELATION('4', 3), FST::RELATION('5', 3), \
-//        FST::RELATION('6', 3), FST::RELATION('7', 3), \
-//		FST::RELATION('0', 4), FST::RELATION('1', 4), FST::RELATION('2', 4), \
-//		FST::RELATION('3', 4), FST::RELATION('4', 4), FST::RELATION('5', 4), \
-//		FST::RELATION('6', 4), FST::RELATION('7', 4)), \
-//    FST::NODE()
-
 #define GRAPH_SHORT_LITERAL_10  \
 	2, \
 	FST::NODE(21, \
@@ -176,31 +106,6 @@ struct GRAPH
 		FST::RELATION('6', 1), FST::RELATION('7', 1), FST::RELATION('8', 1), \
 		FST::RELATION('9', 1)), \
 	FST::NODE()
-
-//#define GRAPH_SHORT_LITERAL_10  \
-//    4, \
-//    FST::NODE(11, \
-//        FST::RELATION('-', 1), FST::RELATION('0', 3), \
-//		FST::RELATION('1', 2), FST::RELATION('2', 2), FST::RELATION('3', 2), \
-//		FST::RELATION('4', 2), FST::RELATION('5', 2), FST::RELATION('6', 2), \
-//		FST::RELATION('7', 2), FST::RELATION('8', 2), FST::RELATION('9', 2)), \
-//    FST::NODE(18, \
-//        FST::RELATION('1', 2), FST::RELATION('2', 2), FST::RELATION('3', 2), \
-//        FST::RELATION('4', 2), FST::RELATION('5', 2), FST::RELATION('6', 2), \
-//        FST::RELATION('7', 2), FST::RELATION('8', 2), FST::RELATION('9', 2), \
-//        FST::RELATION('1', 3), FST::RELATION('2', 3), FST::RELATION('3', 3), \
-//        FST::RELATION('4', 3), FST::RELATION('5', 3), FST::RELATION('6', 3), \
-//        FST::RELATION('7', 3), FST::RELATION('8', 3), FST::RELATION('9', 3)), \
-//    FST::NODE(20, \
-//        FST::RELATION('0', 2), FST::RELATION('1', 2), FST::RELATION('2', 2), \
-//        FST::RELATION('3', 2), FST::RELATION('4', 2), FST::RELATION('5', 2), \
-//        FST::RELATION('6', 2), FST::RELATION('7', 2), FST::RELATION('8', 2), \
-//        FST::RELATION('9', 2), \
-//		FST::RELATION('0', 3), FST::RELATION('1', 3), FST::RELATION('2', 3), \
-//		FST::RELATION('3', 3), FST::RELATION('4', 3), FST::RELATION('5', 3), \
-//		FST::RELATION('6', 3), FST::RELATION('7', 3), FST::RELATION('8', 3), \
-//		FST::RELATION('9', 3)), \
-//    FST::NODE()
 
 #define GRAPH_STRING_LITERAL \
 	4, \

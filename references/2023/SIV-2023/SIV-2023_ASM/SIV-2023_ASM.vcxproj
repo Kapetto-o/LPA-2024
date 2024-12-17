@@ -81,7 +81,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalOptions>D:\KPO_3sem\SIV-2023\SIV-2023\Debug\SIV-2023_LIB.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>D:\GitHub\Course-Work_KPO_2-1\references\2023\SIV-2023\Debug\SIV-2023_LIB.lib %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <MASM>
       <AssembledCodeListingFile>$(IntDir)</AssembledCodeListingFile>
