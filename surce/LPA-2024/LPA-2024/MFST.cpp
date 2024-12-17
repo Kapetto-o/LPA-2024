@@ -208,7 +208,8 @@ namespace MFST
 			Error::ERROR err = Error::geterror(errid);
 			sprintf_s(buf, MFST_DIAGN_MAXSIZE, "%d: строка %d, %s", err.id, lex.lextable.table[lpos].sn, err.message);
 			rc = buf;
-			throw ERROR_THROW_IN(err.id, lex.lextable.table[lpos].sn, 0);
+			//throw ERROR_THROW_IN(err.id, lex.lextable.table[lpos].sn, 0);
+			throw ERROR_THROW_IN(errid, lex.lextable.table[lpos].sn, 0);
 		};
 		return rc;
 	};

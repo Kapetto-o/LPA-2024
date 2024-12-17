@@ -1,17 +1,16 @@
 -------------- Протокол ----------------
-Дата: 16.12.2024 17:16:29
+Дата: 17.12.2024 03:14:20
 ------------- Параметры ----------------
 -in: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt
 -log: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.log
 -out: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\out.txt
 -an: D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\in.txt.an.txt
 ---------- Исходные данные -------------
-Количество символов: 1379
+Количество символов: 1610
 Проигнорировано:     0
-Количество строк:    88
+Количество строк:    107
 ----------------------------------------
 No forbidden characters
 Tokenization :  Completed successfully
 Lexical analysis :  Completed successfully
-Syntax analysis : - ERROR
-Ошибка 0: Системная ошибка: Недопустимый код ошибки, строка -1, позиция -1
+Syntax analysis :  Completed successfully

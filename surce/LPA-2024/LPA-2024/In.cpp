@@ -58,8 +58,6 @@ namespace In
 				++currentCol;
 		}
 
-
-
 		*Ptemp = IN_CODE_ENDL;
 		Info.size = strlen((char*)Info.text) - Info.lines;
 

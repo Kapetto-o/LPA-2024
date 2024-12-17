@@ -112,12 +112,12 @@ namespace MFST
 		bool push_chain(										// поместить цепочку правила в стек
 			GRB::Rule::Chain chain								// цепочка правила
 		);
-		RC_STEP step(ofstream& sin);							// выполнить шаг автомата
-		bool start(ofstream& sin);								// запустить автомат
+		RC_STEP step(ofstream& sin);			// выполнить шаг автомата
+		bool start(ofstream& sin);				// запустить автомат
 		bool savediagnosis(
-			RC_STEP pprc_step									// код завершения шага
+			RC_STEP pprc_step					// код завершения шага
 		);
-		void printrules(ofstream& sin);							// вывести последовательность правил
+		void printrules(ofstream& sin);			// вывести последовательность правил
 
 		struct Deducation						// вывод
 		{
