@@ -19,7 +19,7 @@ _strtransint	PROTO :BYTE
 	true BYTE 'true', 0
 	false BYTE 'false', 0
 	short0 SDWORD 5
-	short1 SDWORD 1
+	short1 SDWORD 0
 	short2 SDWORD 1
 	str3 BYTE "teststring", 0
 	bool4 DWORD 1
@@ -48,43 +48,33 @@ _strtransint	PROTO :BYTE
 	short27 SDWORD 5
 	short28 SDWORD 5
 	str29 BYTE "Приоритет (=2):", 0
-	str30 BYTE "Пользовательские функции:", 0
+	str30 BYTE "TestText1", 0
 	short31 SDWORD 0
 	short32 SDWORD 5
-	short33 SDWORD 10
-	str34 BYTE "Библиотечные функции:", 0
+	short33 SDWORD 1
+	short34 SDWORD 10
 	str35 BYTE "Тестовая строчка", 0
 	str36 BYTE "125", 0
-	str37 BYTE "test", 0
-	str38 BYTE "testing", 0
-	short39 SDWORD 0
-	short40 SDWORD 10
-	short41 SDWORD 1
-	short42 SDWORD 0
-	short43 SDWORD 10
-	short44 SDWORD 10
-	short45 SDWORD 0
-	short46 SDWORD 1
-	short47 SDWORD 1
+	short37 SDWORD 0
+	short38 SDWORD 10
+	short39 SDWORD 1
 .DATA
 	res10 SDWORD 0
-	prom31 SDWORD 0
-	res31 DWORD 0
-	it56 SDWORD 0
-	st56 DWORD ?
-	bt56 DWORD 0
-	a56 SDWORD 0
-	b56 SDWORD 0
-	number56 SDWORD 0
-	pravda56 DWORD 0
-	stroka56 DWORD ?
-	strokachislo56 DWORD ?
-	copystr56 DWORD ?
-	dlina56 SDWORD 0
-	strchislo56 SDWORD 0
-	i56 SDWORD 0
-	ii56 SDWORD 0
-	jj56 SDWORD 0
+	phah31 DWORD 0
+	it50 SDWORD 0
+	st50 DWORD ?
+	bt50 DWORD 0
+	a50 SDWORD 0
+	b50 SDWORD 0
+	parm150 DWORD ?
+	number50 SDWORD 0
+	pravda50 DWORD 0
+	stroka50 DWORD ?
+	strokachislo50 DWORD ?
+	copystr50 DWORD ?
+	dlina50 SDWORD 0
+	strchislo50 SDWORD 0
+	i50 SDWORD 0
 
 .CODE
 
@@ -110,7 +100,6 @@ testfunc11 ENDP
 
 testfunc22 PROC chetnoe2 : SDWORD
 	push chetnoe2
-	push short0
 	pop ebx
 	pop eax
 	cmp ebx,0
@@ -118,16 +107,10 @@ testfunc22 PROC chetnoe2 : SDWORD
 	cdq
 	idiv ebx
 	push edx
-	pop eax
-	cmp eax, 32767
-	jg overflow
-	cmp eax, -32768
-	jl overflow
-	mov prom31, eax
-	push prom31
+	push short0
 	push short1
-	pop res31
-	push res31
+	pop phah31
+	push phah31
 	jmp local1
 local1:
 	pop eax
@@ -141,11 +124,11 @@ main PROC
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov it56, eax
+	mov it50, eax
 	push offset str3
-	pop st56
+	pop st50
 	push bool4
-	pop bt56
+	pop bt50
 
 push offset str5
 call soutl
@@ -155,7 +138,7 @@ call soutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov b56, eax
+	mov b50, eax
 	push short7
 	push short8
 	pop eax
@@ -167,12 +150,12 @@ call soutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str9
 call soutl
 
-push a56
+push a50
 call noutl
 	push short10
 	push short11
@@ -188,12 +171,12 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str12
 call soutl
 
-push a56
+push a50
 call noutl
 	push short13
 	push short14
@@ -209,12 +192,12 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str15
 call soutl
 
-push a56
+push a50
 call noutl
 	push short16
 	push short17
@@ -227,12 +210,12 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str18
 call soutl
 
-push a56
+push a50
 call noutl
 	push short19
 	push short20
@@ -245,12 +228,12 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str21
 call soutl
 
-push a56
+push a50
 call noutl
 	push short22
 	push short23
@@ -268,12 +251,12 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str25
 call soutl
 
-push a56
+push a50
 call noutl
 	push short26
 	push short27
@@ -294,61 +277,60 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov a56, eax
+	mov a50, eax
 
 push offset str29
 call soutl
 
-push a56
+push a50
 call noutl
-
-push offset str30
-call soutl
+	push offset str30
+	pop parm150
 	push short31
 	push short32
 	call testfunc11
+	push eax
+	push short33
+	pop eax
+	pop ebx
+	add eax, ebx
 	push eax
 	pop eax
 	cmp eax, 32767
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov number56, eax
-	push short33
+	mov number50, eax
+	push short34
 	call testfunc22
 	push eax
-	pop pravda56
+	pop pravda50
 
-push number56
+push number50
 call noutl
-	mov eax, pravda56
-	cmp eax, 0
-	jz pravda560T
-	jnz pravda560F
 
-pravda560T:
+push offset parm150
+call soutl
+	mov eax, pravda50
+	cmp eax, 0
+	jz pravda500T
+	jnz pravda500F
+
+pravda500T:
 	push offset false
 call soutl
-	jmp pravda560
+	jmp pravda500
 
-pravda560F:
+pravda500F:
 	push offset true
 call soutl
 
-pravda560:
-
-push offset str34
-call soutl
+pravda500:
 	push offset str35
-	pop stroka56
+	pop stroka50
 	push offset str36
-	pop strokachislo56
-	push offset str37
-	push offset str38
-	call _strduplicate
-	push eax
-	pop copystr56
-	push stroka56
+	pop strokachislo50
+	push stroka50
 	call _strlength
 	push eax
 	pop eax
@@ -356,8 +338,8 @@ call soutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov dlina56, eax
-	push strokachislo56
+	mov dlina50, eax
+	push strokachislo50
 	call _strtransint
 	push eax
 	pop eax
@@ -365,32 +347,32 @@ call soutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov strchislo56, eax
+	mov strchislo50, eax
 
-push offset copystr56
+push offset copystr50
 call soutl
 
-push dlina56
+push dlina50
 call noutl
 
-push strchislo56
+push strchislo50
 call noutl
-	push short39
+	push short37
 	pop eax
 	cmp eax, 32767
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov i56, eax
+	mov i50, eax
 cycle1:
-	mov eax, i56
-	cmp eax, short40
+	mov eax, i50
+	cmp eax, short38
 	jge cycleEnd1
 
-push i56
+push i50
 call noutl
-	push i56
-	push short41
+	push i50
+	push short39
 	pop eax
 	pop ebx
 	add eax, ebx
@@ -400,65 +382,9 @@ call noutl
 	jg overflow
 	cmp eax, -32768
 	jl overflow
-	mov i56, eax
+	mov i50, eax
 	jmp cycle1
 cycleEnd1:
-	push short42
-	pop eax
-	cmp eax, 32767
-	jg overflow
-	cmp eax, -32768
-	jl overflow
-	mov ii56, eax
-	push short43
-	pop eax
-	cmp eax, 32767
-	jg overflow
-	cmp eax, -32768
-	jl overflow
-	mov jj56, eax
-cycle2:
-	mov eax, ii56
-	cmp eax, short44
-	jge cycleEnd2
-cycle3:
-	mov eax, jj56
-	cmp eax, short45
-	jle cycleEnd3
-
-push jj56
-call noutl
-	push jj56
-	push short46
-	pop ebx
-	pop eax
-	sub eax, ebx
-	push eax
-	pop eax
-	cmp eax, 32767
-	jg overflow
-	cmp eax, -32768
-	jl overflow
-	mov jj56, eax
-	jmp cycle3
-cycleEnd3:
-
-push ii56
-call noutl
-	push ii56
-	push short47
-	pop eax
-	pop ebx
-	add eax, ebx
-	push eax
-	pop eax
-	cmp eax, 32767
-	jg overflow
-	cmp eax, -32768
-	jl overflow
-	mov ii56, eax
-	jmp cycle2
-cycleEnd2:
 	call SYSPAUSE
 	push 0
 	call ExitProcess

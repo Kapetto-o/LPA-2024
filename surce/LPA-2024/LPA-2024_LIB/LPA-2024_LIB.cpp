@@ -5,7 +5,7 @@
 
 extern "C" char* __stdcall _strduplicate(char* parm1, char* parm2)
 {
-        strcpy(parm2, parm1);
+        strcpy(parm1, parm2);
         return 0;
 }
 
@@ -27,7 +27,6 @@ extern "C" int __stdcall _strtransint(const char* parm1)
             return 0;
         }
     }
-    // Не трогайте стандартные функции здесь
     return atoi(parm1);
 }
 

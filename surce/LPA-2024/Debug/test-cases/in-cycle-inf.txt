@@ -1,0 +1,15 @@
+main {
+	new int ii = 0;
+	new int jj = 10;
+
+	cycle(ii < 10)
+	{
+		cycle (jj > 0)
+		{
+			write jj;
+			jj = jj - 1;
+		}
+		write ii;
+		ii = ii + 1;
+	}
+}

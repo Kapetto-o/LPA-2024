@@ -3,10 +3,10 @@ int function testfunc1(int a, int b){
 	return res;
 };
 
+
 bool function testfunc2(int chetnoe){
-	new int prom = chetnoe % 5;
-	new bool res = (prom != 1);
-	return res;
+	new bool phah = (chetnoe % 5 == 0);
+	return phah;
 };
 
 main
@@ -52,22 +52,21 @@ main
 
 	// ПОЛЬЗОВАТЕЛЬСКИЕ ФУНКЦИИ
 
-	writeline "Пользовательские функции:";
+	new str parm1 = "TestText1";
 
-	new int number = testfunc1(0, 5);
+	new int number = testfunc1(0, 5) + 1;
 	new bool pravda = testfunc2(10);
 
 	write number;
+	writeline parm1;
 	writeline pravda;
 
 	// БИБЛИОТЕЧНЫЕ ФУНКЦИИ
 
-	writeline "Библиотечные функции:";
-
 	new str stroka = "Тестовая строчка";
 	new str strokachislo = "125";
+	new str copystr;
 
-	new str copystr = strduplicate(stroka, strokachislo);			// Копирование строки stroka в copystr
 	new int dlina = strlength(stroka);		// Вычисление длины строки stroka
 	new int strchislo = strtransint(strokachislo);	// Преобразование строки strokachislo в число
 
@@ -84,16 +83,6 @@ main
 		write i;
 		i = i + 1;
 	}
-	new int ii = 0;
-	new int jj = 10;
-	cycle(ii < 10)
-	{
-		cycle (jj > 0)
-		{
-			write jj;
-			jj = jj - 1;
-		}
-		write ii;
-		ii = ii + 1;
-	}
+
+	int new vosmerka = 515O;
 };

@@ -1,5 +1,0 @@
-#pragma once
-#include "pch.h"
-
-bool PolishNotation(int i, LT::LexTable& lextable, IT::IdTable& idtable);
-bool startPolishNotation(LT::LexTable& lextable, IT::IdTable& idtable);

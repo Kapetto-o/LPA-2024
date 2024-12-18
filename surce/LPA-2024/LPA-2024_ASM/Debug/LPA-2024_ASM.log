@@ -1,4 +1,4 @@
-﻿Сборка начата 18.12.2024 10:22:32.
+﻿Сборка начата 18.12.2024 14:24:20.
 Уровень детализации журнала: Normal.     1>Проект "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\LPA-2024_ASM\LPA-2024_ASM.vcxproj" в узле 2 (целевые объекты Build).
      1>PrepareForBuild:
          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
@@ -7,10 +7,10 @@
          Обращение к "Debug\LPA-2024_ASM.tlog\unsuccessfulbuild".
        _MASM:
          Assembling LPA-2024_ASM.asm...
-         cmd.exe /C "C:\Users\Binar\AppData\Local\Temp\tmp081f5278b1d9400aa14c14ba5ce4410f.cmd"
+         cmd.exe /C "C:\Users\Kapetto\AppData\Local\Temp\tmpe312818b004c459b942ddfc93c172cc1.cmd"
          ml.exe /c /nologo /Zi /Fo"Debug\LPA-2024_ASM.obj" /Fl"Debug\\" /W3 /errorReport:prompt  /Ta"LPA-2024_ASM.asm"
        Link:
-         D:\Programs\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.exe" /INCREMENTAL /ILK:"Debug\LPA-2024_ASM.ilk" /NOLOGO /LIBPATH:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug" "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_LIB.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYLINKRESOURCE:"LPA-2024_LIB.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.lib" /MACHINE:X86 D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_LIB.lib /FORCE "Debug\LPA-2024_ASM.obj"
+         D:\Programs\VisualStudio\VC\Tools\MSVC\14.41.34120\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.exe" /INCREMENTAL /ILK:"Debug\LPA-2024_ASM.ilk" /NOLOGO /LIBPATH:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug" "D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_LIB.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYLINKRESOURCE:"LPA-2024_LIB.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_ASM.lib" /MACHINE:X86 D:\GitHub\Course-Work_KPO_2-1\surce\LPA-2024\Debug\LPA-2024_LIB.lib /FORCE "Debug\LPA-2024_ASM.obj"
      1>LINK : warning LNK4075: не учитывается "/INCREMENTAL" из-за спецификации "/FORCE"
      1>ucrtd.lib(ucrtbased.dll) : warning LNK4006: _atoi уже определен в libucrt.lib(atox.obj); второе определение пропущено
      1>LINK : warning LNK4098: библиотека по умолчанию "libucrt.lib" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library
@@ -33,4 +33,4 @@
     Предупреждений: 4
     Ошибок: 0
 
-Прошло времени 00:00:00.79
+Прошло времени 00:00:01.33

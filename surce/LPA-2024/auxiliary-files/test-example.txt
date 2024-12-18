@@ -3,24 +3,9 @@ int function testfunc1(int a, int b){
 	return res;
 };
 
-str function testfunc2(str parm1){
-	new str parm2 = "TestText20";
-	strduplicate(parm1, parm2);
-	return parm1;
-};
 
-char function testfunc3(char simbol){
-	simbol = 'e';
-	new int i = 0;
-	cycle(i < 10) {
-		write simbol;
-		i = i + 1;
-	}
-	return simbol;
-};
-
-bool function testfunc4(int chetnoe){
-	new bool phah = (chetnoe % 2 == 0);
+bool function testfunc2(int chetnoe){
+	new bool phah = (chetnoe % 5 == 0);
 	return phah;
 };
 
@@ -29,7 +14,6 @@ main
 	// ÒÈÏÛ ÄÀÍÍÛÕ
 
 	new int it = 1;
-	new char ct = 'a';
 	new str st = "teststring";
 	new bool bt = true;
 
@@ -69,16 +53,12 @@ main
 	// ÏÎËÜÇÎÂÀÒÅËÜÑÊÈÅ ÔÓÍÊÖÈÈ
 
 	new str parm1 = "TestText1";
-	new char alpha = 'a';
 
-	new int number = testfunc1(0, 5);
-	testfunc2(parm1);
-	testfunc3(alpha);
-	new bool pravda = testfunc4(10);
+	new int number = testfunc1(0, 5) + 1;
+	new bool pravda = testfunc2(10);
 
 	write number;
 	writeline parm1;
-	write alpha;
 	writeline pravda;
 
 	// ÁÈÁËÈÎÒÅ×ÍÛÅ ÔÓÍÊÖÈÈ
@@ -87,7 +67,6 @@ main
 	new str strokachislo = "125";
 	new str copystr;
 
-	strduplicate(copystr, stroka);			// Êîïèðîâàíèå ñòðîêè stroka â copystr
 	new int dlina = strlength(stroka);		// Âû÷èñëåíèå äëèíû ñòðîêè stroka
 	new int strchislo = strtransint(strokachislo);	// Ïðåîáðàçîâàíèå ñòðîêè strokachislo â ÷èñëî
 
@@ -104,4 +83,6 @@ main
 		write i;
 		i = i + 1;
 	}
+
+	int new vosmerka = 515O;
 };

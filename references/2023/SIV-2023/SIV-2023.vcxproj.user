@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommandArguments>-in:D:\KPO_3sem\SIV-2023\SIV-2023\ControlExample.txt -out:D:\KPO_3sem\SIV-2023\SIV-2023\SIV_result.asm -log:D:\KPO_3sem\SIV-2023\SIV-2023\Logger.txt -an:D:\KPO_3sem\SIV-2023\SIV-2023\Analize.txt</LocalDebuggerCommandArguments>
-    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
-  </PropertyGroup>
-</Project>
