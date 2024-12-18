@@ -1,11 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <cstring>
+#include <cctype>
 
-extern "C" char* __stdcall _strduplicate(char* parm1, const char* parm2)
+extern "C" char* __stdcall _strduplicate(char* parm1, char* parm2)
 {
-    if (parm1 == nullptr || parm2 == nullptr) return nullptr;
-    strcpy(parm1, parm2);
-    return parm1;
+        strcpy(parm2, parm1);
+        return 0;
 }
 
 extern "C" int __stdcall _strlength(const char* parm1)

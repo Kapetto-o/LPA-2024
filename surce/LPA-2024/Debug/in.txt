@@ -3,15 +3,10 @@ int function testfunc1(int a, int b){
 	return res;
 };
 
-str function testfunc2(str parm1){
-	new str parm2 = "TestText20";
-	strduplicate(parm1, parm2);
-	return parm1;
-};
-
-bool function testfunc4(int chetnoe){
-	new bool phah = (chetnoe % 2 == 0);
-	return phah;
+bool function testfunc2(int chetnoe){
+	new int prom = chetnoe % 5;
+	new bool res = (prom != 1);
+	return res;
 };
 
 main
@@ -57,23 +52,22 @@ main
 
 	// ПОЛЬЗОВАТЕЛЬСКИЕ ФУНКЦИИ
 
-	new str parm1 = "TestText1";
+	writeline "Пользовательские функции:";
 
 	new int number = testfunc1(0, 5);
-	testfunc2(parm1);
-	new bool pravda = testfunc4(10);
+	new bool pravda = testfunc2(10);
 
 	write number;
-	writeline parm1;
 	writeline pravda;
 
 	// БИБЛИОТЕЧНЫЕ ФУНКЦИИ
 
+	writeline "Библиотечные функции:";
+
 	new str stroka = "Тестовая строчка";
 	new str strokachislo = "125";
-	new str copystr;
 
-	strduplicate(copystr, stroka);			// Копирование строки stroka в copystr
+	new str copystr = strduplicate(stroka, strokachislo);			// Копирование строки stroka в copystr
 	new int dlina = strlength(stroka);		// Вычисление длины строки stroka
 	new int strchislo = strtransint(strokachislo);	// Преобразование строки strokachislo в число
 
@@ -89,5 +83,17 @@ main
 	{
 		write i;
 		i = i + 1;
+	}
+	new int ii = 0;
+	new int jj = 10;
+	cycle(ii < 10)
+	{
+		cycle (jj > 0)
+		{
+			write jj;
+			jj = jj - 1;
+		}
+		write ii;
+		ii = ii + 1;
 	}
 };
