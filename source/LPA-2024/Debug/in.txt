@@ -3,7 +3,6 @@ int function testfunc1(int a, int b){
 	return res;
 };
 
-
 bool function testfunc2(int chetnoe){
 	new bool phah = (chetnoe % 5 == 0);
 	return phah;
