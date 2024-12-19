@@ -29,7 +29,7 @@ _strtransint	PROTO :BYTE
 	short8 SDWORD 5
 	str9 BYTE "Умножение:", 0
 	short10 SDWORD 10
-	short11 SDWORD 0
+	short11 SDWORD 5
 	str12 BYTE "Деление:", 0
 	short13 SDWORD 15
 	short14 SDWORD 10
@@ -58,6 +58,7 @@ _strtransint	PROTO :BYTE
 	short37 SDWORD 0
 	short38 SDWORD 10
 	short39 SDWORD 1
+	short40 SDWORD 333
 .DATA
 	res10 SDWORD 0
 	phah31 DWORD 0
@@ -75,6 +76,7 @@ _strtransint	PROTO :BYTE
 	dlina50 SDWORD 0
 	strchislo50 SDWORD 0
 	i50 SDWORD 0
+	vosmerka50 SDWORD 0
 
 .CODE
 
@@ -385,6 +387,13 @@ call noutl
 	mov i50, eax
 	jmp cycle1
 cycleEnd1:
+	push short40
+	pop eax
+	cmp eax, 32767
+	jg overflow
+	cmp eax, -32768
+	jl overflow
+	mov vosmerka50, eax
 	call SYSPAUSE
 	push 0
 	call ExitProcess

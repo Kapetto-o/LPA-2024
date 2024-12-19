@@ -83,5 +83,5 @@ main
 		i = i + 1;
 	}
 
-	int new vosmerka = 515O;
+	new int vosmerka = 515O;
 };

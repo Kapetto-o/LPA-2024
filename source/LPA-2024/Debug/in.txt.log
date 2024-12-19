@@ -1,17 +1,19 @@
 -------------- Протокол ----------------
-Дата: 18.12.2024 14:27:10
+Дата: 19.12.2024 15:15:01
 ------------- Параметры ----------------
 -in: in.txt
 -log: in.txt.log
 -out: out.txt
 -an: in.txt.an.txt
 ---------- Исходные данные -------------
-Количество символов: 1217
+Количество символов: 1241
 Проигнорировано:     0
-Количество строк:    86
+Количество строк:    87
 ----------------------------------------
 No forbidden characters
 Tokenization :  Completed successfully
 Lexical analysis :  Completed successfully
-Syntax analysis : - ERROR
-Ошибка 610: Неопределенная ошибка, строка 84, позиция 1
+Syntax analysis :  Completed successfully
+Semantic analysis :  Completed successfully
+Polish notation  :  Completed successfully
+Code generation :  Completed successfully
